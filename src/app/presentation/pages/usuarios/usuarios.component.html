@@ -1,0 +1,157 @@
+<div class="usuarios">
+  <div class="page-header">
+    <div>
+      <h2>Gestión de Usuarios</h2>
+      <p class="subtitle">Administración de cuentas y roles del sistema</p>
+    </div>
+    <button class="btn-primary" (click)="abrirCrear()">➕ Nuevo Usuario</button>
+  </div>
+
+  <!-- Filtros -->
+  <div class="filters-bar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        placeholder="Buscar por nombre, email o rol..."
+        [ngModel]="searchTerm()"
+        (ngModelChange)="searchTerm.set($event)"
+      >
+    </div>
+    <span class="results-count">{{ filteredUsuarios().length }} usuarios</span>
+  </div>
+
+  <!-- Tabla de usuarios -->
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Usuario</th>
+          <th>Email</th>
+          <th>Rol</th>
+          <th>Estado</th>
+          <th>Último Acceso</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (usuario of filteredUsuarios(); track usuario.id) {
+          <tr>
+            <td class="avatar-cell">{{ usuario.avatar || '👤' }}</td>
+            <td>
+              <div class="user-cell">
+                <span class="user-name-cell">{{ usuario.nombre }}</span>
+                <span class="user-id">{{ usuario.id }}</span>
+              </div>
+            </td>
+            <td class="email-cell">{{ usuario.email }}</td>
+            <td>
+              <span class="rol-badge" [class]="usuario.rol">
+                {{ usuario.rol === 'admin' ? '👨‍💼 Administrador' : '👷 Encargado Bodega' }}
+              </span>
+            </td>
+            <td>
+              <span class="estado-badge" [class.activo]="usuario.activo" [class.inactivo]="!usuario.activo">
+                {{ usuario.activo ? '● Activo' : '○ Inactivo' }}
+              </span>
+            </td>
+            <td class="fecha-cell">
+              {{ usuario.ultimoAcceso ? (usuario.ultimoAcceso | date:'dd/MM/yyyy') : 'Sin acceso' }}
+            </td>
+            <td>
+              <div class="actions">
+                <button class="btn-icon" title="Editar" (click)="abrirEditar(usuario)">✏️</button>
+                @if (usuario.id !== currentUser()?.id) {
+                  <button class="btn-icon danger" title="Eliminar" (click)="confirmarEliminar(usuario)">🗑️</button>
+                }
+              </div>
+            </td>
+          </tr>
+        } @empty {
+          <tr>
+            <td colspan="7" class="empty-row">
+              <span class="empty-icon">👥</span>
+              No se encontraron usuarios
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal Crear/Editar -->
+@if (showModal()) {
+  <app-modal
+    [title]="editingUser() ? 'Editar Usuario' : 'Nuevo Usuario'"
+    size="md"
+    (closed)="showModal.set(false)"
+  >
+    <form (ngSubmit)="guardar()" class="user-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Nombre completo</label>
+          <input type="text" [(ngModel)]="form.nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" [(ngModel)]="form.email" name="email" placeholder="usuario&#64;pugamujica.cl" required>
+        </div>
+        <div class="form-group">
+          <label>{{ editingUser() ? 'Nueva contraseña (dejar vacío para mantener)' : 'Contraseña' }}</label>
+          <input type="password" [(ngModel)]="form.password" name="password" placeholder="••••••••" [required]="!editingUser()">
+        </div>
+        <div class="form-group">
+          <label>Rol</label>
+          <select [(ngModel)]="form.rol" name="rol">
+            <option value="admin">Administrador</option>
+            <option value="encargado">Encargado de Bodega</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Estado</label>
+          <select [(ngModel)]="form.activo" name="activo">
+            <option [ngValue]="true">Activo</option>
+            <option [ngValue]="false">Inactivo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Avatar</label>
+          <div class="avatar-grid">
+            @for (av of avatarOptions; track av) {
+              <button
+                type="button"
+                class="avatar-option"
+                [class.selected]="form.avatar === av"
+                (click)="form.avatar = av"
+              >{{ av }}</button>
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-secondary" (click)="showModal.set(false)">Cancelar</button>
+        <button type="submit" class="btn-primary">
+          {{ editingUser() ? 'Guardar Cambios' : 'Crear Usuario' }}
+        </button>
+      </div>
+    </form>
+  </app-modal>
+}
+
+<!-- Modal Confirmar Eliminación -->
+@if (showDeleteModal()) {
+  <app-modal title="Eliminar Usuario" size="sm" (closed)="showDeleteModal.set(false)">
+    <div class="confirm-delete">
+      <span class="delete-icon">⚠️</span>
+      <p>¿Eliminar a <strong>{{ deletingUser()?.nombre }}</strong>?</p>
+      <p class="delete-warning">Esta acción no se puede deshacer.</p>
+    </div>
+    <div class="form-actions">
+      <button class="btn-secondary" (click)="showDeleteModal.set(false)">Cancelar</button>
+      <button class="btn-danger" (click)="eliminar()">Eliminar</button>
+    </div>
+  </app-modal>
+}

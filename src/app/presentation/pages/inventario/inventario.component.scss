@@ -1,0 +1,344 @@
+$accent: #E87722;
+
+.inventario {
+  .page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    h2 { font-size: 24px; font-weight: 800; color: #2d3436; margin: 0 0 4px; }
+    .subtitle { color: #636e72; font-size: 14px; margin: 0; }
+  }
+}
+
+// ─── Buttons ──────────────────────────────────────
+.btn-primary {
+  background: $accent;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover { background: color-mix(in srgb, $accent 92%, black); transform: translateY(-1px); box-shadow: 0 4px 12px rgba($accent, 0.3); }
+}
+
+.btn-secondary {
+  background: #f1f2f6;
+  color: #636e72;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover { background: #dfe6e9; }
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover { background: color-mix(in srgb, #e74c3c 92%, black); }
+}
+
+.btn-icon {
+  background: #f1f2f6;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover { background: #dfe6e9; transform: scale(1.1); }
+  &.danger:hover { background: #fce4ec; }
+}
+
+// ─── Filters ──────────────────────────────────────
+.filters-bar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.search-box {
+  flex: 1;
+  min-width: 220px;
+  position: relative;
+
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 16px 12px 44px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    background: #fafafa;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+      background: #fff;
+    }
+  }
+}
+
+.filter-select {
+  padding: 12px 16px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 14px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: border-color 0.2s;
+
+  &:focus {
+    outline: none;
+    border-color: $accent;
+  }
+}
+
+.results-count {
+  font-size: 13px;
+  color: #636e72;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+// ─── Table ────────────────────────────────────────
+.table-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #636e72;
+    background: #fafafa;
+    border-bottom: 2px solid #eee;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #2d3436;
+    border-bottom: 1px solid #f5f5f5;
+    vertical-align: middle;
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  tbody tr {
+    transition: background 0.15s;
+    &:hover { background: #fafbfc; }
+  }
+}
+
+.code-badge {
+  background: #f1f2f6;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: monospace;
+  color: #2d3436;
+}
+
+.product-cell {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.product-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.product-desc { font-size: 12px; color: #636e72; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.cat-tag {
+  background: #e8f4fd;
+  color: #2980b9;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.location-badge {
+  font-size: 13px;
+  color: #636e72;
+}
+
+.stock-cell { width: 130px; }
+
+.stock-bar-mini {
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.stock-fill-mini {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s;
+
+  &.stock-ok { background: #2ecc71; }
+  &.stock-bajo { background: #f39c12; }
+  &.stock-critico { background: #e74c3c; }
+  &.stock-sobre { background: #3498db; }
+}
+
+.stock-num {
+  font-size: 12px;
+  font-weight: 700;
+
+  &.stock-ok { color: #27ae60; }
+  &.stock-bajo { color: #e67e22; }
+  &.stock-critico { color: #e74c3c; }
+  &.stock-sobre { color: #2980b9; }
+}
+
+.price-cell {
+  font-weight: 700;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+.estado-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+
+  &.activo { background: #d4edda; color: #155724; }
+  &.inactivo { background: #fff3cd; color: #856404; }
+  &.descontinuado { background: #f8d7da; color: #721c24; }
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 48px 0 !important;
+  color: #636e72;
+  font-size: 15px;
+
+  .empty-icon {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+}
+
+// ─── Form ─────────────────────────────────────────
+.product-form {
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    .full { grid-column: 1 / -1; }
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d3436;
+  }
+
+  input, select {
+    padding: 10px 14px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+    }
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+// ─── Confirm Delete ───────────────────────────────
+.confirm-delete {
+  text-align: center;
+
+  .delete-icon { font-size: 48px; display: block; margin-bottom: 16px; }
+
+  p {
+    font-size: 15px;
+    color: #2d3436;
+    margin: 0 0 8px;
+  }
+
+  .delete-warning {
+    font-size: 13px;
+    color: #e74c3c;
+    margin-bottom: 0;
+  }
+}

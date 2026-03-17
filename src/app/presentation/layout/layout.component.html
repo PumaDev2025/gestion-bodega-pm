@@ -1,0 +1,92 @@
+<div class="app-shell" [class.sidebar-collapsed]="sidebarCollapsed()">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <span class="logo-icon">⛏</span>
+        @if (!sidebarCollapsed()) {
+          <span class="logo-text">Bodega<strong>PM</strong></span>
+        }
+      </div>
+      <button class="toggle-btn" (click)="toggleSidebar()">
+        {{ sidebarCollapsed() ? '▶' : '◀' }}
+      </button>
+    </div>
+
+    <nav class="sidebar-nav">
+      @for (item of navItems(); track item.route) {
+        <a class="nav-item"
+           [routerLink]="item.route"
+           routerLinkActive="active">
+          <span class="nav-icon">{{ item.icon }}</span>
+          @if (!sidebarCollapsed()) {
+            <span class="nav-label">{{ item.label }}</span>
+          }
+        </a>
+      }
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <span class="user-avatar">{{ currentUser()?.avatar || '👤' }}</span>
+        @if (!sidebarCollapsed()) {
+          <div class="user-details">
+            <span class="user-name">{{ currentUser()?.nombre || 'Usuario' }}</span>
+            <span class="user-role">{{ currentUser()?.rol === 'admin' ? 'Administrador' : 'Encargado Bodega' }}</span>
+          </div>
+        }
+      </div>
+      @if (!sidebarCollapsed()) {
+        <button class="logout-btn" (click)="logout()" title="Cerrar sesión">
+          🚪
+        </button>
+      }
+    </div>
+  </aside>
+
+  <!-- Main content area -->
+  <main class="main-content">
+    <header class="topbar">
+      <div class="topbar-left">
+        <h1 class="page-title">Puga Mujica — Gestión de Bodega en Obra</h1>
+      </div>
+      <div class="topbar-right">
+        <span class="date-display">📅 {{ today }}</span>
+        <div class="notif-wrapper">
+          <button class="notification-btn" title="Notificaciones" (click)="toggleNotif()">
+            🔔 @if (alertas().length > 0) { <span class="badge">{{ alertas().length }}</span> }
+          </button>
+          @if (notifOpen()) {
+            <div class="notif-dropdown">
+              <div class="notif-header">
+                <strong>Alertas de Stock</strong>
+                <span class="notif-count">{{ alertas().length }}</span>
+              </div>
+              @if (alertas().length === 0) {
+                <div class="notif-empty">✅ Sin alertas</div>
+              } @else {
+                <div class="notif-list">
+                  @for (a of alertas(); track a.productoId) {
+                    <div class="notif-item">
+                      <span class="notif-icon">{{ getAlertaIcon(a.tipo) }}</span>
+                      <div class="notif-body">
+                        <span class="notif-name">{{ a.productoNombre }}</span>
+                        <span class="notif-detail">Stock: {{ a.stockActual }} / mín: {{ a.stockMinimo }}</span>
+                      </div>
+                      <span class="notif-badge" [class]="a.tipo">{{ getAlertaLabel(a.tipo) }}</span>
+                    </div>
+                  }
+                </div>
+              }
+            </div>
+            <div class="notif-backdrop" (click)="closeNotif()"></div>
+          }
+        </div>
+      </div>
+    </header>
+
+    <div class="content-area">
+      <router-outlet />
+    </div>
+  </main>
+</div>

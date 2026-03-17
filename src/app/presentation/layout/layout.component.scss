@@ -1,0 +1,418 @@
+$sidebar-width: 260px;
+$sidebar-collapsed-width: 70px;
+$topbar-height: 64px;
+$primary: #1B3A5C;
+$primary-light: #244B73;
+$accent: #E87722;
+$accent-hover: #F59234;
+$surface: #f8f9fa;
+$text: #2d3436;
+$text-light: #636e72;
+$border: #dfe6e9;
+$transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background: $surface;
+}
+
+// ─── Sidebar ──────────────────────────────────────
+.sidebar {
+  width: $sidebar-width;
+  background: linear-gradient(180deg, $primary 0%, $primary-light 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: width $transition;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-collapsed .sidebar {
+  width: $sidebar-collapsed-width;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.logo-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: 18px;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+
+  strong {
+    color: $accent;
+  }
+}
+
+.toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background $transition;
+  flex-shrink: 0;
+  font-size: 12px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+// ─── Navigation ───────────────────────────────────
+.sidebar-nav {
+  flex: 1;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all $transition;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+
+  .nav-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+
+  &.active {
+    background: $accent;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba($accent, 0.4);
+  }
+}
+
+// ─── Sidebar Footer ──────────────────────────────
+.sidebar-footer {
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.user-avatar {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.user-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.user-role {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background $transition;
+  flex-shrink: 0;
+
+  &:hover {
+    background: rgba(232, 119, 34, 0.5);
+  }
+}
+
+// ─── Main Content ─────────────────────────────────
+.main-content {
+  flex: 1;
+  margin-left: $sidebar-width;
+  transition: margin-left $transition;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sidebar-collapsed .main-content {
+  margin-left: $sidebar-collapsed-width;
+}
+
+.topbar {
+  height: $topbar-height;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topbar-left {
+  min-width: 0;
+  flex: 1;
+
+  .page-title {
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 700;
+    color: $text;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.date-display {
+  font-size: 13px;
+  color: $text-light;
+}
+
+.notification-btn {
+  background: none;
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  transition: all $transition;
+
+  &:hover {
+    background: $surface;
+    border-color: $accent;
+  }
+
+  .badge {
+    background: $accent;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    font-weight: 700;
+  }
+}
+
+// ─── Notification Dropdown ────────────────────────
+.notif-wrapper {
+  position: relative;
+}
+
+.notif-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 199;
+}
+
+.notif-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 340px;
+  max-height: 420px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  z-index: 200;
+  overflow: hidden;
+  animation: notifSlide 0.2s ease;
+}
+
+@keyframes notifSlide {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.notif-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+
+  strong {
+    font-size: 14px;
+    color: $text;
+  }
+
+  .notif-count {
+    background: $accent;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+}
+
+.notif-list {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #f5f5f5;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #fafafa;
+  }
+}
+
+.notif-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.notif-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.notif-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: $text;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notif-detail {
+  font-size: 11px;
+  color: $text-light;
+}
+
+.notif-badge {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  flex-shrink: 0;
+  white-space: nowrap;
+
+  &.critico { background: #fce4ec; color: #c0392b; }
+  &.bajo { background: #fff8e1; color: #e67e22; }
+  &.sobrestock { background: #e3f2fd; color: #2980b9; }
+}
+
+.notif-empty {
+  padding: 32px;
+  text-align: center;
+  color: $text-light;
+  font-size: 14px;
+}
+
+.content-area {
+  flex: 1;
+  padding: clamp(16px, 2.5vw, 28px) clamp(16px, 3vw, 32px);
+  max-width: 1600px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+// ─── Responsive ───────────────────────────────────
+@media (max-width: 768px) {
+  .sidebar {
+    width: $sidebar-collapsed-width;
+  }
+
+  .main-content {
+    margin-left: $sidebar-collapsed-width;
+  }
+
+  .nav-label, .logo-text, .user-details {
+    display: none;
+  }
+
+  .content-area {
+    padding: 16px;
+  }
+
+  .topbar {
+    padding: 0 16px;
+  }
+}

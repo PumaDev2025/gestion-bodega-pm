@@ -1,0 +1,48 @@
+import { Usuario } from '../../domain/models/usuario.model';
+
+export const MOCK_USUARIOS: Usuario[] = [
+  {
+    id: 'USR-001',
+    nombre: 'Carlos Puga',
+    email: 'admin@pugamujica.cl',
+    password: 'admin123',
+    rol: 'admin',
+    activo: true,
+    avatar: '👨‍💼',
+    fechaCreacion: new Date('2024-01-15'),
+    ultimoAcceso: new Date('2025-07-17'),
+  },
+  {
+    id: 'USR-002',
+    nombre: 'María López',
+    email: 'maria@pugamujica.cl',
+    password: 'bodega123',
+    rol: 'encargado',
+    activo: true,
+    avatar: '👷‍♀️',
+    fechaCreacion: new Date('2024-03-10'),
+    ultimoAcceso: new Date('2025-07-16'),
+  },
+  {
+    id: 'USR-003',
+    nombre: 'Jorge Muñoz',
+    email: 'jorge@pugamujica.cl',
+    password: 'bodega456',
+    rol: 'encargado',
+    activo: true,
+    avatar: '👷',
+    fechaCreacion: new Date('2024-06-01'),
+    ultimoAcceso: new Date('2025-07-15'),
+  },
+  {
+    id: 'USR-004',
+    nombre: 'Andrea Mujica',
+    email: 'andrea@pugamujica.cl',
+    password: 'admin456',
+    rol: 'admin',
+    activo: false,
+    avatar: '👩‍💼',
+    fechaCreacion: new Date('2024-02-20'),
+    ultimoAcceso: new Date('2025-06-01'),
+  },
+];

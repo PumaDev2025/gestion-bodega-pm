@@ -1,0 +1,139 @@
+<div class="movimientos">
+  <div class="page-header">
+    <div>
+      <h2>Movimientos de Bodega</h2>
+      <p class="subtitle">Registro de entradas, salidas y ajustes de inventario</p>
+    </div>
+    <button class="btn-primary" (click)="openNuevoMovimiento()">
+      ➕ Nuevo Movimiento
+    </button>
+  </div>
+
+  <!-- Resumen rápido -->
+  <div class="mov-summary">
+    <div class="summary-item entrada">
+      <span class="summary-icon">📥</span>
+      <span class="summary-num">{{ resumenMov().entradas }}</span>
+      <span class="summary-label">Entradas</span>
+    </div>
+    <div class="summary-item salida">
+      <span class="summary-icon">📤</span>
+      <span class="summary-num">{{ resumenMov().salidas }}</span>
+      <span class="summary-label">Salidas</span>
+    </div>
+    <div class="summary-item ajuste">
+      <span class="summary-icon">🔧</span>
+      <span class="summary-num">{{ resumenMov().ajustes }}</span>
+      <span class="summary-label">Ajustes</span>
+    </div>
+  </div>
+
+  <!-- Filtros -->
+  <div class="filters-bar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Buscar por producto, código o responsable..."
+             [ngModel]="searchTerm()" (ngModelChange)="searchTerm.set($event)">
+    </div>
+    <div class="tipo-tabs">
+      <button class="tab" [class.active]="filtroTipo() === 'todos'" (click)="filtroTipo.set('todos')">Todos</button>
+      <button class="tab entrada" [class.active]="filtroTipo() === 'entrada'" (click)="filtroTipo.set('entrada')">📥 Entradas</button>
+      <button class="tab salida" [class.active]="filtroTipo() === 'salida'" (click)="filtroTipo.set('salida')">📤 Salidas</button>
+      <button class="tab ajuste" [class.active]="filtroTipo() === 'ajuste'" (click)="filtroTipo.set('ajuste')">🔧 Ajustes</button>
+    </div>
+  </div>
+
+  <!-- Lista de movimientos -->
+  <div class="mov-list">
+    @for (mov of movimientosFiltrados(); track mov.id) {
+      <div class="mov-card" [class]="mov.tipo">
+        <div class="mov-tipo-indicator">
+          <span class="mov-icon">{{ getTipoIcon(mov.tipo) }}</span>
+          <span class="mov-tipo-label">{{ getTipoLabel(mov.tipo) }}</span>
+        </div>
+        <div class="mov-main">
+          <div class="mov-product">
+            <span class="mov-product-name">{{ mov.productoNombre }}</span>
+            <span class="mov-product-code">{{ mov.productoCodigo }}</span>
+          </div>
+          <div class="mov-detail">
+            <span>👤 {{ mov.responsable }}</span>
+            <span>📝 {{ mov.motivo }}</span>
+            @if (mov.documento) {
+              <span>📄 {{ mov.documento }}</span>
+            }
+          </div>
+          @if (mov.observaciones) {
+            <p class="mov-obs">💬 {{ mov.observaciones }}</p>
+          }
+        </div>
+        <div class="mov-right">
+          <span class="mov-cantidad" [class]="mov.tipo">
+            {{ mov.tipo === 'salida' ? '-' : (mov.tipo === 'ajuste' && mov.cantidad < 0) ? '' : '+' }}{{ mov.cantidad }}
+          </span>
+          <span class="mov-fecha">{{ mov.fecha | date:'dd/MM/yyyy HH:mm' }}</span>
+        </div>
+      </div>
+    } @empty {
+      <div class="empty-state">
+        <span>📭</span>
+        <p>No hay movimientos registrados</p>
+      </div>
+    }
+  </div>
+</div>
+
+<!-- Modal Nuevo Movimiento -->
+<app-modal [isOpen]="modalOpen()" title="Registrar Movimiento" size="md" (close)="modalOpen.set(false)">
+  <form class="mov-form" (ngSubmit)="saveMovimiento()">
+    <div class="form-group">
+      <label>Tipo de Movimiento</label>
+      <div class="tipo-selector">
+        <label class="tipo-option" [class.selected]="form.tipo === 'entrada'">
+          <input type="radio" [(ngModel)]="form.tipo" name="tipo" value="entrada"> 📥 Entrada
+        </label>
+        <label class="tipo-option" [class.selected]="form.tipo === 'salida'">
+          <input type="radio" [(ngModel)]="form.tipo" name="tipo" value="salida"> 📤 Salida
+        </label>
+        <label class="tipo-option" [class.selected]="form.tipo === 'ajuste'">
+          <input type="radio" [(ngModel)]="form.tipo" name="tipo" value="ajuste"> 🔧 Ajuste
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Producto</label>
+      <select [(ngModel)]="form.productoId" name="productoId" required>
+        <option [value]="0" disabled>Seleccionar producto...</option>
+        @for (p of productos(); track p.id) {
+          <option [value]="p.id">{{ p.codigo }} – {{ p.nombre }} (Stock: {{ p.stockActual }})</option>
+        }
+      </select>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Cantidad</label>
+        <input type="number" [(ngModel)]="form.cantidad" name="cantidad" min="1" required>
+      </div>
+      <div class="form-group">
+        <label>Responsable</label>
+        <input type="text" [(ngModel)]="form.responsable" name="responsable" placeholder="Nombre responsable" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Motivo</label>
+      <input type="text" [(ngModel)]="form.motivo" name="motivo" placeholder="Motivo del movimiento" required>
+    </div>
+    <div class="form-group">
+      <label>Documento (opcional)</label>
+      <input type="text" [(ngModel)]="form.documento" name="documento" placeholder="OC-2026-XXXX / DES-2026-XXXX">
+    </div>
+    <div class="form-group">
+      <label>Observaciones (opcional)</label>
+      <textarea [(ngModel)]="form.observaciones" name="observaciones" rows="3" placeholder="Notas adicionales..."></textarea>
+    </div>
+    <div class="form-actions">
+      <button type="button" class="btn-secondary" (click)="modalOpen.set(false)">Cancelar</button>
+      <button type="submit" class="btn-primary">💾 Registrar</button>
+    </div>
+  </form>
+</app-modal>

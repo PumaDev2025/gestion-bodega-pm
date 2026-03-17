@@ -1,0 +1,181 @@
+<div class="inventario">
+  <div class="page-header">
+    <div>
+      <h2>Inventario</h2>
+      <p class="subtitle">Gestión completa de productos en bodega</p>
+    </div>
+    <button class="btn-primary" (click)="openCreate()">
+      ➕ Nuevo Producto
+    </button>
+  </div>
+
+  <!-- Filtros -->
+  <div class="filters-bar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Buscar por nombre, código o ubicación..."
+             [ngModel]="searchTerm()" (ngModelChange)="searchTerm.set($event)">
+    </div>
+    <select class="filter-select" [ngModel]="filtroCategoria()" (ngModelChange)="filtroCategoria.set(+$event)">
+      <option [value]="0">Todas las categorías</option>
+      @for (cat of categorias(); track cat.id) {
+        <option [value]="cat.id">{{ cat.icono }} {{ cat.nombre }}</option>
+      }
+    </select>
+    <select class="filter-select" [ngModel]="filtroEstado()" (ngModelChange)="filtroEstado.set($event)">
+      <option value="todos">Todos los estados</option>
+      <option value="activo">✅ Activo</option>
+      <option value="inactivo">⏸️ Inactivo</option>
+      <option value="descontinuado">🚫 Descontinuado</option>
+    </select>
+    <span class="results-count">{{ productosFiltrados().length }} productos</span>
+  </div>
+
+  <!-- Tabla -->
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Producto</th>
+          <th>Categoría</th>
+          <th>Ubicación</th>
+          <th>Stock</th>
+          <th>Precio Unit.</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (p of productosFiltrados(); track p.id) {
+          <tr>
+            <td><span class="code-badge">{{ p.codigo }}</span></td>
+            <td>
+              <div class="product-cell">
+                <span class="product-name">{{ p.nombre }}</span>
+                <span class="product-desc">{{ p.descripcion }}</span>
+              </div>
+            </td>
+            <td><span class="cat-tag">{{ p.categoriaNombre }}</span></td>
+            <td><span class="location-badge">📍 {{ p.ubicacion }}</span></td>
+            <td>
+              <div class="stock-cell">
+                <div class="stock-bar-mini">
+                  <div class="stock-fill-mini" [class]="getStockClass(p)"
+                       [style.width.%]="getStockPercent(p)"></div>
+                </div>
+                <span class="stock-num" [class]="getStockClass(p)">
+                  {{ p.stockActual }} / {{ p.stockMaximo }}
+                </span>
+              </div>
+            </td>
+            <td class="price-cell">{{ p.precioUnitario | clp }}</td>
+            <td>
+              <span class="estado-badge" [class]="p.estado">
+                {{ p.estado === 'activo' ? '✅ Activo' : p.estado === 'inactivo' ? '⏸️ Inactivo' : '🚫 Desc.' }}
+              </span>
+            </td>
+            <td>
+              <div class="actions">
+                <button class="btn-icon" title="Editar" (click)="openEdit(p)">✏️</button>
+                <button class="btn-icon danger" title="Eliminar" (click)="confirmDelete(p)">🗑️</button>
+              </div>
+            </td>
+          </tr>
+        } @empty {
+          <tr>
+            <td colspan="8" class="empty-row">
+              <span class="empty-icon">📭</span>
+              No se encontraron productos
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal Crear/Editar -->
+<app-modal [isOpen]="modalOpen()" [title]="modalTitle()" size="lg" (close)="modalOpen.set(false)">
+  <form class="product-form" (ngSubmit)="saveProducto()">
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Código</label>
+        <input type="text" [(ngModel)]="form.codigo" name="codigo" placeholder="PM-XXX" required>
+      </div>
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" [(ngModel)]="form.nombre" name="nombre" placeholder="Nombre del producto" required>
+      </div>
+      <div class="form-group full">
+        <label>Descripción</label>
+        <input type="text" [(ngModel)]="form.descripcion" name="descripcion" placeholder="Descripción breve">
+      </div>
+      <div class="form-group">
+        <label>Categoría</label>
+        <select [(ngModel)]="form.categoriaId" name="categoriaId" required>
+          <option [value]="0" disabled>Seleccionar...</option>
+          @for (cat of categorias(); track cat.id) {
+            <option [value]="cat.id">{{ cat.icono }} {{ cat.nombre }}</option>
+          }
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Ubicación</label>
+        <input type="text" [(ngModel)]="form.ubicacion" name="ubicacion" placeholder="A-01-01">
+      </div>
+      <div class="form-group">
+        <label>Stock Actual</label>
+        <input type="number" [(ngModel)]="form.stockActual" name="stockActual" min="0">
+      </div>
+      <div class="form-group">
+        <label>Stock Mínimo</label>
+        <input type="number" [(ngModel)]="form.stockMinimo" name="stockMinimo" min="0">
+      </div>
+      <div class="form-group">
+        <label>Stock Máximo</label>
+        <input type="number" [(ngModel)]="form.stockMaximo" name="stockMaximo" min="0">
+      </div>
+      <div class="form-group">
+        <label>Unidad Medida</label>
+        <select [(ngModel)]="form.unidadMedida" name="unidadMedida">
+          <option value="unidades">Unidades</option>
+          <option value="pares">Pares</option>
+          <option value="packs">Packs</option>
+          <option value="cajas">Cajas</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Precio Unitario ($)</label>
+        <input type="number" [(ngModel)]="form.precioUnitario" name="precioUnitario" min="0">
+      </div>
+      <div class="form-group">
+        <label>Estado</label>
+        <select [(ngModel)]="form.estado" name="estado">
+          <option value="activo">Activo</option>
+          <option value="inactivo">Inactivo</option>
+          <option value="descontinuado">Descontinuado</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button type="button" class="btn-secondary" (click)="modalOpen.set(false)">Cancelar</button>
+      <button type="submit" class="btn-primary">💾 Guardar</button>
+    </div>
+  </form>
+</app-modal>
+
+<!-- Modal Confirmar eliminación -->
+<app-modal [isOpen]="confirmDeleteOpen()" title="Confirmar Eliminación" size="sm" (close)="confirmDeleteOpen.set(false)">
+  @if (deleteTarget(); as target) {
+    <div class="confirm-delete">
+      <span class="delete-icon">⚠️</span>
+      <p>¿Eliminar <strong>{{ target.nombre }}</strong> ({{ target.codigo }})?</p>
+      <p class="delete-warning">Esta acción no se puede deshacer.</p>
+      <div class="form-actions">
+        <button class="btn-secondary" (click)="confirmDeleteOpen.set(false)">Cancelar</button>
+        <button class="btn-danger" (click)="executeDelete()">🗑️ Eliminar</button>
+      </div>
+    </div>
+  }
+</app-modal>

@@ -1,0 +1,149 @@
+<div class="dashboard">
+  <div class="page-header">
+    <h2>Dashboard de Bodega</h2>
+    <p class="subtitle">Vista general del inventario de obra — Puga Mujica</p>
+  </div>
+
+  <!-- KPI Cards -->
+  @if (resumen(); as r) {
+    <div class="kpi-grid">
+      <app-stat-card icon="📦" [value]="r.totalProductos" label="Total Productos" color="#1B3A5C" />
+      <app-stat-card icon="💰" [value]="(r.valorInventario | clp)" label="Valor Inventario" color="#27ae60" trend="+4.2%" [trendUp]="true" />
+      <app-stat-card icon="⚠️" [value]="r.productosStockBajo" label="Stock Bajo" color="#f39c12" />
+      <app-stat-card icon="🚨" [value]="r.productosStockCritico" label="Stock Crítico" color="#e74c3c" />
+      <app-stat-card icon="📥" [value]="r.entradasMes" label="Entradas Mes" color="#E87722" />
+      <app-stat-card icon="📤" [value]="r.salidasMes" label="Salidas Mes" color="#8e44ad" />
+    </div>
+  }
+
+  <div class="dashboard-grid">
+    <!-- Alertas de stock -->
+    <div class="card alertas-card">
+      <div class="card-header">
+        <h3>🔔 Alertas de Stock</h3>
+        <span class="badge-count">{{ alertas().length }}</span>
+      </div>
+      <div class="card-body">
+        @if (alertas().length === 0) {
+          <div class="empty-state">
+            <span class="empty-icon">✅</span>
+            <p>Sin alertas activas</p>
+          </div>
+        } @else {
+          <div class="alertas-list">
+            @for (alerta of alertas(); track alerta.productoId) {
+              <div class="alerta-item" [class]="getAlertaClass(alerta.tipo)">
+                <span class="alerta-icon">{{ getAlertaIcon(alerta.tipo) }}</span>
+                <div class="alerta-info">
+                  <span class="alerta-producto">{{ alerta.productoNombre }}</span>
+                  <span class="alerta-detalle">
+                    {{ alerta.productoCodigo }} · {{ alerta.ubicacion }}
+                  </span>
+                </div>
+                <div class="alerta-stock">
+                  <span class="stock-actual">{{ alerta.stockActual }}</span>
+                  <span class="stock-minimo">mín: {{ alerta.stockMinimo }}</span>
+                </div>
+                <span class="alerta-badge" [class]="alerta.tipo">
+                  {{ alerta.tipo === 'critico' ? 'CRÍTICO' : alerta.tipo === 'bajo' ? 'BAJO' : 'SOBRE' }}
+                </span>
+              </div>
+            }
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Últimos movimientos -->
+    <div class="card movimientos-card">
+      <div class="card-header">
+        <h3>🔄 Últimos Movimientos</h3>
+      </div>
+      <div class="card-body">
+        <div class="movimientos-list">
+          @for (mov of movimientos(); track mov.id) {
+            <div class="mov-item">
+              <span class="mov-icon" [class]="getMovTipoClass(mov.tipo)">{{ getMovIcon(mov.tipo) }}</span>
+              <div class="mov-info">
+                <span class="mov-producto">{{ mov.productoNombre }}</span>
+                <span class="mov-detalle">{{ mov.responsable }} · {{ mov.motivo }}</span>
+              </div>
+              <div class="mov-meta">
+                <span class="mov-cantidad" [class]="getMovTipoClass(mov.tipo)">
+                  {{ mov.tipo === 'salida' ? '-' : '+' }}{{ mov.cantidad > 0 ? mov.cantidad : mov.cantidad * -1 }}
+                </span>
+                <span class="mov-fecha">{{ mov.fecha | date:'dd/MM HH:mm' }}</span>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Stock por categoría visual -->
+    <div class="card categorias-chart-card">
+      <div class="card-header">
+        <h3>📊 Distribución por Categoría</h3>
+      </div>
+      <div class="card-body">
+        <div class="bar-chart">
+          <div class="bar-item">
+            <span class="bar-label">🧱 Mat. Básicos</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 75%; background: #e74c3c;"></div></div>
+            <span class="bar-value">445 uds</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">🦺 EPP</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 12%; background: #3498db;"></div></div>
+            <span class="bar-value">16 uds</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">🔧 Herramientas</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 5%; background: #2ecc71;"></div></div>
+            <span class="bar-value">6 uds</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">🔩 Fijaciones</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 14%; background: #f39c12;"></div></div>
+            <span class="bar-value">85 uds</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">🔌 Instalaciones</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 10%; background: #9b59b6;"></div></div>
+            <span class="bar-value">60 uds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ocupación bodega -->
+    <div class="card ocupacion-card">
+      <div class="card-header">
+        <h3>⛏ Ocupación Bodega</h3>
+      </div>
+      <div class="card-body ocupacion-body">
+        <div class="ocupacion-visual">
+          <div class="ocupacion-ring">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="52" fill="none" stroke="#eee" stroke-width="12"/>
+              <circle cx="60" cy="60" r="52" fill="none" stroke="#E87722" stroke-width="12"
+                      stroke-dasharray="327" stroke-dashoffset="98" stroke-linecap="round"
+                      transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="ocupacion-text">
+              <span class="ocupacion-pct">70%</span>
+              <span class="ocupacion-label">ocupado</span>
+            </div>
+          </div>
+        </div>
+        <div class="ocupacion-details">
+          <div class="ocupacion-row"><span class="dot" style="background:#E87722"></span> Zona A – Materiales <strong>85%</strong></div>
+          <div class="ocupacion-row"><span class="dot" style="background:#3498db"></span> Zona B – EPP <strong>40%</strong></div>
+          <div class="ocupacion-row"><span class="dot" style="background:#2ecc71"></span> Zona C – Herramientas <strong>55%</strong></div>
+          <div class="ocupacion-row"><span class="dot" style="background:#f39c12"></span> Zona D – Fijaciones <strong>65%</strong></div>
+          <div class="ocupacion-row"><span class="dot" style="background:#9b59b6"></span> Zona E – Instalaciones <strong>50%</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

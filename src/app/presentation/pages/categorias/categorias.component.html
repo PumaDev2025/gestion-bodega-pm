@@ -1,0 +1,93 @@
+<div class="categorias">
+  <div class="page-header">
+    <div>
+      <h2>Categorías</h2>
+      <p class="subtitle">Organización de productos por categoría</p>
+    </div>
+    <button class="btn-primary" (click)="openCreate()">
+      ➕ Nueva Categoría
+    </button>
+  </div>
+
+  <div class="categorias-grid">
+    @for (cat of categorias(); track cat.id) {
+      <div class="cat-card" [style.--cat-color]="cat.color">
+        <div class="cat-header">
+          <span class="cat-icon">{{ cat.icono }}</span>
+          <div class="cat-actions">
+            <button class="btn-icon" (click)="openEdit(cat)" title="Editar">✏️</button>
+            <button class="btn-icon danger" (click)="confirmDelete(cat)" title="Eliminar">🗑️</button>
+          </div>
+        </div>
+        <h3 class="cat-name">{{ cat.nombre }}</h3>
+        <p class="cat-desc">{{ cat.descripcion }}</p>
+        <div class="cat-footer">
+          <span class="cat-count">
+            📦 {{ cat.cantidadProductos ?? 0 }} productos
+          </span>
+          <span class="cat-color-dot" [style.background]="cat.color"></span>
+        </div>
+      </div>
+    } @empty {
+      <div class="empty-state">
+        <span>🏷️</span>
+        <p>No hay categorías creadas</p>
+        <button class="btn-primary" (click)="openCreate()">Crear primera categoría</button>
+      </div>
+    }
+  </div>
+</div>
+
+<!-- Modal Crear/Editar -->
+<app-modal [isOpen]="modalOpen()" [title]="modalTitle()" size="md" (close)="modalOpen.set(false)">
+  <form class="cat-form" (ngSubmit)="save()">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" [(ngModel)]="form.nombre" name="nombre" placeholder="Nombre de la categoría" required>
+    </div>
+    <div class="form-group">
+      <label>Descripción</label>
+      <textarea [(ngModel)]="form.descripcion" name="descripcion" rows="3" placeholder="Descripción de la categoría"></textarea>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Color</label>
+        <div class="color-picker">
+          <input type="color" [(ngModel)]="form.color" name="color">
+          <span class="color-preview" [style.background]="form.color">{{ form.color }}</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Ícono</label>
+        <div class="icon-grid">
+          @for (ico of iconos; track ico) {
+            <button type="button" class="icon-option"
+                    [class.selected]="form.icono === ico"
+                    (click)="form.icono = ico">
+              {{ ico }}
+            </button>
+          }
+        </div>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button type="button" class="btn-secondary" (click)="modalOpen.set(false)">Cancelar</button>
+      <button type="submit" class="btn-primary">💾 Guardar</button>
+    </div>
+  </form>
+</app-modal>
+
+<!-- Modal Confirmar eliminación -->
+<app-modal [isOpen]="confirmDeleteOpen()" title="Confirmar Eliminación" size="sm" (close)="confirmDeleteOpen.set(false)">
+  @if (deleteTarget(); as target) {
+    <div class="confirm-delete">
+      <span class="delete-icon">⚠️</span>
+      <p>¿Eliminar categoría <strong>{{ target.nombre }}</strong>?</p>
+      <p class="delete-warning">Los productos asociados quedarán sin categoría.</p>
+      <div class="form-actions">
+        <button class="btn-secondary" (click)="confirmDeleteOpen.set(false)">Cancelar</button>
+        <button class="btn-danger" (click)="executeDelete()">🗑️ Eliminar</button>
+      </div>
+    </div>
+  }
+</app-modal>
