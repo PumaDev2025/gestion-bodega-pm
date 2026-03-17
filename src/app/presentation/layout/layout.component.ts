@@ -29,7 +29,8 @@ export class LayoutComponent {
     { icon: '📦', label: 'Inventario', route: '/inventario' },
     { icon: '🔄', label: 'Movimientos', route: '/movimientos' },
     { icon: '🏷️', label: 'Categorías', route: '/categorias' },
-    { icon: '👥', label: 'Usuarios', route: '/usuarios', adminOnly: true },
+    { icon: '�', label: 'Actividad', route: '/actividad' },
+    { icon: '�👥', label: 'Usuarios', route: '/usuarios', adminOnly: true },
   ];
 
   navItems = computed(() => {
@@ -44,7 +45,7 @@ export class LayoutComponent {
     private bodegaFacade: BodegaFacadeService,
     private router: Router
   ) {
-    this.bodegaFacade.getAlertasStock().subscribe(a => this.alertas.set(a));
+    this.bodegaFacade.alertasStock$.subscribe(a => this.alertas.set(a));
   }
 
   toggleSidebar() {

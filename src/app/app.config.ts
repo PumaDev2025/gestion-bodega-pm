@@ -6,6 +6,7 @@ import { routes } from './app.routes';
 import { PRODUCTO_REPOSITORY } from './core/domain/ports';
 import { CATEGORIA_REPOSITORY } from './core/domain/ports';
 import { MOVIMIENTO_REPOSITORY } from './core/domain/ports';
+import { ACTIVIDAD_REPOSITORY } from './core/domain/ports';
 import { AUTH_REPOSITORY } from './core/domain/ports/auth.repository';
 
 // ─── Hexagonal: Adapters (implementaciones mock) ──
@@ -14,6 +15,7 @@ import { AUTH_REPOSITORY } from './core/domain/ports/auth.repository';
 import { ProductoMockAdapter } from './core/infrastructure/adapters';
 import { CategoriaMockAdapter } from './core/infrastructure/adapters';
 import { MovimientoMockAdapter } from './core/infrastructure/adapters';
+import { ActividadMockAdapter } from './core/infrastructure/adapters';
 import { AuthMockAdapter } from './core/infrastructure/adapters/auth-mock.adapter';
 
 export const appConfig: ApplicationConfig = {
@@ -27,6 +29,7 @@ export const appConfig: ApplicationConfig = {
     { provide: PRODUCTO_REPOSITORY, useClass: ProductoMockAdapter },
     { provide: CATEGORIA_REPOSITORY, useClass: CategoriaMockAdapter },
     { provide: MOVIMIENTO_REPOSITORY, useClass: MovimientoMockAdapter },
+    { provide: ACTIVIDAD_REPOSITORY, useClass: ActividadMockAdapter },
     { provide: AUTH_REPOSITORY, useClass: AuthMockAdapter },
   ]
 };

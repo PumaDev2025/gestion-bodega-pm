@@ -1,0 +1,93 @@
+<div class="actividad">
+  <div class="page-header">
+    <div>
+      <h2>📋 Registro de Actividad</h2>
+      <p class="subtitle">Historial de todas las modificaciones realizadas en el sistema</p>
+    </div>
+  </div>
+
+  <!-- Resumen por módulo -->
+  <div class="act-summary">
+    <div class="summary-item total">
+      <span class="summary-icon">📋</span>
+      <span class="summary-num">{{ resumen().total }}</span>
+      <span class="summary-label">Total</span>
+    </div>
+    <div class="summary-item inventario">
+      <span class="summary-icon">📦</span>
+      <span class="summary-num">{{ resumen().inventario }}</span>
+      <span class="summary-label">Inventario</span>
+    </div>
+    <div class="summary-item categorias">
+      <span class="summary-icon">🏷️</span>
+      <span class="summary-num">{{ resumen().categorias }}</span>
+      <span class="summary-label">Categorías</span>
+    </div>
+    <div class="summary-item movimientos">
+      <span class="summary-icon">🔄</span>
+      <span class="summary-num">{{ resumen().movimientos }}</span>
+      <span class="summary-label">Movimientos</span>
+    </div>
+    <div class="summary-item usuarios">
+      <span class="summary-icon">👥</span>
+      <span class="summary-num">{{ resumen().usuarios }}</span>
+      <span class="summary-label">Usuarios</span>
+    </div>
+  </div>
+
+  <!-- Filtros -->
+  <div class="filters-bar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Buscar por usuario, detalle o módulo..."
+             [ngModel]="searchTerm()" (ngModelChange)="searchTerm.set($event)">
+    </div>
+    <div class="modulo-tabs">
+      <button class="tab" [class.active]="filtroModulo() === 'todos'" (click)="filtroModulo.set('todos')">Todos</button>
+      <button class="tab" [class.active]="filtroModulo() === 'inventario'" (click)="filtroModulo.set('inventario')">📦 Inventario</button>
+      <button class="tab" [class.active]="filtroModulo() === 'categorias'" (click)="filtroModulo.set('categorias')">🏷️ Categorías</button>
+      <button class="tab" [class.active]="filtroModulo() === 'movimientos'" (click)="filtroModulo.set('movimientos')">🔄 Movimientos</button>
+      <button class="tab" [class.active]="filtroModulo() === 'usuarios'" (click)="filtroModulo.set('usuarios')">👥 Usuarios</button>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline">
+    @for (r of registrosFiltrados(); track r.id) {
+      <div class="timeline-item" [class]="r.modulo">
+        <div class="timeline-dot">
+          <span>{{ getAccionIcon(r.accion) }}</span>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-user">
+              <span class="user-avatar">{{ r.usuarioAvatar || '👤' }}</span>
+              <strong class="user-name">{{ r.usuario }}</strong>
+            </div>
+            <div class="timeline-meta">
+              <span class="modulo-badge" [class]="r.modulo">
+                {{ getModuloIcon(r.modulo) }} {{ getModuloLabel(r.modulo) }}
+              </span>
+              <span class="accion-badge" [class]="r.accion">
+                {{ getAccionLabel(r.accion) }}
+              </span>
+            </div>
+          </div>
+          <p class="timeline-detalle">{{ r.detalle }}</p>
+          <div class="timeline-footer">
+            <span class="timeline-time" title="{{ r.fecha | date:'dd/MM/yyyy HH:mm:ss' }}">
+              🕐 {{ getTimeAgo(r.fecha) }}
+            </span>
+            <span class="timeline-date">{{ r.fecha | date:'dd/MM/yyyy HH:mm' }}</span>
+          </div>
+        </div>
+      </div>
+    } @empty {
+      <div class="empty-state">
+        <span>📭</span>
+        <p>No hay registros de actividad aún</p>
+        <p class="empty-hint">Las acciones como crear, editar o eliminar productos, categorías y movimientos se registrarán aquí automáticamente.</p>
+      </div>
+    }
+  </div>
+</div>

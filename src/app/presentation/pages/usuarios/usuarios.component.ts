@@ -2,6 +2,7 @@ import { Component, signal, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { AuthFacadeService } from '../../../core/application/auth-facade.service';
+import { BodegaFacadeService } from '../../../core/application/bodega-facade.service';
 import { ModalComponent } from '../../shared/components/modal/modal.component';
 import type { Usuario, RolUsuario } from '../../../core/domain/models/usuario.model';
 
@@ -41,7 +42,7 @@ export class UsuariosComponent {
 
   currentUser = computed(() => this.authFacade.getUsuarioActual());
 
-  constructor(private authFacade: AuthFacadeService) {
+  constructor(private authFacade: AuthFacadeService, private bodegaFacade: BodegaFacadeService) {
     this.loadUsuarios();
   }
 
@@ -93,6 +94,7 @@ export class UsuariosComponent {
         updateData.password = this.form.password;
       }
       this.authFacade.actualizarUsuario(editing.id, updateData);
+      this.bodegaFacade.registrarActividad('editar', 'usuarios', `Editó usuario "${this.form.nombre}" (${this.form.rol})`);
     } else {
       this.authFacade.crearUsuario({
         nombre: this.form.nombre,
@@ -102,6 +104,7 @@ export class UsuariosComponent {
         activo: this.form.activo,
         avatar: this.form.avatar,
       });
+      this.bodegaFacade.registrarActividad('crear', 'usuarios', `Creó usuario "${this.form.nombre}" (${this.form.rol})`);
     }
     this.showModal.set(false);
     this.loadUsuarios();
@@ -116,6 +119,7 @@ export class UsuariosComponent {
     const user = this.deletingUser();
     if (user) {
       this.authFacade.eliminarUsuario(user.id);
+      this.bodegaFacade.registrarActividad('eliminar', 'usuarios', `Eliminó usuario "${user.nombre}"`);
       this.showDeleteModal.set(false);
       this.loadUsuarios();
     }

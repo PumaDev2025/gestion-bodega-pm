@@ -39,6 +39,11 @@ export const routes: Routes = [
         loadComponent: () => import('./presentation/pages/usuarios/usuarios.component')
           .then(m => m.UsuariosComponent),
         canActivate: [adminGuard]
+      },
+      {
+        path: 'actividad',
+        loadComponent: () => import('./presentation/pages/actividad/actividad.component')
+          .then(m => m.ActividadComponent)
       }
     ]
   },
