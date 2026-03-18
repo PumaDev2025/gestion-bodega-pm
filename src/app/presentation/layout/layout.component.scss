@@ -37,6 +37,23 @@ $transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   width: $sidebar-collapsed-width;
 }
 
+.sidebar-collapsed .sidebar-header {
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding: 14px 8px;
+}
+
+.sidebar-collapsed .nav-item {
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.sidebar-collapsed .sidebar-footer {
+  justify-content: center;
+  padding: 12px 8px;
+}
+
 .sidebar-header {
   display: flex;
   align-items: center;
