@@ -38,7 +38,7 @@ export class InventarioComponent implements OnInit {
 
   /** Productos filtrados por proyecto activo */
   productos = computed(() =>
-    this.proyectoState.filtrarPorProyecto(this.allProductos(), this.allMovimientos())
+    this.proyectoState.filtrarProductosPorProyecto(this.allProductos())
   );
 
   productosFiltrados = computed(() => {

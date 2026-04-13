@@ -291,8 +291,11 @@ for idx, p in enumerate(productos_list, start=1):
     stock_actual, stock_min, stock_max = calc_stock(p["cod"], n_projs_activos, int(p["total"]))
     precio       = gen_precio(cat_id, int(p["total"]))
     unidad       = gen_unidad(p["desc"])
+    # Lista de proyectos que solicitaron este producto (de la hoja Codigos)
+    proy_list = [pn for pn in PROYECTOS_COLS if p.get(pn.replace("-","").lower(), 0) > 0]
+    proy_ts   = ", ".join(f"'{pn}'" for pn in proy_list)
     prod_items.append((idx, cat_id, codigo, nombre, desc_ts, ubic,
-                       stock_actual, stock_min, stock_max, unidad, precio))
+                       stock_actual, stock_min, stock_max, unidad, precio, proy_ts))
 
 n_prod_chunks = (len(prod_items) + PROD_CHUNK - 1) // PROD_CHUNK
 prod_chunk_names = [f"_PROD_CHUNK_{i+1}" for i in range(n_prod_chunks)]
@@ -300,7 +303,7 @@ prod_chunk_names = [f"_PROD_CHUNK_{i+1}" for i in range(n_prod_chunks)]
 for ci, cname in enumerate(prod_chunk_names):
     lines_prod.append(f"const {cname}: Producto[] = [\n")
     for (idx, cat_id, codigo, nombre, desc_ts, ubic,
-         stock_actual, stock_min, stock_max, unidad, precio) in prod_items[ci*PROD_CHUNK:(ci+1)*PROD_CHUNK]:
+         stock_actual, stock_min, stock_max, unidad, precio, proy_ts) in prod_items[ci*PROD_CHUNK:(ci+1)*PROD_CHUNK]:
         lines_prod += [
             f"  {{\n",
             f"    id: {idx}, codigo: '{codigo}', nombre: '{nombre}',\n",
@@ -308,7 +311,8 @@ for ci, cname in enumerate(prod_chunk_names):
             f"    categoriaNombre: '{CATEGORIAS[cat_id]['nombre']}', ubicacion: '{ubic}', stockActual: {stock_actual},\n",
             f"    stockMinimo: {stock_min}, stockMaximo: {stock_max}, unidadMedida: '{unidad}',\n",
             f"    precioUnitario: {precio}, estado: 'activo',\n",
-            f"    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')\n",
+            f"    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),\n",
+            f"    proyectos: [{proy_ts}]\n",
             f"  }},\n",
         ]
     lines_prod.append("];\n\n")

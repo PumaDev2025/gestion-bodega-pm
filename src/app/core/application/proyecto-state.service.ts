@@ -1,5 +1,5 @@
 import { Injectable, signal, computed } from '@angular/core';
-import type { Movimiento } from '../domain/models';
+import type { Movimiento, Producto } from '../domain/models';
 
 export interface Proyecto {
   codigo: string;
@@ -57,6 +57,7 @@ export class ProyectoStateService {
   /**
    * Dado un array de movimientos, retorna el Set de productoIds que pertenecen
    * al proyecto seleccionado. Retorna null si está en modo "TODOS".
+   * Usado para filtrar alertas (que no tienen campo proyectos propio).
    */
   getProductIdsParaProyecto(movimientos: Movimiento[]): Set<number> | null {
     const proyecto = this.seleccionado();
@@ -69,8 +70,18 @@ export class ProyectoStateService {
   }
 
   /**
-   * Filtra un array de productos/items con campo `id` según los movimientos del proyecto activo.
-   * Si el proyecto es "TODOS" devuelve el array completo.
+   * Filtra productos usando su campo proyectos[] (dato directo de la hoja Codigos).
+   * Mucho más fiable que inferirlo desde movimientos.
+   */
+  filtrarProductosPorProyecto(productos: Producto[]): Producto[] {
+    const proyecto = this.seleccionado();
+    if (proyecto === 'TODOS') return productos;
+    return productos.filter(p => p.proyectos?.includes(proyecto));
+  }
+
+  /**
+   * Filtra un array genérico con campo id usando movimientos (para alertas, etc.).
+   * Prefer filtrarProductosPorProyecto para Producto[].
    */
   filtrarPorProyecto<T extends { id: number }>(items: T[], movimientos: Movimiento[]): T[] {
     const ids = this.getProductIdsParaProyecto(movimientos);

@@ -37,7 +37,7 @@ export class DashboardComponent implements OnInit {
 
   /** Resumen reactivo calculado desde los productos del proyecto activo */
   resumen = computed((): ResumenBodega => {
-    const productos = this.proyectoState.filtrarPorProyecto(this.allProductos(), this.allMovimientos());
+    const productos = this.proyectoState.filtrarProductosPorProyecto(this.allProductos());
     const movsFiltrados = this.proyectoState.seleccionado() === 'TODOS'
       ? this.allMovimientos()
       : this.allMovimientos().filter(m =>
@@ -64,7 +64,7 @@ export class DashboardComponent implements OnInit {
 
   /** Productos del proyecto activo (reactivo al selector) */
   private productosFiltrados = computed(() =>
-    this.proyectoState.filtrarPorProyecto(this.allProductos(), this.allMovimientos())
+    this.proyectoState.filtrarProductosPorProyecto(this.allProductos())
   );
 
   /** Distribución por categoría: stock total y porcentaje respecto al mayor */

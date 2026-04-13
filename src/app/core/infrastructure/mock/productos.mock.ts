@@ -10,7 +10,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-01-01', stockActual: 30,
     stockMinimo: 7, stockMaximo: 75, unidadMedida: 'unidades',
     precioUnitario: 83300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 2, codigo: 'S.C.12.02.08.005', nombre: 'Silla Con Brazos',
@@ -18,7 +19,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-01-01', stockActual: 35,
     stockMinimo: 7, stockMaximo: 87, unidadMedida: 'unidades',
     precioUnitario: 53100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 3, codigo: 'S.P.03.02.03.004', nombre: 'Monitor',
@@ -26,7 +28,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-01-01', stockActual: 24,
     stockMinimo: 3, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 88000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 4, codigo: 'C.30.01.08.397', nombre: 'Tizador',
@@ -34,7 +37,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-01-01', stockActual: 36,
     stockMinimo: 8, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 15300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 5, codigo: 'S.C.30.01.08.351', nombre: 'Esmeril Angular 7Pulg',
@@ -42,7 +46,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-01-02', stockActual: 36,
     stockMinimo: 7, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 76700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 6, codigo: 'C.06.02.08.459', nombre: 'Nivel Torpedo Imantado 9Pulg',
@@ -50,7 +55,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-01-02', stockActual: 24,
     stockMinimo: 7, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 15800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 7, codigo: 'S.C.12.02.01.001', nombre: 'Escritorio',
@@ -58,7 +64,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-01-02', stockActual: 35,
     stockMinimo: 8, stockMaximo: 87, unidadMedida: 'unidades',
     precioUnitario: 66500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 8, codigo: 'C.07.01.02.006', nombre: 'Extensión Eléctrica 220 Volt',
@@ -66,7 +73,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-01-01', stockActual: 96,
     stockMinimo: 21, stockMaximo: 240, unidadMedida: 'unidades',
     precioUnitario: 12400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 9, codigo: 'C.06.03.04.013', nombre: 'Flexometro De 8 Mtrs',
@@ -74,7 +82,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-01-01', stockActual: 54,
     stockMinimo: 10, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 61100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 10, codigo: 'Z.C.06.11.03.018', nombre: 'Martillo Peña',
@@ -82,7 +91,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-01-03', stockActual: 54,
     stockMinimo: 9, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 15400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 11, codigo: 'Z.C.06.13.02.018', nombre: 'Flexometro 10 Metros',
@@ -90,7 +100,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-01-01', stockActual: 36,
     stockMinimo: 12, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 94400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 12, codigo: 'S.P.04.03.06.005', nombre: 'Radio Portatil',
@@ -98,7 +109,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-01-03', stockActual: 72,
     stockMinimo: 14, stockMaximo: 180, unidadMedida: 'unidades',
     precioUnitario: 43000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 13, codigo: 'Z.C.06.02.07.083', nombre: 'Alicate Universal 8',
@@ -106,7 +118,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-01-04', stockActual: 60,
     stockMinimo: 10, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 16700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 14, codigo: 'C.06.13.02.039', nombre: 'Martillo Carpintero',
@@ -114,7 +127,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-01-02', stockActual: 38,
     stockMinimo: 10, stockMaximo: 96, unidadMedida: 'unidades',
     precioUnitario: 73300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 15, codigo: 'C.06.02.06.017', nombre: 'Caja De Herramientas',
@@ -122,7 +136,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-01-05', stockActual: 60,
     stockMinimo: 14, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 17900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 16, codigo: 'Z.C.06.04.03.038', nombre: 'Escuadra Plana 24',
@@ -130,7 +145,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-01-04', stockActual: 24,
     stockMinimo: 7, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 67500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 17, codigo: 'S.C.36.26.03.200', nombre: 'A',
@@ -138,7 +154,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-01-01', stockActual: 662,
     stockMinimo: 166, stockMaximo: 1656, unidadMedida: 'unidades',
     precioUnitario: 27900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 18, codigo: 'C.30.01.08.596', nombre: 'Alicate Enfierrador',
@@ -146,7 +163,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-02-01', stockActual: 18,
     stockMinimo: 7, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 17500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 19, codigo: 'P.01.01.06.001', nombre: 'Cuchillo Cartonero',
@@ -154,7 +172,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-02-02', stockActual: 36,
     stockMinimo: 8, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 17500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 20, codigo: 'C.32.13.02.030', nombre: 'Escuadra Talon 12"',
@@ -162,7 +181,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-02-03', stockActual: 34,
     stockMinimo: 8, stockMaximo: 84, unidadMedida: 'unidades',
     precioUnitario: 17500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 21, codigo: 'P.03.01.05.007', nombre: 'Impresora',
@@ -170,7 +190,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-01-02', stockActual: 14,
     stockMinimo: 4, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 57900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 22, codigo: 'S.C.12.02.03.003', nombre: 'Cajonera',
@@ -178,7 +199,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-01-05', stockActual: 29,
     stockMinimo: 8, stockMaximo: 72, unidadMedida: 'unidades',
     precioUnitario: 72700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 23, codigo: 'S.C.06.02.14.009', nombre: 'Tecle Palanca 1,5 Kilos',
@@ -186,7 +208,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-01-03', stockActual: 24,
     stockMinimo: 6, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 87700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 24, codigo: 'Z.C.06.02.07.036', nombre: 'Llave Ajustable 12',
@@ -194,7 +217,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-02-04', stockActual: 24,
     stockMinimo: 5, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 25, codigo: 'S.C.36.38.12.257', nombre: 'Plataforma Acero 0.32 X 2.57 M - Perf.',
@@ -202,7 +226,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-01-02', stockActual: 938,
     stockMinimo: 179, stockMaximo: 2346, unidadMedida: 'unidades',
     precioUnitario: 22500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 26, codigo: 'Z.C.06.13.02.038', nombre: 'Plomada 500 Gr',
@@ -210,7 +235,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-01-03', stockActual: 48,
     stockMinimo: 8, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 51800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 27, codigo: 'S.C.30.01.08.339', nombre: 'Rectificador Recto',
@@ -218,7 +244,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-01-04', stockActual: 19,
     stockMinimo: 6, stockMaximo: 48, unidadMedida: 'unidades',
     precioUnitario: 100400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 28, codigo: 'C.06.02.06.003', nombre: 'Carretilla 70Lt',
@@ -226,7 +253,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-02-05', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 10900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 29, codigo: 'C.06.04.03.045', nombre: 'Combo Fe 4 Lbs',
@@ -234,7 +262,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-02-01', stockActual: 22,
     stockMinimo: 6, stockMaximo: 54, unidadMedida: 'unidades',
     precioUnitario: 58600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 30, codigo: 'C.30.01.08.629', nombre: 'Barretillas De 1 Mts',
@@ -242,7 +271,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-03-01', stockActual: 24,
     stockMinimo: 6, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 19800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 31, codigo: 'S.C.36.26.02.000', nombre: 'Base Collarin',
@@ -250,7 +280,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-01-03', stockActual: 1332,
     stockMinimo: 137, stockMaximo: 3330, unidadMedida: 'unidades',
     precioUnitario: 33400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 32, codigo: 'S.C.36.26.07.257', nombre: 'Horizontal 2.57 M',
@@ -258,7 +289,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-01-04', stockActual: 1620,
     stockMinimo: 363, stockMaximo: 4050, unidadMedida: 'unidades',
     precioUnitario: 33400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 33, codigo: 'C.30.01.08.663', nombre: 'Llave Cola Chicharra 19X22 Mm',
@@ -266,7 +298,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-03-02', stockActual: 60,
     stockMinimo: 9, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 19800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 34, codigo: 'C.04.03.04.003', nombre: 'Lockers Metálicos',
@@ -274,7 +307,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-02-02', stockActual: 20,
     stockMinimo: 7, stockMaximo: 51, unidadMedida: 'unidades',
     precioUnitario: 76000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 35, codigo: 'S.C.08.08.02.024', nombre: 'Rotomartillo Sds Plus',
@@ -282,7 +316,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-01-05', stockActual: 12,
     stockMinimo: 3, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 54800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 36, codigo: 'Z.C.06.02.07.023', nombre: 'Set De Atornilladores',
@@ -290,7 +325,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-03-03', stockActual: 14,
     stockMinimo: 5, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 19800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 37, codigo: 'S.C.06.02.14.017', nombre: 'Sierra Circular Electrica',
@@ -298,7 +334,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-02-01', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 54800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 38, codigo: 'S.C.07.03.06.012', nombre: 'Tablero Electrico',
@@ -306,7 +343,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-01-01', stockActual: 7,
     stockMinimo: 2, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 61400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 39, codigo: 'S.C.06.02.10.117', nombre: 'Taladro Inalambrico',
@@ -314,7 +352,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-02-02', stockActual: 24,
     stockMinimo: 5, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 54800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 40, codigo: 'S.C.36.40.01.060', nombre: 'Base Regulable 0.60 M',
@@ -322,7 +361,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-01-05', stockActual: 666,
     stockMinimo: 109, stockMaximo: 1665, unidadMedida: 'unidades',
     precioUnitario: 34100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 41, codigo: 'S.C.36.26.20.257', nombre: 'Diagonal 2.57 M',
@@ -330,7 +370,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-02-01', stockActual: 120,
     stockMinimo: 51, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 34100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 42, codigo: 'C.07.01.02.007', nombre: 'Extensión Eléctrica 380 Volt',
@@ -338,7 +379,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-01-02', stockActual: 90,
     stockMinimo: 14, stockMaximo: 225, unidadMedida: 'unidades',
     precioUnitario: 14000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 43, codigo: 'S.C.12.03.04.015', nombre: 'Mueble Estante',
@@ -346,7 +388,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-02-03', stockActual: 29,
     stockMinimo: 8, stockMaximo: 72, unidadMedida: 'unidades',
     precioUnitario: 87000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 44, codigo: 'C.06.02.08.824', nombre: 'Pala Punta Huevo Mango De Fibra',
@@ -354,7 +397,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-03-04', stockActual: 26,
     stockMinimo: 10, stockMaximo: 66, unidadMedida: 'unidades',
     precioUnitario: 17100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 45, codigo: 'S.C.36.26.07.073', nombre: 'Horizontal 0.73 M',
@@ -362,7 +406,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-02-02', stockActual: 360,
     stockMinimo: 112, stockMaximo: 900, unidadMedida: 'unidades',
     precioUnitario: 18200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 46, codigo: 'S.C.36.38.38.257', nombre: 'Plataforma Robust Con Escalera 2.57 M',
@@ -370,7 +415,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-02-03', stockActual: 36,
     stockMinimo: 16, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 18200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 47, codigo: 'S.C.36.26.40.257', nombre: 'Rodapie 2.57 M',
@@ -378,7 +424,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-02-04', stockActual: 420,
     stockMinimo: 92, stockMaximo: 1050, unidadMedida: 'unidades',
     precioUnitario: 18200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 48, codigo: 'Z.C.06.11.02.030', nombre: 'Juego De Llaves Torx',
@@ -386,7 +433,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-03-05', stockActual: 24,
     stockMinimo: 5, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 15200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 49, codigo: 'C.06.02.07.800', nombre: 'Martillo Trinquete',
@@ -394,7 +442,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-04-01', stockActual: 54,
     stockMinimo: 9, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 15200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 50, codigo: 'S.C.30.01.08.427', nombre: 'Mini Prisma Topografico',
@@ -402,7 +451,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-01-04', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 101800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 51, codigo: 'P.02.03.03.007', nombre: 'Pizarra Blanca',
@@ -410,7 +460,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-02-04', stockActual: 14,
     stockMinimo: 5, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 47500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 52, codigo: 'Z.C.06.02.09.025', nombre: 'Punto Centro',
@@ -418,7 +469,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-04-02', stockActual: 48,
     stockMinimo: 9, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 15200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 53, codigo: 'C.30.01.08.360', nombre: 'Serrucho Carpintero',
@@ -426,7 +478,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-04-03', stockActual: 24,
     stockMinimo: 6, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 15200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 54, codigo: 'C.06.02.07.208', nombre: 'Alicate De Punta Aislado 1000V',
@@ -434,7 +487,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-04-04', stockActual: 54,
     stockMinimo: 6, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 13300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231', 'P-4254']
   },
   {
     id: 55, codigo: 'C.06.13.003', nombre: 'Marco De Sierra',
@@ -442,7 +496,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-01-05', stockActual: 36,
     stockMinimo: 10, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 76600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 56, codigo: 'S.C.06.13.01.016', nombre: 'Nivel Topografico',
@@ -450,7 +505,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-02-01', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 76600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 57, codigo: 'C.30.01.08.410', nombre: 'Pie De Metro 12Pulg',
@@ -458,7 +514,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-04-05', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 13300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 58, codigo: 'S.C.06.02.10.128', nombre: 'Taladro Inalambrico 20V',
@@ -466,7 +523,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-02-03', stockActual: 7,
     stockMinimo: 2, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 76300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 59, codigo: 'S.C.06.13.01.017', nombre: 'Tripode Topografico',
@@ -474,7 +532,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-02-02', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 76600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 60, codigo: 'C.06.03.06.003', nombre: 'Escuadra Carpintero',
@@ -482,7 +541,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-01-02', stockActual: 48,
     stockMinimo: 9, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 73600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 61, codigo: 'S.Z.C.06.13.05.001', nombre: 'Estacion Total',
@@ -490,7 +550,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-02-03', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 99400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 62, codigo: 'S.C.36.26.07.109', nombre: 'Horizontal 1,09',
@@ -498,7 +559,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-02-05', stockActual: 120,
     stockMinimo: 52, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 18600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 63, codigo: 'S.C.36.26.13.073', nombre: 'Horizontal En U 0.73 M',
@@ -506,7 +568,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-03-01', stockActual: 540,
     stockMinimo: 121, stockMaximo: 1350, unidadMedida: 'unidades',
     precioUnitario: 18600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 64, codigo: 'Z.C.06.13.02.023', nombre: 'Huincha De Medir 50 Mts.',
@@ -514,7 +577,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-02-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 99400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 65, codigo: 'Z.C.06.03.04.033', nombre: 'Limaton Redondo 12P Pulg',
@@ -522,7 +586,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-01-03', stockActual: 12,
     stockMinimo: 7, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 73600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 66, codigo: 'S.Z.C.31.03.03.085', nombre: 'Maquina Soldadora Arco Manual 380V',
@@ -530,7 +595,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-01-04', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 73600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 67, codigo: 'S.C.06.02.14.005', nombre: 'Tecle De Cadena 2000 Kg.',
@@ -538,7 +604,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-02-04', stockActual: 18,
     stockMinimo: 6, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 66600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 68, codigo: 'S.C.36.26.03.100', nombre: 'Vertical 1.00 M',
@@ -546,7 +613,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-03-02', stockActual: 600,
     stockMinimo: 106, stockMaximo: 1500, unidadMedida: 'unidades',
     precioUnitario: 18600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 69, codigo: 'C.30.01.08.080', nombre: 'Alicate Universal 8 Pulg. Aislado 1000V',
@@ -554,7 +622,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-05-01', stockActual: 24,
     stockMinimo: 5, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 10200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 70, codigo: 'S.C.30.01.08.551', nombre: 'Amperimetro Tenaza',
@@ -562,7 +631,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-01-02', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 40000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 71, codigo: 'C.06.02.09.039', nombre: 'Chuzo',
@@ -570,7 +640,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-05-02', stockActual: 13,
     stockMinimo: 5, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 10200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 72, codigo: 'Z.C.06.02.09.059', nombre: 'Cincel Concretero Manual',
@@ -578,7 +649,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-05-03', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 10200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 73, codigo: 'C.06.11.02.035', nombre: 'Escuadra Universal',
@@ -586,7 +658,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-05-04', stockActual: 10,
     stockMinimo: 2, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 10200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 74, codigo: 'S.C.36.26.18.109', nombre: 'Horizontal Ar U Lw 1.09M T14',
@@ -594,7 +667,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-03-03', stockActual: 120,
     stockMinimo: 59, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 25400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 75, codigo: 'S.Z.C.06.03.03.085', nombre: 'Maquina Soldadora Arco Manual 220V',
@@ -602,7 +676,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-01-05', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 75100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 76, codigo: 'S.C.06.02.10.043', nombre: 'Martillo Demoledor Sds Ma',
@@ -610,7 +685,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-02-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 102900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 77, codigo: 'C.06.13.05.022', nombre: 'Nivel Esferico',
@@ -618,7 +694,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-02-05', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 113800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 78, codigo: 'C.06.13.05.012', nombre: 'Prisma',
@@ -626,7 +703,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-03-01', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 113800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 79, codigo: 'Z.C.06.02.11.012', nombre: 'Rastrillo',
@@ -634,7 +712,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-05-05', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 10200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 80, codigo: 'S.C.06.02.14.016', nombre: 'Sierra Caladora',
@@ -642,7 +721,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-03-01', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 102900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4254']
   },
   {
     id: 81, codigo: 'C.06.02.07.209', nombre: 'Alicate Cortante Aislado',
@@ -650,7 +730,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-06-01', stockActual: 54,
     stockMinimo: 6, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 12100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 82, codigo: 'Z.C.06.02.09.004', nombre: 'Diablo',
@@ -658,7 +739,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-06-02', stockActual: 24,
     stockMinimo: 6, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 12100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 83, codigo: 'S.C.30.01.08.396', nombre: 'Mira De Nivelacion De Aluminio Con Niveleta',
@@ -666,7 +748,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-06-03', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 12100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 84, codigo: 'C.06.13.02.067', nombre: 'Nivel Aluminio 12 Pulg',
@@ -674,7 +757,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-03-02', stockActual: 20,
     stockMinimo: 7, stockMaximo: 51, unidadMedida: 'unidades',
     precioUnitario: 116100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 85, codigo: 'C.06.11.02.043', nombre: 'Regla Paralela Metalica 2Mt. Graduada',
@@ -682,7 +766,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-06-04', stockActual: 7,
     stockMinimo: 2, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 12100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4254']
   },
   {
     id: 86, codigo: 'C.06.02.08.753', nombre: 'Set De Dados Hasta 32 Mm',
@@ -690,7 +775,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-06-05', stockActual: 12,
     stockMinimo: 3, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 12100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 87, codigo: 'S.Z.C.06.02.99.001', nombre: 'Soplador De Aire',
@@ -698,7 +784,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-07-01', stockActual: 8,
     stockMinimo: 4, stockMaximo: 21, unidadMedida: 'unidades',
     precioUnitario: 12100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 88, codigo: 'S.C.32.03.08.508', nombre: 'Tablero Electrico De 800X600X300Mm',
@@ -706,7 +793,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-01-03', stockActual: 8,
     stockMinimo: 3, stockMaximo: 21, unidadMedida: 'unidades',
     precioUnitario: 8900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 89, codigo: 'S.C.32.02.10.027', nombre: 'Taladro De Rotacion 1/2Pulg',
@@ -714,7 +802,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-03-02', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 51400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 90, codigo: 'S.C.32.14.02.188', nombre: 'Termometro Infarrojo Laser',
@@ -722,7 +811,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-07-02', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 12100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 91, codigo: 'Z.C.06.02.09.036', nombre: 'Combo Fe 8 Lbs.',
@@ -730,7 +820,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-07-03', stockActual: 10,
     stockMinimo: 4, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 14600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 92, codigo: 'S.Z.C.06.02.07.161', nombre: 'Desvainador Pela Cable',
@@ -738,7 +829,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-07-04', stockActual: 12,
     stockMinimo: 3, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 14600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4254']
   },
   {
     id: 93, codigo: 'S.C.36.47.00.022', nombre: 'Grapa Ortogonal 22 Mm',
@@ -746,7 +838,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-03-04', stockActual: 1800,
     stockMinimo: 261, stockMaximo: 4500, unidadMedida: 'unidades',
     precioUnitario: 34300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 94, codigo: 'C.30.01.08.398', nombre: 'Huincha De Medir 30 Mts.',
@@ -754,7 +847,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-07-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 14600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 95, codigo: 'Z.C.06.13.01.007', nombre: 'Jalon Topografico',
@@ -762,7 +856,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-03-03', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 62200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 96, codigo: 'C.30.01.08.341', nombre: 'Lima Plana 12Pulg',
@@ -770,7 +865,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-08-01', stockActual: 12,
     stockMinimo: 7, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 14600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 97, codigo: 'Z.C.06.02.08.104', nombre: 'Llave Unta Corona 46 Mm',
@@ -778,7 +874,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-08-02', stockActual: 10,
     stockMinimo: 4, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 14600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 98, codigo: 'S.C.06.03.04.063', nombre: 'Napoleon 36 Pulg',
@@ -786,7 +883,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-02-01', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 72800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 99, codigo: 'C.06.13.02.037', nombre: 'Picota Punta Y Rama',
@@ -794,7 +892,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-03-04', stockActual: 10,
     stockMinimo: 4, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 62200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 100, codigo: 'C.30.01.08.064', nombre: 'Prensa C De 8Pulg',
@@ -802,7 +901,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-08-03', stockActual: 24,
     stockMinimo: 9, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 14600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 101, codigo: 'S.C.36.26.40.073', nombre: 'Rodapié 0.73 M',
@@ -810,7 +910,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-03-05', stockActual: 420,
     stockMinimo: 99, stockMaximo: 1050, unidadMedida: 'unidades',
     precioUnitario: 34300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 102, codigo: 'C.06.02.07.250', nombre: 'Set De Atornilladores De 7 Piezas. Aisladas Para 1000 V',
@@ -818,7 +919,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-08-04', stockActual: 24,
     stockMinimo: 4, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 14600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 103, codigo: 'S.Z.C.06.02.10.045', nombre: 'Taladro Mandril 5/8',
@@ -826,7 +928,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-03-03', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 60500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 104, codigo: 'S.P.04.04.01.018', nombre: 'Televisor Color 43 Pulg',
@@ -834,7 +937,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-01-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 108400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 105, codigo: 'Z.C.06.02.07.034', nombre: 'Alicate Caimán 10',
@@ -842,7 +946,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-08-05', stockActual: 54,
     stockMinimo: 9, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 106, codigo: 'C.30.01.08.062', nombre: 'Alicate Picoloro 10Pulg',
@@ -850,7 +955,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-09-01', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 107, codigo: 'S.Z.C.06.14.01.019', nombre: 'Anemometro Digital',
@@ -858,7 +964,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-09-02', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 108, codigo: 'C.06.02.07.171', nombre: 'Atornillador Perillero Cruz',
@@ -866,7 +973,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-09-03', stockActual: 36,
     stockMinimo: 7, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4254']
   },
   {
     id: 109, codigo: 'S.C.13.02.06.017', nombre: 'Cierre Perimetral 2,5X2 Galvanizado',
@@ -874,7 +982,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-09-04', stockActual: 86,
     stockMinimo: 33, stockMaximo: 216, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231', 'P-4257']
   },
   {
     id: 110, codigo: 'S.C.22.01.04.003', nombre: 'Equipo De Alcotest',
@@ -882,7 +991,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-09-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 111, codigo: 'Z.C.06.13.02.024', nombre: 'Huincha De Medir 5 Mts',
@@ -890,7 +1000,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-03-05', stockActual: 48,
     stockMinimo: 17, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 112500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 112, codigo: 'S.C.06.02.08.293', nombre: 'Set De Dados Cuadrante De 1/2',
@@ -898,7 +1009,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-10-01', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 113, codigo: 'Z.C.06.02.08.094', nombre: 'Llave Punta Corona 36',
@@ -906,7 +1018,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-10-02', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 114, codigo: 'Z.C.06.02.07.115', nombre: 'Llave Stillson 14',
@@ -914,7 +1027,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-10-03', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 115, codigo: 'S.C.36.26.40.109', nombre: 'Rodapie 1.09 M',
@@ -922,7 +1036,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-04-01', stockActual: 120,
     stockMinimo: 36, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 17100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 116, codigo: 'S.C.06.13.01.018', nombre: 'Tripode Prensa Cadena',
@@ -930,7 +1045,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-04-01', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 112500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 117, codigo: 'S.Z.C.06.13.01.012', nombre: 'Tripode Topografico De Aluminio',
@@ -938,7 +1054,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-04-02', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 112500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4254']
   },
   {
     id: 118, codigo: 'S.C.11.01.08.016', nombre: 'Tubo De Acero Cortado A 0.50M Layher',
@@ -946,7 +1063,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-10-04', stockActual: 960,
     stockMinimo: 135, stockMaximo: 2400, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 119, codigo: 'C.06.02.09.044', nombre: 'Uñeta Saca Clavos',
@@ -954,7 +1072,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-10-05', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 14400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4254']
   },
   {
     id: 120, codigo: 'C.06.02.07.276', nombre: 'Alicate Pela Cable',
@@ -962,7 +1081,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-11-01', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 15800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 121, codigo: 'S.C.30.01.08.505', nombre: 'Aprieta Terminales Ergonometrico',
@@ -970,7 +1090,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-11-02', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 15800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 122, codigo: 'Z.C.06.11.02.062', nombre: 'Atornilladores Aislados 1000V',
@@ -978,7 +1099,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-11-03', stockActual: 54,
     stockMinimo: 9, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 15800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231', 'P-4254']
   },
   {
     id: 123, codigo: 'S.C.14.01.02.006', nombre: 'Bases Hormigon',
@@ -986,7 +1108,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-02-02', stockActual: 97,
     stockMinimo: 32, stockMaximo: 243, unidadMedida: 'unidades',
     precioUnitario: 40900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 124, codigo: 'S.C.12.02.04.002', nombre: 'Mesa De Reunion',
@@ -994,7 +1117,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-02-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 44500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 125, codigo: 'S.C.30.01.08.573', nombre: 'Multimetro',
@@ -1002,7 +1126,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-01-03', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 44000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 126, codigo: 'C.06.13.02.035', nombre: 'Nivel Carpintero 18Pulg',
@@ -1010,7 +1135,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-04-03', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 97000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231', 'P-4254']
   },
   {
     id: 127, codigo: 'Z.C.06.13.02.033', nombre: 'Nivel De Aluminio 1Mt.',
@@ -1018,7 +1144,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-04-04', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 97000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 128, codigo: 'Z.C.06.13.02.026', nombre: 'Nivel Mecanico 12Pulg',
@@ -1026,7 +1153,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-04-05', stockActual: 12,
     stockMinimo: 3, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 97000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 129, codigo: 'S.P.04.01.06.017', nombre: 'Pistola De Calor',
@@ -1034,7 +1162,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-01-04', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 96600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 130, codigo: 'C.06.02.09.087', nombre: 'Platacho De Madera',
@@ -1042,7 +1171,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-11-04', stockActual: 24,
     stockMinimo: 8, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 15800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4254']
   },
   {
     id: 131, codigo: 'S.C.06.04.03.058', nombre: 'Sierra Sable',
@@ -1050,7 +1180,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-03-01', stockActual: 4,
     stockMinimo: 1, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 44500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231']
   },
   {
     id: 132, codigo: 'S.C.08.08.02.026', nombre: 'Tecle Tipo Tirfor 1600 Kg.',
@@ -1058,7 +1189,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-03-04', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 72100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231', 'P-4257']
   },
   {
     id: 133, codigo: 'Z.C.06.11.03.022', nombre: 'Termo Soldadura',
@@ -1066,7 +1198,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-02-03', stockActual: 19,
     stockMinimo: 7, stockMaximo: 48, unidadMedida: 'unidades',
     precioUnitario: 40900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 134, codigo: 'S.C.36.26.24.257', nombre: 'Viga Puente En U 2.57 M',
@@ -1074,7 +1207,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-04-02', stockActual: 857,
     stockMinimo: 114, stockMaximo: 2142, unidadMedida: 'unidades',
     precioUnitario: 20100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 135, codigo: 'S.P.04.01.01.002', nombre: 'Aspiradora Polvo Agua 80 Lt',
@@ -1082,7 +1216,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-11-05', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 14500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 136, codigo: 'C.06.02.07.170', nombre: 'Atornillador Perillero Paleta',
@@ -1090,7 +1225,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-12-01', stockActual: 36,
     stockMinimo: 8, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 14500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 137, codigo: 'C.06.02.13.032', nombre: 'Set Llaves Punta Y Corona 10 A 32Mm.',
@@ -1098,7 +1234,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-12-02', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 14500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 138, codigo: 'C.06.03.04.038', nombre: 'Lima Media Cana Bastarda 12 Pulg',
@@ -1106,7 +1243,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-02-04', stockActual: 24,
     stockMinimo: 10, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 55900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 139, codigo: 'S.P.02.01.08.001', nombre: 'Maquina Rotuladora',
@@ -1114,7 +1252,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-01-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 84400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 140, codigo: 'S.P.04.01.06.015', nombre: 'Pistola Calefactora Aire Caliente',
@@ -1122,7 +1261,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-02-01', stockActual: 24,
     stockMinimo: 5, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 84400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 141, codigo: 'S.C.36.26.02.022', nombre: 'Roseta Allround',
@@ -1130,7 +1270,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-04-03', stockActual: 180,
     stockMinimo: 56, stockMaximo: 450, unidadMedida: 'unidades',
     precioUnitario: 24400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 142, codigo: 'S.C.36.47.02.022', nombre: 'Grapa Giratoria 22 Mm',
@@ -1138,7 +1279,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-04-04', stockActual: 120,
     stockMinimo: 55, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 24000, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 143, codigo: 'S.Z.C.06.03.04.038', nombre: 'Grifa De 2 Bocas 5/8 Pulg  A 3/4 Pulg',
@@ -1146,7 +1288,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-02-05', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 48900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 144, codigo: 'S.C.09.02.04.091', nombre: 'Kit Soporte Lateral Galv. C/ Abrazadera',
@@ -1154,7 +1297,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-12-03', stockActual: 32,
     stockMinimo: 10, stockMaximo: 81, unidadMedida: 'unidades',
     precioUnitario: 11700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4257']
   },
   {
     id: 145, codigo: 'Z.C.06.02.07.042', nombre: 'Llave Ajustable 8',
@@ -1162,7 +1306,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-12-04', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 146, codigo: 'S.Z.C.06.13.02.039', nombre: 'Nivel De Aluminio 24',
@@ -1170,7 +1315,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-05-01', stockActual: 36,
     stockMinimo: 11, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 86400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 147, codigo: 'Z.C.06.13.05.011', nombre: 'Porta Prisma',
@@ -1178,7 +1324,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-05-02', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 86400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 148, codigo: 'S.C.06.02.08.289', nombre: 'Set De Llaves Allen Aislados A 1000 Volt',
@@ -1186,7 +1333,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-12-05', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 11700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231', 'P-4254']
   },
   {
     id: 149, codigo: 'S.Z.C.06.02.08.019', nombre: 'Set De Llaves Punta Y Corona 12 Pcs',
@@ -1194,7 +1342,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-13-01', stockActual: 10,
     stockMinimo: 4, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 11700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231', 'P-4254']
   },
   {
     id: 150, codigo: 'C.06.08.07.064', nombre: 'Soportes Para Tuberias Con Cabezal En V',
@@ -1202,7 +1351,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-01-04', stockActual: 24,
     stockMinimo: 11, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 47500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 151, codigo: 'S.C.08.08.02.027', nombre: 'Tecle Tipo Tirfor 3200 Kg.',
@@ -1210,7 +1360,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-03-05', stockActual: 14,
     stockMinimo: 4, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 72700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231', 'P-4257']
   },
   {
     id: 152, codigo: 'P.01.01.09.016', nombre: 'Termolaminadora',
@@ -1218,7 +1369,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-13-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 153, codigo: 'S.C.30.01.08.499', nombre: 'Crimpadora Hidraulica',
@@ -1226,7 +1378,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-13-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 154, codigo: 'C.30.01.08.704', nombre: 'Carro Oxicorte Doble',
@@ -1234,7 +1387,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-13-04', stockActual: 10,
     stockMinimo: 3, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 155, codigo: 'S.C.13.02.06.018', nombre: 'Cierre Perimetral 1X2 Galvanizado',
@@ -1242,7 +1396,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-13-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231', 'P-4257']
   },
   {
     id: 156, codigo: 'Z.C.06.11.03.015', nombre: 'Combo Fe 8 Lbs',
@@ -1250,7 +1405,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-14-01', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4231', 'P-4254']
   },
   {
     id: 157, codigo: 'S.C.30.01.08.352', nombre: 'Esmeril Angular Inalámbrico 4 ½  18 V',
@@ -1258,7 +1414,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-04-01', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 58600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231']
   },
   {
     id: 158, codigo: 'Z.C.06.04.06.020', nombre: 'Formon 1 Pulg',
@@ -1266,7 +1423,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-14-02', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 159, codigo: 'S.Z.C.06.02.07.160', nombre: 'Juego Terraja 1/2 X 2',
@@ -1274,7 +1432,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-14-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231']
   },
   {
     id: 160, codigo: 'S.C.33.02.08.646', nombre: 'Set Llave Punta Y Corona De 5/16 Pulg A 1 ¼ Pulg',
@@ -1282,7 +1441,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-14-04', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 161, codigo: 'S.C.30.01.08.685', nombre: 'Lima Media Caña 12 Pulg',
@@ -1290,7 +1450,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-14-05', stockActual: 12,
     stockMinimo: 7, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4231']
   },
   {
     id: 162, codigo: 'Z.C.06.02.08.079', nombre: 'Llave Punta Corona 24',
@@ -1298,7 +1459,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-15-01', stockActual: 17,
     stockMinimo: 8, stockMaximo: 42, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 163, codigo: 'S.C.06.02.10.044', nombre: 'Martillo Demoledor Sds Max 10Kg',
@@ -1306,7 +1468,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-04-02', stockActual: 8,
     stockMinimo: 3, stockMaximo: 21, unidadMedida: 'unidades',
     precioUnitario: 58600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 164, codigo: 'S.C.07.03.04.107', nombre: 'Termometro-Higrometro',
@@ -1314,7 +1477,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-01-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 43600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 165, codigo: 'S.Z.C.06.11.02.002', nombre: 'Pistola De Fijacion',
@@ -1322,7 +1486,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-15-02', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 166, codigo: 'S.C.36.38.01.257', nombre: 'Plataforma Acero 0.19 X 2.57 Mt',
@@ -1330,7 +1495,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-04-05', stockActual: 120,
     stockMinimo: 46, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 26400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 167, codigo: 'C.30.01.08.236', nombre: 'Set De Llaves Estrellas T10 A T50',
@@ -1338,7 +1504,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-15-03', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 168, codigo: 'C.30.01.08.277', nombre: 'Set Llaves Punta Corona De 6 A 32 Mm',
@@ -1346,7 +1513,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-15-04', stockActual: 24,
     stockMinimo: 6, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219', 'P-4257']
   },
   {
     id: 169, codigo: 'S.C.30.01.08.311', nombre: 'Taladro De Percusion 1/2Pulg',
@@ -1354,7 +1522,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-04-03', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 58600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 170, codigo: 'S.Z.C.06.02.10.024', nombre: 'Taladro De Percusion 5/8',
@@ -1362,7 +1531,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-04-04', stockActual: 12,
     stockMinimo: 4, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 58600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 171, codigo: 'C.06.02.08.212', nombre: 'Tornillo Mecanico Num 6',
@@ -1370,7 +1540,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-15-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219', 'P-4257', 'P-4254']
   },
   {
     id: 172, codigo: 'C.30.01.08.218', nombre: 'Tornillo Mecanico Num 8',
@@ -1378,7 +1549,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-16-01', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231']
   },
   {
     id: 173, codigo: 'S.C.30.01.08.545', nombre: 'Unidad Motriz De Alta Frecuencia',
@@ -1386,7 +1558,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-16-02', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 12800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 174, codigo: 'C.06.02.13.077', nombre: 'Aprieta Terminal Para Ferrul 0.25 A 6Mm',
@@ -1394,7 +1567,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-16-03', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 175, codigo: 'C.06.02.13.086', nombre: 'Aprieta Terminales Manual',
@@ -1402,7 +1576,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-16-04', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4254']
   },
   {
     id: 176, codigo: 'Z.C.06.02.12.007', nombre: 'Bombín',
@@ -1410,7 +1585,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-16-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 177, codigo: 'C.06.02.10.050', nombre: 'Bujardas Sds Max',
@@ -1418,7 +1594,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-04-05', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 64400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 178, codigo: 'C.30.01.08.705', nombre: 'Carro Cilindro Simple',
@@ -1426,7 +1603,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-17-01', stockActual: 19,
     stockMinimo: 7, stockMaximo: 48, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 179, codigo: 'C.30.01.08.302', nombre: 'Combo Fe 6 Lbs. Mango De Fibra',
@@ -1434,7 +1612,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-17-02', stockActual: 19,
     stockMinimo: 9, stockMaximo: 48, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4231']
   },
   {
     id: 180, codigo: 'Z.C.06.14.02.001', nombre: 'Cono De Habrams',
@@ -1442,7 +1621,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-17-03', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4254']
   },
   {
     id: 181, codigo: 'C.30.01.08.464', nombre: 'Escalera Tijera Fibra 3 Mts.',
@@ -1450,7 +1630,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-17-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219', 'P-4231', 'P-4257', 'P-4254']
   },
   {
     id: 182, codigo: 'C.14.04.06.029', nombre: 'Fumigadora Manual',
@@ -1458,7 +1639,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-03-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 37700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4254']
   },
   {
     id: 183, codigo: 'S.Z.C.06.03.04.039', nombre: 'Grifa De 2 Bocas 1/2 Pulg  A 5/8 Pulg',
@@ -1466,7 +1648,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-03-02', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 37700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 184, codigo: 'C.06.03.04.071', nombre: 'Huincha De Medir Metalica 100 Mt',
@@ -1474,7 +1657,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-03-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 37700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 185, codigo: 'S.C.08.09.01.020', nombre: 'Jaula Almacenamiento Suspel 1200X1800X2500 Mm',
@@ -1482,7 +1666,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-17-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4231', 'P-4257']
   },
   {
     id: 186, codigo: 'C.30.01.08.601', nombre: 'Juego Atornilladores Torx',
@@ -1490,7 +1675,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-18-01', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 187, codigo: 'C.06.02.09.023', nombre: 'Llana Lisa',
@@ -1498,7 +1684,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-18-02', stockActual: 24,
     stockMinimo: 7, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219', 'P-4254']
   },
   {
     id: 188, codigo: 'Z.C.06.02.07.035', nombre: 'Llave Ajustable 10',
@@ -1506,7 +1693,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-18-03', stockActual: 54,
     stockMinimo: 12, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 189, codigo: 'S.C.06.02.08.163', nombre: 'Llave Torque Cuadrante De 1/2',
@@ -1514,7 +1702,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-18-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4231']
   },
   {
     id: 190, codigo: 'Z.C.06.02.08.099', nombre: 'Llave Punta Corona 41',
@@ -1522,7 +1711,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-18-05', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 191, codigo: 'Z.C.06.02.08.110', nombre: 'Llave Punta Corona 50',
@@ -1530,7 +1720,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-19-01', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 192, codigo: 'C.30.01.08.049', nombre: 'Llave Stillson 10Pulg',
@@ -1538,7 +1729,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-19-02', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 193, codigo: 'Z.C.06.02.07.044', nombre: 'Llave Stillson 12',
@@ -1546,7 +1738,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-19-03', stockActual: 10,
     stockMinimo: 3, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 194, codigo: 'S.C.30.01.08.515', nombre: 'Llave Torque Cuadrante De 3/4',
@@ -1554,7 +1747,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-19-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 195, codigo: 'S.C.07.03.04.113', nombre: 'Medidor De Traslape Hi-Lo',
@@ -1562,7 +1756,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-02-01', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 35100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 196, codigo: 'S.Z.C.06.02.08.213', nombre: 'Niplera Electrica',
@@ -1570,7 +1765,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-19-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 197, codigo: 'S.C.36.38.12.073', nombre: 'Plataforma Acero 0.32 X 0.73 M - Perf.',
@@ -1578,7 +1774,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-05-01', stockActual: 240,
     stockMinimo: 90, stockMaximo: 600, unidadMedida: 'unidades',
     precioUnitario: 24200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 198, codigo: 'S.C.06.07.09.015', nombre: 'Plataforma Para Estanque 0.73 M',
@@ -1586,7 +1783,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-20-01', stockActual: 360,
     stockMinimo: 88, stockMaximo: 900, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 199, codigo: 'S.P.04.03.06.013', nombre: 'Radio Digital Portatil',
@@ -1594,7 +1792,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-03-02', stockActual: 24,
     stockMinimo: 9, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 68700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4231']
   },
   {
     id: 200, codigo: 'C.06.11.02.042', nombre: 'Regla Paralela Metalica 1.5Mt. Graduada',
@@ -1602,7 +1801,8 @@ const _PROD_CHUNK_1: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-20-02', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
 ];
 
@@ -1613,7 +1813,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-05-02', stockActual: 120,
     stockMinimo: 56, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 24200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 202, codigo: 'S.C.06.02.10.120', nombre: 'Rotomartillo Toma Sds Max 7 Kg',
@@ -1621,7 +1822,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-05-01', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 64400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 203, codigo: 'S.C.36.12.60.200', nombre: 'Rueda 1000 Kg / Con Base Regulable',
@@ -1629,7 +1831,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-05-03', stockActual: 38,
     stockMinimo: 22, stockMaximo: 96, unidadMedida: 'unidades',
     precioUnitario: 24200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 204, codigo: 'S.C.06.02.08.820', nombre: 'Set Llave Torx Aislada 1000 Volt',
@@ -1637,7 +1840,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-20-03', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4254']
   },
   {
     id: 205, codigo: 'C.06.05.07.064', nombre: 'Set Llave Allens De 1/6 A 3/4Pulg',
@@ -1645,7 +1849,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-20-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 18500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 206, codigo: 'S.C.06.02.14.010', nombre: 'Tecle De Palanca 3000 Kg.',
@@ -1653,7 +1858,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-05-02', stockActual: 6,
     stockMinimo: 4, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 64400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231']
   },
   {
     id: 207, codigo: 'S.Z.C.06.02.14.013', nombre: 'Tecle Palanca 750 Kilos',
@@ -1661,7 +1867,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-05-03', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 64400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 208, codigo: 'Z.C.06.03.04.022', nombre: 'Tijera Hojalatera Derecha',
@@ -1669,7 +1876,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-03-04', stockActual: 18,
     stockMinimo: 4, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 37700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 209, codigo: 'Z.C.06.03.04.020', nombre: 'Tijera Hojalatera Recta',
@@ -1677,7 +1885,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-03-05', stockActual: 18,
     stockMinimo: 5, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 37700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 210, codigo: 'Z.C.06.02.07.106', nombre: 'Alicate Cortante 6',
@@ -1685,7 +1894,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-20-05', stockActual: 14,
     stockMinimo: 4, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 211, codigo: 'C.06.02.07.149', nombre: 'Alicate Picoloro 12 Pulg',
@@ -1693,7 +1903,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-21-01', stockActual: 6,
     stockMinimo: 4, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219', 'P-4254']
   },
   {
     id: 212, codigo: 'S.C.06.03.03.133', nombre: 'Base Porta Carrete',
@@ -1701,7 +1912,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-04-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 44300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 213, codigo: 'C.06.13.01.020', nombre: 'Base Tribach Con Adaptador',
@@ -1709,7 +1921,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-05-03', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 58200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219', 'P-4257']
   },
   {
     id: 214, codigo: 'C.06.10.02.010', nombre: 'Bidon Metalico 20 Lts',
@@ -1717,7 +1930,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-21-02', stockActual: 7,
     stockMinimo: 5, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4231']
   },
   {
     id: 215, codigo: 'C.06.09.01.051', nombre: 'Bomba De Trasvasije',
@@ -1725,7 +1939,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-21-03', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219', 'P-4254']
   },
   {
     id: 216, codigo: 'S.C.03.02.99.006', nombre: 'Calibrador De Soldadura Bridge Cam',
@@ -1733,7 +1948,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-04-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 44300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 217, codigo: 'C.30.01.08.286', nombre: 'Centradores Conico 12 A 3/4',
@@ -1741,7 +1957,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-21-04', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4231']
   },
   {
     id: 218, codigo: 'S.C.36.26.60.000', nombre: 'Collarín Alto',
@@ -1749,7 +1966,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-05-04', stockActual: 38,
     stockMinimo: 18, stockMaximo: 96, unidadMedida: 'unidades',
     precioUnitario: 19500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 219, codigo: 'Z.C.06.02.09.034', nombre: 'Combo Fe 4 Lbs.',
@@ -1757,7 +1975,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-21-05', stockActual: 14,
     stockMinimo: 4, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 220, codigo: 'S.C.30.01.08.624', nombre: 'Corta Cable Chicharra Manual',
@@ -1765,7 +1984,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-01-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'metros',
     precioUnitario: 12600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 221, codigo: 'S.C.08.07.01.008', nombre: 'Detector Gas',
@@ -1773,7 +1993,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-02-02', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 38600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 222, codigo: 'Z.C.03.02.10.018', nombre: 'Equipo Tig 200 Amp',
@@ -1781,7 +2002,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-04-03', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 44300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 223, codigo: 'C.06.11.02.063', nombre: 'Escuadra Carpintera 10Pulg',
@@ -1789,7 +2011,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-22-01', stockActual: 14,
     stockMinimo: 8, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 224, codigo: 'Z.C.06.02.09.053', nombre: 'Espatula 80Mm',
@@ -1797,7 +2020,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-22-02', stockActual: 36,
     stockMinimo: 14, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219', 'P-4254']
   },
   {
     id: 225, codigo: 'S.C.36.47.06.022', nombre: 'Espiga Para Tubo De 48 Mm',
@@ -1805,7 +2029,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-05-05', stockActual: 60,
     stockMinimo: 35, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 19500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 226, codigo: 'S.C.30.01.08.347', nombre: 'Grifa De 10-12 Mm',
@@ -1813,7 +2038,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-22-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 227, codigo: 'S.C.06.15.03.005', nombre: 'Hidrolavadora Electrica',
@@ -1821,7 +2047,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-05-04', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 92600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 228, codigo: '2607039', nombre: 'Horizontal 0,39 Mt',
@@ -1829,7 +2056,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-22-04', stockActual: 60,
     stockMinimo: 40, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 229, codigo: 'S.C.06.08.08.042', nombre: 'Horizontal 1.57 M',
@@ -1837,7 +2065,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-05-05', stockActual: 60,
     stockMinimo: 46, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 92600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 230, codigo: 'S.C.09.02.04.093', nombre: 'Kit Bisagra Para Porton 1 Hoja Galv.',
@@ -1845,7 +2074,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-22-05', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 231, codigo: 'S.C.09.02.04.092', nombre: 'Kit Ruedas Porton 1 Hoja Galv.',
@@ -1853,7 +2083,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-23-01', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 232, codigo: 'S.Z.C.06.02.07.038', nombre: 'Llave Ajustable 18',
@@ -1861,7 +2092,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-23-02', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 233, codigo: 'Z.C.06.02.08.066', nombre: 'Llave Punta Corona 19',
@@ -1869,7 +2101,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-23-03', stockActual: 17,
     stockMinimo: 10, stockMaximo: 42, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 234, codigo: 'Z.C.06.02.08.090', nombre: 'Llave Punta Corona 32',
@@ -1877,7 +2110,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-23-04', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 235, codigo: 'C.06.03.03.101', nombre: 'Llave Stillson 12 Pulg',
@@ -1885,7 +2119,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-04-04', stockActual: 54,
     stockMinimo: 12, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 44300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 236, codigo: 'S.Z.C.06.02.07.045', nombre: 'Llave Stillson 18',
@@ -1893,7 +2128,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-23-05', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 237, codigo: 'Z.C.06.02.07.046', nombre: 'Llave Stillson 24',
@@ -1901,7 +2137,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-24-01', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 238, codigo: 'Z.C.06.02.07.007', nombre: 'Marco Sierra',
@@ -1909,7 +2146,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-24-02', stockActual: 54,
     stockMinimo: 13, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4254']
   },
   {
     id: 239, codigo: 'S.C.36.47.00.023', nombre: 'Media Grapa P/Perfil Metal O,22',
@@ -1917,7 +2155,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-06-01', stockActual: 120,
     stockMinimo: 68, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 19500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 240, codigo: 'S.C.30.01.08.518', nombre: 'Medidor De Aislacion',
@@ -1925,7 +2164,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-24-03', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 241, codigo: 'S.C.30.01.08.526', nombre: 'Medidor De Espesor Elcometer Mod.456',
@@ -1933,7 +2173,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-24-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 242, codigo: 'S.C.03.01.13.019', nombre: 'Pasteca De 2 Tons',
@@ -1941,7 +2182,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-24-05', stockActual: 10,
     stockMinimo: 3, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 243, codigo: 'S.C.06.13.02.062', nombre: 'Pistola Anclaje',
@@ -1949,7 +2191,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-06-01', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 92600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4254']
   },
   {
     id: 244, codigo: 'S.C.06.02.09.086', nombre: 'Plana Lengüeta',
@@ -1957,7 +2200,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-25-01', stockActual: 24,
     stockMinimo: 9, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 245, codigo: 'Z.C.06.02.09.060', nombre: 'Planas Botadoras',
@@ -1965,7 +2209,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-25-02', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4254']
   },
   {
     id: 246, codigo: 'C.06.02.09.106', nombre: 'Platacho 1.2 M Con Extensiones',
@@ -1973,7 +2218,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-25-03', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4254']
   },
   {
     id: 247, codigo: 'S.C.36.38.12.109', nombre: 'Plataforma Acero 0.32 X 1.09 M - Perf.',
@@ -1981,7 +2227,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-06-02', stockActual: 120,
     stockMinimo: 65, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 19500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 248, codigo: '3801073', nombre: 'Plataforma De Acero 0,73 X 0,19',
@@ -1989,7 +2236,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-25-04', stockActual: 60,
     stockMinimo: 20, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 249, codigo: 'S.Z.C.06.08.05.018', nombre: 'Porta Power Hidráulico 10 Ton',
@@ -1997,7 +2245,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-25-05', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166', 'P-4231']
   },
   {
     id: 250, codigo: 'C.06.11.02.036', nombre: 'Regla Paralela Metalica 1Mt. Graduada',
@@ -2005,7 +2254,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-26-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219']
   },
   {
     id: 251, codigo: 'S.C.06.02.10.039', nombre: 'Rotomartillo Toma Sds Plus',
@@ -2013,7 +2263,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-06-02', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 92600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 252, codigo: 'S.C.06.02.08.286', nombre: 'Set De Dados Cuadrante ½ De 10 A 24 Pzas Aislados',
@@ -2021,7 +2272,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-26-02', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4219']
   },
   {
     id: 253, codigo: 'S.C.06.02.08.477', nombre: 'Set Llave Punta Corona Chicharra 8 Mm A 19Mm',
@@ -2029,7 +2281,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-26-03', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4231']
   },
   {
     id: 254, codigo: 'S.C.30.01.08.372', nombre: 'Sonda Vibradora Alta Frecuencia 45Mm.',
@@ -2037,7 +2290,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-26-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4219', 'P-4231']
   },
   {
     id: 255, codigo: 'S.C.06.02.14.006', nombre: 'Tecle De Cadena 3000 Kg.',
@@ -2045,7 +2299,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-06-03', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 92600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 256, codigo: 'S.C.06.05.14.027', nombre: 'Testiguera',
@@ -2053,7 +2308,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-04-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 44300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 257, codigo: 'S.C.11.01.08.018', nombre: 'Tubo Acero Cortado A 1.00 M.',
@@ -2061,7 +2317,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-26-05', stockActual: 192,
     stockMinimo: 85, stockMaximo: 480, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 258, codigo: 'S.C.11.01.08.020', nombre: 'Tubo De Acero Cortado A 1.50 M',
@@ -2069,7 +2326,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-27-01', stockActual: 60,
     stockMinimo: 32, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 16400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4257']
   },
   {
     id: 259, codigo: 'S.C.06.02.08.999', nombre: 'Adaptador Dado Impacto 1/2 Hembra A Macho 3/4',
@@ -2077,7 +2335,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-27-02', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 260, codigo: 'Z.C.06.02.07.005', nombre: 'Alicate Universal',
@@ -2085,7 +2344,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-27-03', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 261, codigo: 'S.C.06.02.07.211', nombre: 'Alicate Universal 8 Pulg Aislado 1000 Volt',
@@ -2093,7 +2353,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-27-04', stockActual: 13,
     stockMinimo: 8, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4254']
   },
   {
     id: 262, codigo: 'C.06.11.02.074', nombre: 'Aplicador Hdm 500',
@@ -2101,7 +2362,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-27-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 263, codigo: 'S.C.06.02.13.055', nombre: 'Aprieta Terminal Manual De 10-120Mm',
@@ -2109,7 +2371,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-28-01', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219']
   },
   {
     id: 264, codigo: 'C.06.02.07.191', nombre: 'Atornillador Cruz Aislado Vde N0 Knipex',
@@ -2117,7 +2380,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-28-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 265, codigo: 'C.19.02.04.003', nombre: 'Barrera De Seguridad',
@@ -2125,7 +2389,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-28-03', stockActual: 36,
     stockMinimo: 27, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4231', 'P-4257']
   },
   {
     id: 266, codigo: 'C.06.02.08.481', nombre: 'Barrote Cuadrante 3/4Pulg',
@@ -2133,7 +2398,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-28-04', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4231']
   },
   {
     id: 267, codigo: 'S.C.06.05.01.006', nombre: 'Betonera De Volteo Motor Electrico',
@@ -2141,7 +2407,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-28-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 268, codigo: 'C.06.02.08.461', nombre: 'Chicharra 3/4',
@@ -2149,7 +2416,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-29-01', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 269, codigo: 'C.30.01.08.211', nombre: 'Chicharra Cuadrante 1/2Pulg',
@@ -2157,7 +2425,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-29-02', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 270, codigo: 'C.30.01.08.296', nombre: 'Combo Fe 12 Lbs. Mango De Fibra',
@@ -2165,7 +2434,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-29-03', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 271, codigo: 'C.06.04.03.059', nombre: 'Compas Exterior 12 Pulg',
@@ -2173,7 +2443,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-03-03', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 50700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 272, codigo: 'S.C.06.11.99.022', nombre: 'Compas Interior 12Pulg',
@@ -2181,7 +2452,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-29-04', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 273, codigo: 'Z.C.06.02.07.096', nombre: 'Cuenta Hilo Milimetrico',
@@ -2189,7 +2461,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-29-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4219']
   },
   {
     id: 274, codigo: 'S.Z.C.06.02.13.004', nombre: 'Curvadora Hidraulica 1/2 A 2',
@@ -2197,7 +2470,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-30-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4231']
   },
   {
     id: 275, codigo: 'S.Z.C.06.02.13.012', nombre: 'Curvadora Hidraulica 1/2 A 4 Pulg',
@@ -2205,7 +2479,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-30-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166', 'P-4219']
   },
   {
     id: 276, codigo: 'S.C.21.03.06.052', nombre: 'Curvadora Manual Para Tubing Inox. 1/2"',
@@ -2213,7 +2488,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-30-03', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219']
   },
   {
     id: 277, codigo: 'P.06.02.01.077', nombre: 'Dado Corriente Cuadrante 3/4Pulg. 36Mm.',
@@ -2221,7 +2497,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-30-04', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 278, codigo: 'S.C.30.01.08.209', nombre: 'Dado Impacto Cuadrante 3/4 X 32 Mm',
@@ -2229,7 +2506,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-30-05', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 279, codigo: 'S.C.07.03.04.015', nombre: 'Detector De Voltaje Tipo Lapiz',
@@ -2237,7 +2515,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-02-03', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 55500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4231']
   },
   {
     id: 280, codigo: 'S.C.36.26.20.073', nombre: 'Diagonal 0.73 M',
@@ -2245,7 +2524,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-06-03', stockActual: 72,
     stockMinimo: 37, stockMaximo: 180, unidadMedida: 'unidades',
     precioUnitario: 21400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 281, codigo: 'S.C.36.26.20.110', nombre: 'Diagonal 1.57 M',
@@ -2253,7 +2533,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-06-04', stockActual: 60,
     stockMinimo: 32, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 21400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 282, codigo: 'S.C.06.13.03.006', nombre: 'Drone Dji Mini 3 + Tarjeta Ssd 128Gb',
@@ -2261,7 +2542,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-05-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 68600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219', 'P-4257']
   },
   {
     id: 283, codigo: 'S.C.09.01.10.025', nombre: 'Durometro',
@@ -2269,7 +2551,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-31-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 284, codigo: 'S.Z.C.06.03.03.007', nombre: 'Equipo De Oxicorte',
@@ -2277,7 +2560,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-05-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 53800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 285, codigo: 'S.C.06.03.03.113', nombre: 'Equipo De Oxicorte (Oxigeno-Propano)',
@@ -2285,7 +2569,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-05-02', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 53800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4257']
   },
   {
     id: 286, codigo: 'S.C.08.08.02.032', nombre: 'Escalera Telescopica De Fibra De Vidrio 6 Mts',
@@ -2293,7 +2578,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-06-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 82300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219', 'P-4257']
   },
   {
     id: 287, codigo: 'Z.C.06.02.07.112', nombre: 'Filler Milimetrico',
@@ -2301,7 +2587,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-31-02', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4219']
   },
   {
     id: 288, codigo: 'S.Z.C.06.03.03.035', nombre: 'Horno Soldadura',
@@ -2309,7 +2596,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-05-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 53800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4166']
   },
   {
     id: 289, codigo: 'C.30.01.08.399', nombre: 'Huincha De Medir 5 Mts.',
@@ -2317,7 +2605,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-31-03', stockActual: 60,
     stockMinimo: 19, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4219']
   },
   {
     id: 290, codigo: 'C.08.09.01.022', nombre: 'Jaula Almacenamiento Respel 1600X800X1800 Mm',
@@ -2325,7 +2614,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-31-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4257']
   },
   {
     id: 291, codigo: 'S.Z.C.06.02.07.159', nombre: 'Juego De Terraja Y Machos M6 -M12',
@@ -2333,7 +2623,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-31-05', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 292, codigo: 'S.C.06.02.08.265', nombre: 'Juego Knockout Manual 1/2 A 2 Pulg',
@@ -2341,7 +2632,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-32-01', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 293, codigo: 'S.C.30.01.08.684', nombre: 'Lima Media Caña Bastarda 8 Pulg',
@@ -2349,7 +2641,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-32-02', stockActual: 54,
     stockMinimo: 20, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219']
   },
   {
     id: 294, codigo: 'Z.C.06.02.07.037', nombre: 'Llave Ajustable 15',
@@ -2357,7 +2650,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-32-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 295, codigo: 'S.Z.C.06.02.07.169', nombre: 'Llave Caiman De 10 Pulg',
@@ -2365,7 +2659,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-32-04', stockActual: 18,
     stockMinimo: 8, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 296, codigo: 'Z.C.06.02.08.182', nombre: 'Llave De Golpe 60Mm',
@@ -2373,7 +2668,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-32-05', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 297, codigo: 'C.06.02.08.634', nombre: 'Llave De Golpe De 46 Mm',
@@ -2381,7 +2677,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-33-01', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 298, codigo: 'S.C.06.02.08.693', nombre: 'Llave De Impacto Electrica 1/2 Pulg',
@@ -2389,7 +2686,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-33-02', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 299, codigo: 'S.C.30.01.08.533', nombre: 'Llave De Impacto Electrica De 3/4 Pulg',
@@ -2397,7 +2695,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-33-03', stockActual: 7,
     stockMinimo: 2, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 300, codigo: 'S.C.06.02.08.692', nombre: 'Llave De Impacto Inalambrica 1/2 Pu',
@@ -2405,7 +2704,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-33-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 301, codigo: 'C.06.02.08.0104', nombre: 'Llave Punta Corona 1 Pulg. 1/16 Pulg.',
@@ -2413,7 +2713,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-33-05', stockActual: 18,
     stockMinimo: 8, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4257']
   },
   {
     id: 302, codigo: 'Z.C.06.02.08.082', nombre: 'Llave Punta Corona 27',
@@ -2421,7 +2722,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-34-01', stockActual: 14,
     stockMinimo: 7, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 303, codigo: 'Z.C.06.02.08.086', nombre: 'Llave Punta Corona 3/4',
@@ -2429,7 +2731,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-34-02', stockActual: 18,
     stockMinimo: 10, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4257']
   },
   {
     id: 304, codigo: 'Z.C.06.02.08.088', nombre: 'Llave Punta Corona 30',
@@ -2437,7 +2740,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-34-03', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 305, codigo: 'Z.C.06.02.08.092', nombre: 'Llave Punta Corona 34',
@@ -2445,7 +2749,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-34-04', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 306, codigo: 'Z.C.06.02.08.096', nombre: 'Llave Punta Corona 38',
@@ -2453,7 +2758,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-34-05', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 307, codigo: 'Z.C.06.02.08.100', nombre: 'Llave Punta Corona 42',
@@ -2461,7 +2767,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-35-01', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 308, codigo: 'Z.C.06.02.08.132', nombre: 'Llave Punta Corona 7/8',
@@ -2469,7 +2776,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-35-02', stockActual: 10,
     stockMinimo: 5, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 309, codigo: 'C.06.02.08.066', nombre: 'Llave Punta Y Corona 1 1/16',
@@ -2477,7 +2785,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-35-03', stockActual: 18,
     stockMinimo: 10, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4257']
   },
   {
     id: 310, codigo: 'Z.C.06.02.07.050', nombre: 'Llave Stillson 8 Pulgadas',
@@ -2485,7 +2794,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-35-04', stockActual: 10,
     stockMinimo: 4, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219', 'P-4231']
   },
   {
     id: 311, codigo: 'S.C.07.03.04.078', nombre: 'Luxometro',
@@ -2493,7 +2803,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-02-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 55500, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 312, codigo: 'S.C.30.01.08.519', nombre: 'Medidor De Espesor',
@@ -2501,7 +2812,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-35-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 313, codigo: '1745322', nombre: 'Mensula 0,36 M Blitz',
@@ -2509,7 +2821,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-36-01', stockActual: 60,
     stockMinimo: 27, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 314, codigo: 'S.C.36.26.30.073', nombre: 'Mensula 0.73 M',
@@ -2517,7 +2830,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-06-05', stockActual: 60,
     stockMinimo: 27, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 21400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 315, codigo: 'S.C.36.26.30.109', nombre: 'Mensula 1.09 M',
@@ -2525,7 +2839,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-07-01', stockActual: 60,
     stockMinimo: 27, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 21400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166', 'P-4219']
   },
   {
     id: 316, codigo: 'C.06.13.05.039', nombre: 'Odometro Manual',
@@ -2533,7 +2848,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-05-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 68600, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 317, codigo: 'C.06.01.05.027', nombre: 'Pato Lubricador Grasero',
@@ -2541,7 +2857,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-36-02', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4231']
   },
   {
     id: 318, codigo: 'P.04.01.05.010', nombre: 'Picasal',
@@ -2549,7 +2866,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-36-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 319, codigo: 'C.36.38.01.267', nombre: 'Plataforma Acero 0.19X1.09 Mt',
@@ -2557,7 +2875,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-07-02', stockActual: 12,
     stockMinimo: 9, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 21400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 320, codigo: 'S.C.30.01.08.473', nombre: 'Regla De Pelo 300 Mm',
@@ -2565,7 +2884,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-36-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 321, codigo: 'C.06.11.04.005', nombre: 'Remachadora Pop',
@@ -2573,7 +2893,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-36-05', stockActual: 10,
     stockMinimo: 7, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 322, codigo: 'S.C.36.26.40.207', nombre: 'Rodapié 2.07 M',
@@ -2581,7 +2902,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-07-03', stockActual: 120,
     stockMinimo: 45, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 21400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 323, codigo: 'C.06.02.08.479', nombre: 'Set De Dados Cuadrante 3/4 De 7/8Pulg A 2Pulg',
@@ -2589,7 +2911,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-37-01', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4231']
   },
   {
     id: 324, codigo: 'S.C.06.02.08.287', nombre: 'Set De Dados Cuadrante De 1/2 De 10 A 32 Mm Aislados',
@@ -2597,7 +2920,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-37-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4231']
   },
   {
     id: 325, codigo: 'S.C.06.04.03.052', nombre: 'Set Llave Allens De 1.5 A 10Mm.',
@@ -2605,7 +2929,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-03-04', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 50700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219']
   },
   {
     id: 326, codigo: 'C.06.05.07.036', nombre: 'Set Llave Allens De 2 A 19Mm',
@@ -2613,7 +2938,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-37-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 327, codigo: 'C.32.05.07.016', nombre: 'Sonda Vibradora 60Mm',
@@ -2621,7 +2947,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-37-04', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 328, codigo: 'Z.C.06.03.03.076', nombre: 'Soplete',
@@ -2629,7 +2956,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-05-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 53800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 329, codigo: 'S.C.30.01.08.502', nombre: 'Taladro Base Magnetica Horizontal Baja Altura Portatil',
@@ -2637,7 +2965,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-06-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 82300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132', 'P-4231']
   },
   {
     id: 330, codigo: 'S.C.30.01.08.557', nombre: 'Tecle De Cadena 1000 Kg.',
@@ -2645,7 +2974,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-37-05', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 331, codigo: 'S.C.36.26.03.400', nombre: 'Vertical 0.5 M',
@@ -2653,7 +2983,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-07-04', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 21400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 332, codigo: 'C.06.02.08.967', nombre: 'Adaptador Dado Impacto 1/2Plugl A 3/4 Pulg',
@@ -2661,7 +2992,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-38-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 333, codigo: 'C.06.02.08.261', nombre: 'Adaptador Dado Impacto De 3/4Pulg A 1/2Pulg',
@@ -2669,7 +3001,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-38-02', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 334, codigo: 'C.06.02.08.999', nombre: 'Adaptador Dado Impacto Hembra 3/4 Pulg A 1/2 Pulg Macho',
@@ -2677,7 +3010,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-38-03', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 335, codigo: 'C.08.03.03.455', nombre: 'Adaptador Para Dados Entrada 3/8" Y Salida 1/2"',
@@ -2685,7 +3019,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-38-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 336, codigo: 'S.C.06.02.07.212', nombre: 'Alicate Carte Diagonal 8 Pulg Aislado 1000 Volt',
@@ -2693,7 +3028,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-38-05', stockActual: 13,
     stockMinimo: 6, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4254']
   },
   {
     id: 337, codigo: 'C.30.01.08.060', nombre: 'Alicate Punta 6Pulg',
@@ -2701,7 +3037,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-39-01', stockActual: 14,
     stockMinimo: 6, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 338, codigo: 'S.C.06.02.13.077', nombre: 'Aprieta Terminal Para Ferrul 0,25 A 6Mm',
@@ -2709,7 +3046,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-39-02', stockActual: 10,
     stockMinimo: 3, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 339, codigo: 'S.Z.C.06.02.10.042', nombre: 'Atornillador De Impacto',
@@ -2717,7 +3055,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-07-01', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 340, codigo: 'S.Z.C.06.02.07.030', nombre: 'Atornillador De Paleta',
@@ -2725,7 +3064,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-39-03', stockActual: 14,
     stockMinimo: 8, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4254']
   },
   {
     id: 341, codigo: 'C.06.02.07.192', nombre: 'Atornillador Plano Aisl Vde 1,6X10X205 Mm Knipex',
@@ -2733,7 +3073,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-39-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 342, codigo: 'Z.C.06.14.01.023', nombre: 'Base Magnética 7010 Sn',
@@ -2741,7 +3082,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-39-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 343, codigo: 'S.C.06.05.01.023', nombre: 'Betonera De Volteo Motor Electrico 400 Litros',
@@ -2749,7 +3091,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-40-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 344, codigo: 'S.C.06.05.01.022', nombre: 'Betonera Motor Electrico 200 L',
@@ -2757,7 +3100,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-40-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 345, codigo: 'S.P.04.02.10.001', nombre: 'Calentador A Gas Tipo Dragon',
@@ -2765,7 +3109,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-02-02', stockActual: 12,
     stockMinimo: 8, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 100400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 346, codigo: 'Z.C.06.02.07.032', nombre: 'Cautín Eléctrico',
@@ -2773,7 +3118,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-40-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 347, codigo: 'C.06.02.09.070', nombre: 'Combo Fe 2 Lbs - Mango De Fibra',
@@ -2781,7 +3127,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-40-04', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 348, codigo: 'S.C.06.09.07.001', nombre: 'Compresor De Aire 2.5Hp 50L',
@@ -2789,7 +3136,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-40-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4231']
   },
   {
     id: 349, codigo: 'S.Z.C.06.03.02.006', nombre: 'Cortadora De Cable',
@@ -2797,7 +3145,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-05-05', stockActual: 6,
     stockMinimo: 2, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 350, codigo: 'Z.C.06.03.02.007', nombre: 'Cortadora De Acero 0-25 Mm',
@@ -2805,7 +3154,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-06-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 351, codigo: 'S.C.06.03.02.005', nombre: 'Cortadora De Tubo 3/8 A 2 Pulg',
@@ -2813,7 +3163,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-06-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 352, codigo: 'S.P.06.02.01.057', nombre: 'Dado Corriente Cuadrante 1/2 Pulg 24 Mm',
@@ -2821,7 +3172,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-41-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 353, codigo: 'S.P.06.02.01.124', nombre: 'Dado Corriente Cuadrante 3/4 Pulg. 60 Mm',
@@ -2829,7 +3181,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-41-02', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 354, codigo: 'Z.C.06.02.08.191', nombre: 'Dado Corriente Cuadrante 3/4X46Mm',
@@ -2837,7 +3190,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-41-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 355, codigo: 'S.P.06.02.01.128', nombre: 'Dado Corriente. Cuadrante 3/4Pulg. 34Mm',
@@ -2845,7 +3199,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-41-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 356, codigo: 'S.C.06.02.08.945', nombre: 'Dado De Alta Cuadrante 3/4 De 42 Mm',
@@ -2853,7 +3208,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-41-05', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 357, codigo: 'C.06.02.08.385', nombre: 'Dado De Alta Cuadrate 1/2 De 46 Mm',
@@ -2861,7 +3217,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-42-01', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 358, codigo: 'S.C.08.07.01.009', nombre: 'Detector Multigas Msa Altair 5X',
@@ -2869,7 +3226,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-06-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 359, codigo: 'S.C.36.26.20.109', nombre: 'Diagonal 1.09 M',
@@ -2877,7 +3235,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-07-05', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 30800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 360, codigo: 'S.C.14.01.02.007', nombre: 'Diagonales De Cierre Perimetral',
@@ -2885,7 +3244,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-42-02', stockActual: 48,
     stockMinimo: 28, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4231']
   },
   {
     id: 361, codigo: 'S.C.06.08.08.101', nombre: 'Doble Cabeza Allround Layher',
@@ -2893,7 +3253,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-07-02', stockActual: 60,
     stockMinimo: 40, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 362, codigo: 'Z.C.03.02.10.014', nombre: 'Equipo Tig 125 Amp',
@@ -2901,7 +3262,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-06-04', stockActual: 7,
     stockMinimo: 5, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 363, codigo: 'C.08.08.02.007', nombre: 'Escalera Telescopica 3,66 Mts',
@@ -2909,7 +3271,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-07-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 364, codigo: 'S.C.08.08.02.009', nombre: 'Escalera Telescopica De Fibra De 3 Mts',
@@ -2917,7 +3280,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-07-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4231']
   },
   {
     id: 365, codigo: 'C.30.01.08.698', nombre: 'Escalera Tijera Fibra 1.22 Mts',
@@ -2925,7 +3289,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-42-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 366, codigo: 'Z.C.06.13.02.041', nombre: 'Escuadra Talón 10',
@@ -2933,7 +3298,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-06-01', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 83200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 367, codigo: 'C.06.13.02.063', nombre: 'Escuadra Talon De 6"',
@@ -2941,7 +3307,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-06-02', stockActual: 6,
     stockMinimo: 4, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 83200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 368, codigo: 'S.Z.C.06.03.06.004', nombre: 'Esmeril Angular 9',
@@ -2949,7 +3316,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-06-05', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 369, codigo: 'S.C.06.02.07.047', nombre: 'Feeler 0.05 A 1 Mm X 200Mm',
@@ -2957,7 +3325,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-42-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 370, codigo: 'C.06.02.13.087', nombre: 'Ferrulera Manual A/C',
@@ -2965,7 +3334,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-01-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 9300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 371, codigo: 'P.04.02.08.001', nombre: 'Frigobar',
@@ -2973,7 +3343,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-42-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 372, codigo: 'S.P.04.02.08.001', nombre: 'Frigobar 90 Litros',
@@ -2981,7 +3352,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-02-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 100400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4257']
   },
   {
     id: 373, codigo: 'S.C.03.02.99.005', nombre: 'Galga Para Soldadura Tipo Aws',
@@ -2989,7 +3361,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-07-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 374, codigo: 'S.Z.C.06.09.03.014', nombre: 'Generador Electrico Petrolero 5 Kva',
@@ -2997,7 +3370,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-43-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 375, codigo: 'C.06.01.05.028', nombre: 'Grasera Manual',
@@ -3005,7 +3379,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-43-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 376, codigo: 'Z.C.06.03.04.028', nombre: 'Grifa 10Mm',
@@ -3013,7 +3388,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-07-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 377, codigo: 'Z.C.06.03.04.027', nombre: 'Grifa 8Mm',
@@ -3021,7 +3397,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-07-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 378, codigo: 'S.C.36.26.07.207', nombre: 'Horizontal 2.07 M',
@@ -3029,7 +3406,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-08-01', stockActual: 77,
     stockMinimo: 54, stockMaximo: 192, unidadMedida: 'unidades',
     precioUnitario: 30800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 379, codigo: '2614073', nombre: 'Horizontal U Plataforma-Plataforma 0,64',
@@ -3037,7 +3415,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-43-03', stockActual: 12,
     stockMinimo: 10, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 380, codigo: 'C.30.01.08.619', nombre: 'Huincha Medir Fibra 100 Mts',
@@ -3045,7 +3424,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-43-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 381, codigo: 'S.C.08.09.01.018', nombre: 'Jaula Almacenamiento Respel 3000X1600X2800 Mm',
@@ -3053,7 +3433,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-43-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4231']
   },
   {
     id: 382, codigo: 'S.C.06.02.08.750', nombre: 'Juego De Dados Cuadrante De1/2 5/16-1Pulg',
@@ -3061,7 +3442,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-44-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 383, codigo: 'S.C.06.02.08.298', nombre: 'Juego De Perilleros Presicion',
@@ -3069,7 +3451,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-44-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4257']
   },
   {
     id: 384, codigo: 'S.Z.C.06.02.07.142', nombre: 'Juego Sacabocado De 3Mm- 20 Mm',
@@ -3077,7 +3460,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-44-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 385, codigo: 'S.C.30.01.08.686', nombre: 'Lima Media Caña 6 Pulg',
@@ -3085,7 +3469,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-44-04', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 386, codigo: 'S.C.30.01.08.711', nombre: 'Lima Plana Bastarda 12 Pulg',
@@ -3093,7 +3478,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-44-05', stockActual: 28,
     stockMinimo: 12, stockMaximo: 69, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 387, codigo: 'S.C.30.01.08.687', nombre: 'Lima Redonda 8 Pulg',
@@ -3101,7 +3487,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-45-01', stockActual: 13,
     stockMinimo: 8, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 388, codigo: 'Z.C.06.03.04.044', nombre: 'Limaton Fino 8 Pulg',
@@ -3109,7 +3496,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-07-04', stockActual: 14,
     stockMinimo: 6, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4219']
   },
   {
     id: 389, codigo: 'S.Z.C.06.02.09.023', nombre: 'Llana Pvc',
@@ -3117,7 +3505,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-45-02', stockActual: 7,
     stockMinimo: 5, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 390, codigo: 'C.06.02.07.274', nombre: 'Llave Ajustable 8" Aislada',
@@ -3125,7 +3514,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-45-03', stockActual: 6,
     stockMinimo: 4, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4231']
   },
   {
     id: 391, codigo: 'C.06.02.08.216', nombre: 'Llave Ajustable 8Pulg',
@@ -3133,7 +3523,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-45-04', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4254']
   },
   {
     id: 392, codigo: 'S.Z.C.06.02.07.170', nombre: 'Llave Caiman Curvo De 7 Pulg',
@@ -3141,7 +3532,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-45-05', stockActual: 12,
     stockMinimo: 5, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4257']
   },
   {
     id: 393, codigo: 'Z.C.06.11.03.029', nombre: 'Llave De Golpe 50 Mm',
@@ -3149,7 +3541,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-46-01', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 394, codigo: 'C.06.02.08.676', nombre: 'Llave Golpe 30Mm',
@@ -3157,7 +3550,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-46-02', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 395, codigo: 'C.06.02.08.729', nombre: 'Llave De Golpe De 36 Mm',
@@ -3165,7 +3559,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-46-03', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 396, codigo: 'C.06.02.08.689', nombre: 'Llave Golpe 2 3/4Pulg',
@@ -3173,7 +3568,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-46-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 397, codigo: 'C.06.02.08.384', nombre: 'Llave Golpe 41Mm',
@@ -3181,7 +3577,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-46-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 398, codigo: 'S.C.06.02.08.694', nombre: 'Llave Impacto Inalambrica 3/4',
@@ -3189,7 +3586,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-47-01', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 399, codigo: 'Z.C.06.02.08.032', nombre: 'Llave Punta Cola 3/4',
@@ -3197,7 +3595,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-47-02', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 400, codigo: 'Z.C.06.02.08.047', nombre: 'Llave Punta Corona  1 7/16',
@@ -3205,7 +3604,8 @@ const _PROD_CHUNK_2: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-47-03', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
 ];
 
@@ -3216,7 +3616,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-47-04', stockActual: 7,
     stockMinimo: 5, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 402, codigo: 'Z.C.06.02.08.038', nombre: 'Llave Punta Corona 1 1/8',
@@ -3224,7 +3625,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-47-05', stockActual: 12,
     stockMinimo: 7, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 403, codigo: 'Z.C.06.02.08.057', nombre: 'Llave Punta Corona 12',
@@ -3232,7 +3634,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-48-01', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 404, codigo: 'Z.C.06.02.08.058', nombre: 'Llave Punta Corona 13',
@@ -3240,7 +3643,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-48-02', stockActual: 14,
     stockMinimo: 7, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 405, codigo: 'Z.C.06.02.08.077', nombre: 'Llave Punta Corona 22',
@@ -3248,7 +3652,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-48-03', stockActual: 18,
     stockMinimo: 10, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 406, codigo: 'Z.C.06.02.08.078', nombre: 'Llave Punta Corona 23',
@@ -3256,7 +3661,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-48-04', stockActual: 14,
     stockMinimo: 7, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 407, codigo: 'Z.C.06.02.08.083', nombre: 'Llave Punta Corona 28',
@@ -3264,7 +3670,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-48-05', stockActual: 12,
     stockMinimo: 7, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 408, codigo: 'S.Z.C.06.02.08.117', nombre: 'Llave Punta Corona 40 Mm',
@@ -3272,7 +3679,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-49-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 409, codigo: 'Z.C.06.02.08.115', nombre: 'Llave Punta Corona 55 Mm',
@@ -3280,7 +3688,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-49-02', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 410, codigo: 'Z.C.06.02.08.120', nombre: 'Llave Punta Corona 60',
@@ -3288,7 +3697,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-49-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 411, codigo: 'S.C.06.02.08.734', nombre: 'Llave Punta Corona Chicharra 11 Mm',
@@ -3296,7 +3706,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-49-04', stockActual: 13,
     stockMinimo: 11, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 412, codigo: 'S.C.06.02.08.735', nombre: 'Llave Punta Corona Chicharra 13 Mm',
@@ -3304,7 +3715,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-49-05', stockActual: 13,
     stockMinimo: 11, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 413, codigo: 'Z.C.06.02.08.218', nombre: 'Llave Punta Corona Chicharra 16 Mm',
@@ -3312,7 +3724,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-50-01', stockActual: 13,
     stockMinimo: 11, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 414, codigo: 'S.C.06.02.08.736', nombre: 'Llave Punta Corona Chicharra 19 Mm',
@@ -3320,7 +3733,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-50-02', stockActual: 13,
     stockMinimo: 8, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 415, codigo: 'S.C.06.02.08.969', nombre: 'Llave Torque Cuadrante 1/2 Pulg 50-250 Lbs',
@@ -3328,7 +3742,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-50-03', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 416, codigo: 'S.C.06.02.08.283', nombre: 'Llave Torque Cuadrante 3/4Pulg 600 Lbs',
@@ -3336,7 +3751,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-50-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4231']
   },
   {
     id: 417, codigo: 'S.C.06.02.09.027', nombre: 'Maceta Acetato 2.5 Lbs',
@@ -3344,7 +3760,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-50-05', stockActual: 7,
     stockMinimo: 5, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 418, codigo: 'S.Z.C.06.11.06.018', nombre: 'Martillo Demoledor Sds Plus',
@@ -3352,7 +3769,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-51-01', stockActual: 6,
     stockMinimo: 4, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 419, codigo: 'C.30.01.08.075', nombre: 'Martillo Mecánico 2.0 Lbs. Mango De Fibra',
@@ -3360,7 +3778,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-51-02', stockActual: 12,
     stockMinimo: 8, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 420, codigo: 'C.07.03.04.097', nombre: 'Medidor Angulos Digital',
@@ -3368,7 +3787,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-02-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 49400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4257']
   },
   {
     id: 421, codigo: 'S.C.32.03.04.036', nombre: 'Medidor De Aislamiento Megger Serie Mit 310-Es/070907/1139',
@@ -3376,7 +3796,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-51-03', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 422, codigo: 'C.36.26.30.039', nombre: 'Mensula 0.39 M',
@@ -3384,7 +3805,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-08-02', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 30800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 423, codigo: 'S.C.06.05.07.022', nombre: 'Motobomba Bencinera 2 Pulg',
@@ -3392,7 +3814,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-51-04', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 424, codigo: 'S.C.07.03.04.038', nombre: 'Multimetro Fluke 789',
@@ -3400,7 +3823,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-03-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 49400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219', 'P-4254']
   },
   {
     id: 425, codigo: 'S.C.06.02.08.244', nombre: 'Nockaut Hidraulico De 1/2Pulg A 3Pulg',
@@ -3408,7 +3832,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-51-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4219']
   },
   {
     id: 426, codigo: 'Z.C.06.02.08.144', nombre: 'Pasador Conico',
@@ -3416,7 +3841,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-52-01', stockActual: 18,
     stockMinimo: 12, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 427, codigo: 'S.C.30.01.08.285', nombre: 'Pasador Conico 1 1/4 Pulg',
@@ -3424,7 +3850,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-52-02', stockActual: 24,
     stockMinimo: 20, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 428, codigo: 'Z.C.06.02.07.161', nombre: 'Pelacables Automatico',
@@ -3432,7 +3859,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-52-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 429, codigo: 'S.C.33.02.99.031', nombre: 'Pistola De Calor Inalambrica',
@@ -3440,7 +3868,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-52-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4231']
   },
   {
     id: 430, codigo: 'P.02.01.02.002', nombre: 'Plastificadora',
@@ -3448,7 +3877,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-02-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 100400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4254']
   },
   {
     id: 431, codigo: 'S.C.06.02.09.017', nombre: 'Platacho De Goma',
@@ -3456,7 +3886,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-52-05', stockActual: 24,
     stockMinimo: 14, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 432, codigo: '3812157', nombre: 'Plataforma Acero 0,32 X 1,57 M - Perf.',
@@ -3464,7 +3895,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-53-01', stockActual: 60,
     stockMinimo: 41, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4257']
   },
   {
     id: 433, codigo: 'S.C.36.38.12.207', nombre: 'Plataforma Acero 0.32 X 2.07 M - Perf.',
@@ -3472,7 +3904,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-08-03', stockActual: 24,
     stockMinimo: 20, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 30800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 434, codigo: 'C.06.02.09.025', nombre: 'Plomada 300 Gr',
@@ -3480,7 +3913,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-53-02', stockActual: 24,
     stockMinimo: 14, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4166']
   },
   {
     id: 435, codigo: 'S.C.06.02.09.023', nombre: 'Plomada Carpintera Bronce 350 Grs',
@@ -3488,7 +3922,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-53-03', stockActual: 6,
     stockMinimo: 5, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 436, codigo: 'S.C.04.03.04.002', nombre: 'Rack Metalico 1500X500X2000',
@@ -3496,7 +3931,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-03-05', stockActual: 48,
     stockMinimo: 24, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 55800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4257']
   },
   {
     id: 437, codigo: 'S.C.04.03.04.001', nombre: 'Rack Metalico 200X200X60',
@@ -3504,7 +3940,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-04-01', stockActual: 42,
     stockMinimo: 24, stockMaximo: 105, unidadMedida: 'unidades',
     precioUnitario: 55800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4231']
   },
   {
     id: 438, codigo: 'S.C.07.03.08.749', nombre: 'Reduccion De Alta Entrada 1/2 Salida 3/4 Pulg',
@@ -3512,7 +3949,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-03-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 49400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 439, codigo: 'S.C.07.03.08.748', nombre: 'Reduccion De Alta Entrada 3/4 Pulg Salida 1/2 Pulg',
@@ -3520,7 +3958,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-03-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 49400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 440, codigo: 'Z.C.06.14.01.014', nombre: 'Reloj Comparador',
@@ -3528,7 +3967,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-53-04', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 441, codigo: 'S.C.06.08.08.046', nombre: 'Rodapie 1.57 M',
@@ -3536,7 +3976,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-07-05', stockActual: 36,
     stockMinimo: 17, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4257']
   },
   {
     id: 442, codigo: 'S.C.06.02.10.122', nombre: 'Rotomartillo Combinado 6.3Kg',
@@ -3544,7 +3985,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-08-01', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 443, codigo: 'S.C.06.02.10.134', nombre: 'Rotomartillo Sds Max 10 Kg',
@@ -3552,7 +3994,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-08-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 444, codigo: 'C.06.02.08.344', nombre: 'Set Llave Allens De 1/16 A 3/8Pulg',
@@ -3560,7 +4003,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-53-05', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 445, codigo: 'S.C.06.02.08.478', nombre: 'Set Llaves Punta Corona De 33 A 50 Mm',
@@ -3568,7 +4012,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-54-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 446, codigo: 'S.C.06.02.08.277', nombre: 'Set Llaves Punta Corona De 6 A 32Mm',
@@ -3576,7 +4021,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-54-02', stockActual: 7,
     stockMinimo: 4, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 447, codigo: 'C.30.01.08.623', nombre: 'Set Llaves Punta Y Corona 8 A 22 Mm',
@@ -3584,7 +4030,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-54-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 448, codigo: 'C.32.05.07.008', nombre: 'Sonda Vibradora 25Mm',
@@ -3592,7 +4039,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-54-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4231']
   },
   {
     id: 449, codigo: 'C.32.05.07.010', nombre: 'Sonda Vibradora 35Mm',
@@ -3600,7 +4048,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-54-05', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 450, codigo: 'S.C.33.02.10.127', nombre: 'Taladro Con Base Magnetica',
@@ -3608,7 +4057,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-08-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4132']
   },
   {
     id: 451, codigo: 'S.C.30.01.08.535', nombre: 'Taladro De Pedestal',
@@ -3616,7 +4066,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-08-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4219']
   },
   {
     id: 452, codigo: 'S.Z.C.06.02.14.029', nombre: 'Tecle Cadena 1.5 Tons',
@@ -3624,7 +4075,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-08-05', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4166']
   },
   {
     id: 453, codigo: 'S.C.06.02.14.008', nombre: 'Tecle De Cadena 5000 Kg.',
@@ -3632,7 +4084,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-09-01', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 59100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132', 'P-4219']
   },
   {
     id: 454, codigo: 'Z.C.06.03.04.021', nombre: 'Tijera Hojalatera Izquierda',
@@ -3640,7 +4093,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-07-05', stockActual: 18,
     stockMinimo: 6, stockMaximo: 45, unidadMedida: 'unidades',
     precioUnitario: 52900, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166', 'P-4257']
   },
   {
     id: 455, codigo: 'C.03.01.13.144', nombre: 'Traspaleta Manual Para 2 Ton',
@@ -3648,7 +4102,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-55-01', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 456, codigo: 'S.C.11.01.08.025', nombre: 'Tubo Acero Cortado A 2.50 M',
@@ -3656,7 +4111,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-55-02', stockActual: 24,
     stockMinimo: 14, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127', 'P-4257']
   },
   {
     id: 457, codigo: '2603150', nombre: 'Vertical 1,50 M',
@@ -3664,7 +4120,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-55-03', stockActual: 480,
     stockMinimo: 233, stockMaximo: 1200, unidadMedida: 'unidades',
     precioUnitario: 11800, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 458, codigo: 'S.C.06.11.12.007', nombre: 'Acodado Ocular Recto',
@@ -3672,7 +4129,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-55-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 459, codigo: 'C.06.02.08.260', nombre: 'Adaptador Dado Impacto De 1Pulg A 3/4Pulg',
@@ -3680,7 +4138,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-55-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 460, codigo: 'C.06.02.08.467', nombre: 'Adaptador Reductor Hembra 3/4 Pulg A Macho 1/2  Impacto',
@@ -3688,7 +4147,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-02-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 461, codigo: 'S.C.06.02.07.803', nombre: 'Alicate Aprieta Terminal Hidraulico 4-70 Mm2',
@@ -3696,7 +4156,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-56-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 462, codigo: 'S.Z.C.06.02.07.035', nombre: 'Alicate Caiman 10 Pulg Aislado 1000 Volt',
@@ -3704,7 +4165,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-56-02', stockActual: 13,
     stockMinimo: 11, stockMaximo: 33, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 463, codigo: 'S.Z.C.06.02.07.034', nombre: 'Alicate Caiman Curvo 10',
@@ -3712,7 +4174,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-56-03', stockActual: 6,
     stockMinimo: 5, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 464, codigo: 'C.06.02.07.200', nombre: 'Alicate Cayman 5 Pulg',
@@ -3720,7 +4183,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-56-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 465, codigo: 'Z.C.06.02.07.069', nombre: 'Alicate Cayman 7 Pulg',
@@ -3728,7 +4192,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-56-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 466, codigo: 'S.C.06.02.07.209', nombre: 'Alicate Cortante 8 Pulg Aislado Para 1000 V',
@@ -3736,7 +4201,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-57-01', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 467, codigo: 'S.C.06.02.07.210', nombre: 'Alicate De Punta 8 Pulg Aislado 1000V',
@@ -3744,7 +4210,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-57-02', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 468, codigo: 'S.C.06.02.07.214', nombre: 'Alicate Ferrulera 4-16Mm 11-5 Awg',
@@ -3752,7 +4219,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-02-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 469, codigo: 'C.30.01.08.076', nombre: 'Alicate Pelacable Automatico',
@@ -3760,7 +4228,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-02-03', stockActual: 14,
     stockMinimo: 9, stockMaximo: 36, unidadMedida: 'metros',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 470, codigo: 'C.06.02.07.270', nombre: 'Alicate Punta 8Pulg',
@@ -3768,7 +4237,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-57-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 471, codigo: 'S.C.06.02.07.401', nombre: 'Alicate Soldador Mig',
@@ -3776,7 +4246,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-08-01', stockActual: 19,
     stockMinimo: 16, stockMaximo: 48, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 472, codigo: 'SIN-COD-0472', nombre: 'Alicate Universal 8 Pulg',
@@ -3784,7 +4255,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-57-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 473, codigo: 'S.C.06.03.03.022', nombre: 'Alimentador Alambre Mig-Mag Ln-25',
@@ -3792,7 +4264,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-08-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 474, codigo: 'S.Z.C.06.08.07.004', nombre: 'Alineador De Cañeria De 2 A 6 Pulg',
@@ -3800,7 +4273,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-03-04', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 475, codigo: 'S.Z.C.06.08.07.005', nombre: 'Alineador De Cañeria De 6 A 12 Pulg',
@@ -3808,7 +4282,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-03-05', stockActual: 10,
     stockMinimo: 6, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 476, codigo: 'S.Z.C.06.08.07.001', nombre: 'Alineador Para Tuberia De 8 Pulg A 20 Pulg',
@@ -3816,7 +4291,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-04-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 477, codigo: 'S.C.06.07.10.003', nombre: 'Apilador Manual 1.000 Kg De 1.6 Mt Alto',
@@ -3824,7 +4300,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-57-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 478, codigo: 'S.C.06.02.13.056', nombre: 'Aprieta Terminal 0.25 Mm A 10 Mm',
@@ -3832,7 +4309,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-58-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 479, codigo: 'C.06.02.13.062', nombre: 'Aprieta Terminales 2 A 16 Mm2',
@@ -3840,7 +4318,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-58-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 480, codigo: 'S.C.30.01.08.499 - 3', nombre: 'Aprieta Terminales Hidraulico 25 Mm 2-240 Mm2',
@@ -3848,7 +4327,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-58-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 481, codigo: '2618038', nombre: 'Ar Horizontal U 0,38 M - Lw 1Kk',
@@ -3856,7 +4336,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-58-04', stockActual: 48,
     stockMinimo: 40, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 482, codigo: '2601039', nombre: 'Ar O-Horizontal 0.39 M.',
@@ -3864,7 +4345,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-58-05', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 483, codigo: '2601109', nombre: 'Ar O-Horizontal Lw 1,09 M.',
@@ -3872,7 +4354,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-59-01', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 484, codigo: '2632073', nombre: 'Ar U-Mensula Lw 0,73M. C/Espiga',
@@ -3880,7 +4363,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-59-02', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 485, codigo: 'S.C.06.02.10.005', nombre: 'Atornillador A Batería',
@@ -3888,7 +4372,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-09-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 486, codigo: 'S.C.30.01.08.431', nombre: 'Balanza',
@@ -3896,7 +4381,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-59-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 487, codigo: 'S.C.30.01.08.629', nombre: 'Barretilla 12 Pulg Punta Conica',
@@ -3904,7 +4390,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-59-04', stockActual: 14,
     stockMinimo: 12, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 488, codigo: 'Z.C.06.02.09.026', nombre: 'Barretilla Acero',
@@ -3912,7 +4399,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-59-05', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 489, codigo: 'Z.C.06.11.03.019', nombre: 'Barretillas',
@@ -3920,7 +4408,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-60-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 490, codigo: 'S.C.06.02.08.481', nombre: 'Barrote De Fuerza Cuadrante 3/4',
@@ -3928,7 +4417,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-60-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 491, codigo: '4003000', nombre: 'Base Eclinable  ( Ver Codigo )',
@@ -3936,7 +4426,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-60-03', stockActual: 690,
     stockMinimo: 575, stockMaximo: 1725, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 492, codigo: 'S.C.06.08.08.531', nombre: 'Base Nivelante',
@@ -3944,7 +4435,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-09-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 493, codigo: 'S.C.06.03.03.135', nombre: 'Base Porta Carrete 1.7 Ton Greenlee',
@@ -3952,7 +4444,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-08-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 494, codigo: 'S.C.22.01.04.006', nombre: 'Baston Alcotorch V6',
@@ -3960,7 +4453,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-60-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 495, codigo: 'S.C.30.01.08.506', nombre: 'Biselador Manual Sm-Bm16-230V',
@@ -3968,7 +4462,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-60-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 496, codigo: 'S.Z.C.06.14.02.007', nombre: 'Bomba De Prueba',
@@ -3976,7 +4471,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-61-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 497, codigo: 'S.C.30.01.08.541', nombre: 'Bomba De Prueba Manual',
@@ -3984,7 +4480,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-61-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 498, codigo: 'S.C.06.08.05.048', nombre: 'Bomba Hidraulica Manual',
@@ -3992,7 +4489,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-61-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 499, codigo: 'Z.C.06.11.10.019', nombre: 'Bomba Prueba Hidráulica',
@@ -4000,7 +4498,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-61-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 500, codigo: 'S.C.06.09.01.028', nombre: 'Bomba Sumergible 1 Hp 20 Mtsmanguera',
@@ -4008,7 +4507,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-61-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 501, codigo: 'S.C.06.09.01.029', nombre: 'Bomba Sumergible 1.5 Hp',
@@ -4016,7 +4516,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-62-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 502, codigo: 'S.C.06.09.01.060', nombre: 'Bomba Sumergible 2 Pulg',
@@ -4024,7 +4525,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-62-02', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 503, codigo: 'S.C.06.09.01.030', nombre: 'Bomba Sumergible 3 Pulg De 2 Hp',
@@ -4032,7 +4534,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-62-03', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 504, codigo: 'SIN-COD-0504', nombre: 'Boquillas Oxicorte Propano Nx',
@@ -4040,7 +4543,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-62-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 505, codigo: 'P.0', nombre: 'Cabezal De Cimbra Layher',
@@ -4048,7 +4552,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-62-05', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 506, codigo: 'S.Z.C.06.02.07.171', nombre: 'Caiman Tipo C P/Soldador 11 Pulg',
@@ -4056,7 +4561,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-08-04', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 507, codigo: 'Z.C.06.02.06.002', nombre: 'Caja Para Herramienta',
@@ -4064,7 +4570,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-63-01', stockActual: 17,
     stockMinimo: 14, stockMaximo: 42, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 508, codigo: 'S.C.07.03.04.020', nombre: 'Calibrador De Lazo',
@@ -4072,7 +4579,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-04-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 509, codigo: 'S.C.30.01.08.552', nombre: 'Calibrador De Lazo Fluke 707',
@@ -4080,7 +4588,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-63-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 510, codigo: 'S.C.07.03.04.041', nombre: 'Calibrador De Proceso',
@@ -4088,7 +4597,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-04-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 511, codigo: 'S.C.06.11.08.024', nombre: 'Canastillo Camion Pluma  Con Conexión Al Camiom Pluma De Rodrigo Gomez',
@@ -4096,7 +4606,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-63-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 512, codigo: 'S.C.06.03.03.115', nombre: 'Carro Portacanerias 900 Kg',
@@ -4104,7 +4615,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-08-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 513, codigo: 'S.C.16.04.05.011', nombre: 'Carro Simple Gas Propano 45 Kg',
@@ -4112,7 +4624,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-63-04', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 514, codigo: 'S.C.06.02.08.755', nombre: 'Centrador Conico 10Mm A 25Mm',
@@ -4120,7 +4633,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-63-05', stockActual: 19,
     stockMinimo: 16, stockMaximo: 48, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 515, codigo: 'S.C.06.02.08.756', nombre: 'Centrador Conico 5/8 X 12 Pulg',
@@ -4128,7 +4642,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-64-01', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 516, codigo: 'S.C.30.01.08.542', nombre: 'Cercha Vibradora',
@@ -4136,7 +4651,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-64-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 517, codigo: 'S.C.30.01.08.543', nombre: 'Cercha Vibradora A Gasolina Con Regla De 3.04 Mts',
@@ -4144,7 +4660,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-64-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 518, codigo: 'SIN-COD-0518', nombre: 'Cierre Perimetral Completo',
@@ -4152,7 +4669,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-64-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 519, codigo: '2635109', nombre: 'Cierre Seguridad 1,09M T8',
@@ -4160,7 +4678,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-64-05', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 520, codigo: 'S.C.06.08.05.053', nombre: 'Cilindro Hidraulico Pastilla 10 Ton',
@@ -4168,7 +4687,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-65-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 521, codigo: '2660000', nombre: 'Collarin Alto',
@@ -4176,7 +4696,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-65-02', stockActual: 48,
     stockMinimo: 26, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 522, codigo: 'Z.C.06.02.09.041', nombre: 'Combo Fe 20 Lbs.',
@@ -4184,7 +4705,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-65-03', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 523, codigo: 'Z.C.06.02.09.071', nombre: 'Combo Fe 4 Lbs. Bronce Con Mango Fibra',
@@ -4192,7 +4714,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-65-04', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 524, codigo: 'S.C.30.01.08.657', nombre: 'Corta Cable 1000 Mcm',
@@ -4200,7 +4723,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-02-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'metros',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 525, codigo: 'S.Z.C.06.05.14.032', nombre: 'Corta Tubo N 15 Acero Inox 3/16 - 1 1/8',
@@ -4208,7 +4732,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-65-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 526, codigo: 'Z.C.06.05.14.032', nombre: 'Corta Tubos',
@@ -4216,7 +4741,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-66-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 527, codigo: 'S.C.06.03.02.009', nombre: 'Corta Tubos Pvc 42Mm',
@@ -4224,7 +4750,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-09-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 528, codigo: 'S.C.06.03.02.008', nombre: 'Cortador De Tubos Pvc 14Mm A 200Mm De Rodamiento',
@@ -4232,7 +4759,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-09-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 529, codigo: 'P.01.01.06.002', nombre: 'Cuchillo Cartonero Metálico',
@@ -4240,7 +4768,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-66-02', stockActual: 36,
     stockMinimo: 18, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 530, codigo: 'C.06.03.04.050', nombre: 'Cuchillo Para Electricista Curvo Aislado 1000 V',
@@ -4248,7 +4777,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-09-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 531, codigo: 'S.C.30.01.08.503', nombre: 'Curvadora Manual',
@@ -4256,7 +4786,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-66-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 532, codigo: 'S.C.21.03.06.053', nombre: 'Curvadora Manual Tipo Carretilla 1 1/2 Pulg',
@@ -4264,7 +4795,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-66-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 533, codigo: 'S.P.06.02.01.059', nombre: 'Dado Corriente Cuadrante 1/2 Pulg 25 Mm',
@@ -4272,7 +4804,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-66-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 534, codigo: 'S.P.06.02.01.058', nombre: 'Dado Corriente Cuadrante 1/2 Pulg 60 Mm',
@@ -4280,7 +4813,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-67-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 535, codigo: 'C.30.01.08.213', nombre: 'Dado Corriente Cuadrante 1/2Pulg 3/4Pulg',
@@ -4288,7 +4822,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-67-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 536, codigo: 'P.06.02.01.057', nombre: 'Dado Corriente Cuadrante 1/2Pulg. 19Mm.',
@@ -4296,7 +4831,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-67-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 537, codigo: 'S.P.06.02.01.122', nombre: 'Dado Corriente Cuadrante 3/4 Pulg 50Mm',
@@ -4304,7 +4840,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-67-04', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 538, codigo: 'S.P.06.02.01.126', nombre: 'Dado Corriente Cuadrante 3/4 Pulg De 18Mm',
@@ -4312,7 +4849,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-67-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 539, codigo: 'S.P.06.02.01.127', nombre: 'Dado Corriente Cuadrante 3/4 Pulg De 21Mm',
@@ -4320,7 +4858,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-68-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 540, codigo: 'P.06.02.01.081', nombre: 'Dado Corriente Cuadrante 3/4 Pulg De 24Mm',
@@ -4328,7 +4867,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-68-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 541, codigo: 'P.06.02.01.078', nombre: 'Dado Corriente Cuadrante 3/4 Pulg De 30Mm',
@@ -4336,7 +4876,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-68-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 542, codigo: 'P.06.02.01.123', nombre: 'Dado Corriente Cuadrante 3/4 Pulg De 32Mm',
@@ -4344,7 +4885,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-68-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 543, codigo: 'P.06.02.01.084', nombre: 'Dado Corriente Cuadrante 3/4Pulg. 1 5/8Pulg',
@@ -4352,7 +4894,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-68-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 544, codigo: 'P.06.02.01.079', nombre: 'Dado Corriente Cuadrante 3/4Pulg. 27Mm.',
@@ -4360,7 +4903,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-69-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 545, codigo: 'P.06.02.01.075', nombre: 'Dado Corriente Cuadrante 3/4Pulg. 50Mm.',
@@ -4368,7 +4912,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-69-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 546, codigo: 'P.06.02.01.055', nombre: 'Dado Corriente. Cuadrante 1/2Pulg. 16Mm.',
@@ -4376,7 +4921,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-69-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 547, codigo: 'P.06.02.01.056', nombre: 'Dado Corriente. Cuadrante 1/2Pulg. 18Mm.',
@@ -4384,7 +4930,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-69-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 548, codigo: 'P.06.02.01.059', nombre: 'Dado Corriente. Cuadrante 1/2Pulg. 21Mm.',
@@ -4392,7 +4939,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-69-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 549, codigo: 'P.06.02.01.062', nombre: 'Dado Corriente. Cuadrante 1/2Pulg. 30Mm.',
@@ -4400,7 +4948,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-70-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 550, codigo: 'C.30.01.08.485', nombre: 'Dado Corriente. Cuadrante 1/2Pulg. 36Mm',
@@ -4408,7 +4957,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-70-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 551, codigo: 'P.06.02.01.073', nombre: 'Dado Corriente. Cuadrante 3/4Pulg. 41Mm.',
@@ -4416,7 +4966,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-70-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 552, codigo: 'P.06.02.01.090', nombre: 'Dado Corriente. Cuadrante 3/4Pulg. 7/8Pulg',
@@ -4424,7 +4975,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-70-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 553, codigo: 'S.C.06.02.08.911', nombre: 'Dado Cuadrante Largo 1/2 Pulg X 17 Mm',
@@ -4432,7 +4984,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-70-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 554, codigo: 'S.C.06.02.08.943', nombre: 'Dado De Alta Cuadrante 3/4 De 28 Mm',
@@ -4440,7 +4993,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-71-01', stockActual: 6,
     stockMinimo: 5, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 555, codigo: 'S.C.06.02.08.944', nombre: 'Dado De Alta Cuadrante 3/4 De 36 Mm',
@@ -4448,7 +5002,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-71-02', stockActual: 6,
     stockMinimo: 5, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 556, codigo: 'S.C.06.02.08.966', nombre: 'Dado De Alta Cuadrate 1/2 De 27 Mm',
@@ -4456,7 +5011,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-71-03', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 557, codigo: 'C.06.02.08.966', nombre: 'Dado De Alta Cuadrate 1/2 De 32 Mm',
@@ -4464,7 +5020,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-71-04', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 558, codigo: 'Z.C.06.02.08.150', nombre: 'Dado De Alta Resistencia 1 1/4',
@@ -4472,7 +5029,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-71-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 559, codigo: 'Z.C.06.02.08.178', nombre: 'Dado De Alta Resistencia 1 13/16',
@@ -4480,7 +5038,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-72-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 560, codigo: 'Z.C.06.02.08.177', nombre: 'Dado De Alta Resistencia 1 5/8',
@@ -4488,7 +5047,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-72-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 561, codigo: 'Z.C.06.02.08.176', nombre: 'Dado De Alta Resistencia 1 7/16',
@@ -4496,7 +5056,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-72-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 562, codigo: 'Z.C.06.02.08.154', nombre: 'Dado De Alta Resistencia 2',
@@ -4504,7 +5065,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-72-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 563, codigo: 'C.06.02.08.281', nombre: 'Dado De Alta Resistencia 32Mm.',
@@ -4512,7 +5074,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-72-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 564, codigo: 'Z.C.06.02.08.199', nombre: 'Dado De Alta Resistencia 36Mm',
@@ -4520,7 +5083,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-73-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 565, codigo: 'S.C.06.02.08.0115', nombre: 'Dado Impacto 30 Mm Cuadrante 1/2',
@@ -4528,7 +5092,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-73-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 566, codigo: 'S.C.06.02.08.0116', nombre: 'Dado Impacto 36Mm Cuadrante 3/4 Pulg',
@@ -4536,7 +5101,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-73-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 567, codigo: 'C.06.02.08.598', nombre: 'Dado Impacto Cuadrante 1Pulg X 55Mm.',
@@ -4544,7 +5110,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-73-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 568, codigo: 'C.06.02.08.324', nombre: 'Dado Impacto Cuadrante 3/4 X 1 1/16Pulg',
@@ -4552,7 +5119,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-73-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 569, codigo: 'C.06.02.08.469', nombre: 'Dado Impacto Cuadrante 3/4 X 1 1/4Pulg',
@@ -4560,7 +5128,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-74-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 570, codigo: 'C.06.02.08.326', nombre: 'Dado Impacto Cuadrante 3/4 X 1 5/8Pulg',
@@ -4568,7 +5137,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-74-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 571, codigo: 'C.06.02.08.322', nombre: 'Dado Impacto Cuadrante 3/4 X 1 7/16Pulg',
@@ -4576,7 +5146,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-74-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 572, codigo: 'C.06.02.08.566', nombre: 'Dado Impacto Cuadrante 3/4 X 28Mm',
@@ -4584,7 +5155,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-74-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 573, codigo: 'C.30.01.08.209', nombre: 'Dado Impacto Cuadrante 3/4 X 32Mm',
@@ -4592,7 +5164,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-74-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 574, codigo: 'C.30.01.08.674', nombre: 'Dado Impacto Cuadrante 3/4 X 34Mm',
@@ -4600,7 +5173,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-75-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 575, codigo: 'C.06.02.07.331', nombre: 'Dado Impacto Cuadrante 3/4 X 40Mm',
@@ -4608,7 +5182,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-75-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 576, codigo: 'C.06.02.08.320', nombre: 'Dado Impacto Cuadrante 3/4 X 41Mm.',
@@ -4616,7 +5191,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-75-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 577, codigo: 'C.30.01.08.179', nombre: 'Dado Impacto Cuadrante 3/4 X 42Mm.',
@@ -4624,7 +5200,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-75-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 578, codigo: 'S.C.06.02.08.325', nombre: 'Dado Impacto Cuadrante 3/4 X 5/8Pulg',
@@ -4632,7 +5209,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-75-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 579, codigo: 'Z.P.09.075', nombre: 'Dado Impacto Cuadrante 3/4 X 7/8',
@@ -4640,7 +5218,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-76-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 580, codigo: 'C.06.02.08.984', nombre: 'Dado Impacto Cuadrante 3/4Pulg 38Mm',
@@ -4648,7 +5227,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-76-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 581, codigo: 'C.06.02.08.940', nombre: 'Dado Impacto Cuadrante 3/4Pulg X 50Mm',
@@ -4656,7 +5236,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-76-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 582, codigo: 'C.06.02.08.563', nombre: 'Dado Impacto Cuadrante 3/4Pulg. 33Mm',
@@ -4664,7 +5245,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-76-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 583, codigo: 'C.06.02.08.564', nombre: 'Dado Impacto Cuadrante 3/4Pulg. 45Mm',
@@ -4672,7 +5254,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-76-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 584, codigo: 'S.C.06.02.08.942', nombre: 'Dado Largo Alto Impacto 1 Pulg X 50 Mm',
@@ -4680,7 +5263,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-77-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 585, codigo: 'S.C.06.02.08.982', nombre: 'Dado Largo De Impacto Cuadrante 3/4 Pulg 40Mm',
@@ -4688,7 +5272,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-77-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 586, codigo: 'S.C.06.02.08.983', nombre: 'Dado Largo De Impacto Cuadrante 3/4 Pulg 42Mm',
@@ -4696,7 +5281,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-77-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 587, codigo: 'S.C.06.02.08.984', nombre: 'Dado Largo De Impacto Cuadrante 3/4 Pulg 46Mm',
@@ -4704,7 +5290,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-77-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 588, codigo: 'S.C.06.02.08.985', nombre: 'Dado Largo De Impacto Cuadrante 3/4 Pulg 60Mm',
@@ -4712,7 +5299,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-77-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 589, codigo: 'S.C.06.02.08.912', nombre: 'Dado Normal Cuadrante De 3/4 Diametro 70Mm',
@@ -4720,7 +5308,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-78-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 590, codigo: 'C.06.02.08.979', nombre: 'Dados Cuadrante 1/4  De 4 A 13 Mm',
@@ -4728,7 +5317,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-78-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 591, codigo: 'C.30.01.08.226', nombre: 'Dados De Impacto 43 Mm',
@@ -4736,7 +5326,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-78-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 592, codigo: 'C.30.01.08.261', nombre: 'Dados De Impacto 48 Mm',
@@ -4744,7 +5335,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-78-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 593, codigo: 'SIN-COD-0593', nombre: 'Demoledor Tipo T60 7.8 Kg (Makita 9Kg)',
@@ -4752,7 +5344,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-78-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 594, codigo: 'SIN-COD-0594', nombre: 'Demoledor Tpo T1000  12.5 Kg (Makita 15Kg)',
@@ -4760,7 +5353,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-79-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 595, codigo: 'S.C.07.03.04.022', nombre: 'Detector De Poros Para Cañerias De 0 A 30 Kv',
@@ -4768,7 +5362,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-04-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 596, codigo: 'S.C.36.26.20.207', nombre: 'Diagonal 2.07 M',
@@ -4776,7 +5371,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-08-04', stockActual: 19,
     stockMinimo: 16, stockMaximo: 48, unidadMedida: 'unidades',
     precioUnitario: 27400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 597, codigo: 'S.Z.C.06.03.01.002', nombre: 'Dobladora De Tubo De Acero 3/8 Pulg Con Palanca',
@@ -4784,7 +5380,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-09-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 598, codigo: 'S.C.11.01.01.040', nombre: 'Dobladora Manual De Fierro Construccion 6 – 30Mm',
@@ -4792,7 +5389,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-79-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 599, codigo: 'S.C.06.03.03.136', nombre: 'Eje Para Carrete 1.9 X 50 Mm Greenlee',
@@ -4800,7 +5398,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-09-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 600, codigo: 'S.C.06.03.03.134', nombre: 'Eje Porta Carrete 60 X 1930 Mm',
@@ -4808,7 +5407,8 @@ const _PROD_CHUNK_3: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-10-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
 ];
 
@@ -4819,7 +5419,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-10-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 602, codigo: 'SIN-COD-0602', nombre: 'Engrasadora Manual',
@@ -4827,7 +5428,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-79-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 603, codigo: 'Z.C.03.01.08.009', nombre: 'Enzunchadora Tensor Para Zuncho Metalico',
@@ -4835,7 +5437,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-79-04', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 604, codigo: 'C.03.02.10.037', nombre: 'Equipo Tig 150 Amp',
@@ -4843,7 +5446,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-10-03', stockActual: 7,
     stockMinimo: 5, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 605, codigo: 'SIN-COD-0605', nombre: 'Escala Telescopica 6 Metros Aluminio',
@@ -4851,7 +5455,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-79-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 606, codigo: 'S.C.30.01.08.647', nombre: 'Escalera Recta Fibra De Vidrio 5.49 Mts',
@@ -4859,7 +5464,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-80-01', stockActual: 29,
     stockMinimo: 24, stockMaximo: 72, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 607, codigo: 'S.C.08.08.02.010', nombre: 'Escalera Telescopica De Fibra De 1.5 Mts',
@@ -4867,7 +5473,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-09-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 608, codigo: 'S.C.30.01.08.464', nombre: 'Escalera Tijera 1,5 Mts',
@@ -4875,7 +5482,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-80-02', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 609, codigo: 'S.C.30.01.08.465', nombre: 'Escalera Tijera Aluminio 1.87 Mts',
@@ -4883,7 +5491,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-80-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 610, codigo: 'S.C.30.01.08.466', nombre: 'Escalera Tijera Aluminio 2.48 Mts',
@@ -4891,7 +5500,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-80-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 611, codigo: 'S.Z.C.06.04.03.038', nombre: 'Escuadra 24 Pulg Plana',
@@ -4899,7 +5509,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-04-02', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 80200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 612, codigo: 'P.01.02.14.029', nombre: 'Escuadra Metalica 16X24 Pulg',
@@ -4907,7 +5518,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-80-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 613, codigo: 'C.30.01.08.414', nombre: 'Escuadra Talon 8 Pulg',
@@ -4915,7 +5527,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-81-01', stockActual: 14,
     stockMinimo: 11, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 614, codigo: 'S.C.30.01.08.349', nombre: 'Esmeril Angular 1/4 Pulg Neumatico',
@@ -4923,7 +5536,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-09-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 615, codigo: 'C.30.01.08.352', nombre: 'Esmeril De Banco 170W/220V',
@@ -4931,7 +5545,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-10-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 616, codigo: 'S.C.06.02.05.067', nombre: 'Espatulas 4 Pulg',
@@ -4939,7 +5554,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-81-02', stockActual: 12,
     stockMinimo: 10, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 617, codigo: 'S.C.36.26.56.002', nombre: 'Espiga De Arranque Horizontal U Reforzada',
@@ -4947,7 +5563,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-08-05', stockActual: 120,
     stockMinimo: 100, stockMaximo: 300, unidadMedida: 'unidades',
     precioUnitario: 27400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 618, codigo: 'S.C.36.26.56.000', nombre: 'Espiga Para Viga En U',
@@ -4955,7 +5572,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-09-01', stockActual: 24,
     stockMinimo: 20, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 27400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 619, codigo: 'C.09.01.09.023', nombre: 'Estanque Movil Para Petroleo 900 Lts 12V',
@@ -4963,7 +5581,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-81-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 620, codigo: '1260201', nombre: 'Fg Rueda 1000 T12',
@@ -4971,7 +5590,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-81-04', stockActual: 48,
     stockMinimo: 26, stockMaximo: 120, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 621, codigo: 'C.06.04.06.027', nombre: 'Formon 7/8 Pulg',
@@ -4979,7 +5599,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-81-05', stockActual: 12,
     stockMinimo: 10, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 622, codigo: 'Z.C.06.08.05.011', nombre: 'Gata Hidráulica Tipo Botella 10 Ton.',
@@ -4987,7 +5608,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-82-01', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 623, codigo: 'Z.C.06.08.05.016', nombre: 'Gata Hidraulica Tipo Botella 12 Ton',
@@ -4995,7 +5617,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-82-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 624, codigo: 'S.Z.C.06.09.03.020', nombre: 'Generador Diesel Trifasico Insonoro 13 Kva',
@@ -5003,7 +5626,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-82-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 625, codigo: 'S.Z.C.06.09.03.015', nombre: 'Generador Electrico Petrolero 110 Kva',
@@ -5011,7 +5635,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-82-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 626, codigo: 'S.Z.C.06.09.03.018', nombre: 'Generador Electrico Petrolero 70 Kva',
@@ -5019,7 +5644,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-82-05', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 627, codigo: '4716022', nombre: 'Grapa Con Garra Para Perfil',
@@ -5027,7 +5653,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-83-01', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 628, codigo: '4750019', nombre: 'Grapa De Descuelgue',
@@ -5035,7 +5662,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-83-02', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 629, codigo: 'S.C.30.01.08.345', nombre: 'Grifa 20 Mm',
@@ -5043,7 +5671,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-83-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 630, codigo: 'Z.C.06.03.04.031', nombre: 'Grifa 22 Mm',
@@ -5051,7 +5680,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-10-04', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 631, codigo: 'P.02.01.06.007', nombre: 'Guillotina Metalica Corta Papel Tamaño A4',
@@ -5059,7 +5689,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-02-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 92100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 632, codigo: 'S.C.36.26.13.074', nombre: 'Horizontal En U 0.73 M Pie Compartido 15-44 Grados',
@@ -5067,7 +5698,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Andamios y Estructuras', ubicacion: 'D-09-02', stockActual: 96,
     stockMinimo: 80, stockMaximo: 240, unidadMedida: 'unidades',
     precioUnitario: 27400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 633, codigo: '2614108', nombre: 'Horizontal U Plataforma-Plataforma 0,96',
@@ -5075,7 +5707,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-83-04', stockActual: 12,
     stockMinimo: 10, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 634, codigo: 'S.C.30.01.08.398', nombre: 'Huincha 30 Metros Metalica Esmaltada',
@@ -5083,7 +5716,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-83-05', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 635, codigo: 'Z.C.06.13.02.022', nombre: 'Huincha De Medir 5 Mts.Con Certificado De Contrastación.',
@@ -5091,7 +5725,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-06-03', stockActual: 12,
     stockMinimo: 8, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 81700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 636, codigo: 'SIN-COD-0636', nombre: 'Jaula Para Sustancias Peligrosas',
@@ -5099,7 +5734,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-84-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 637, codigo: 'SIN-COD-0637', nombre: 'Jgos. De Tragallamas Para Soplete Y Regul.',
@@ -5107,7 +5743,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-84-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 638, codigo: 'SIN-COD-0638', nombre: 'Jgos. Manguera Oxicorte 14X40Mt. C/Term.',
@@ -5115,7 +5752,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-84-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 639, codigo: 'C.30.01.08.080-S.C.06.02.07.209', nombre: 'Juego Alicates Aislados 1000 Volt',
@@ -5123,7 +5761,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-84-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 640, codigo: 'S.C.06.02.08.284', nombre: 'Juego Dados 1/4',
@@ -5131,7 +5770,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-84-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 641, codigo: 'C.06.02.08.747', nombre: 'Juego Dados Aislados 1000V Cuadrante 1/2 Pulg',
@@ -5139,7 +5779,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-85-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 642, codigo: 'S.C.06.02.08.476', nombre: 'Juego Dados Impacto Cuadrante 3/4 De 21Mm A 46Mm',
@@ -5147,7 +5788,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-85-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 643, codigo: 'S.C.06.02.08.326', nombre: 'Juego Dados Normal Cuadrante 3/4 De 6Mm A 32Mm C/Barrote',
@@ -5155,7 +5797,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-85-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 644, codigo: 'S.C.06.02.07.209- C.30.01.08.080-C.06.02.07.210', nombre: 'Juego De Alicates  3 Piezas (Cualquier Marca) Aislados 100 Volt.',
@@ -5163,7 +5806,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-85-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 645, codigo: 'C.06.02.07.806', nombre: 'Juego De Alicates Para Seguros Segers',
@@ -5171,7 +5815,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-85-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 646, codigo: 'C.06.02.08.981', nombre: 'Juego De Dados Punta Allen Cuadrante 1/2" De 3 A 10 Mm.',
@@ -5179,7 +5824,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-86-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 647, codigo: 'S.C.06.02.08.296', nombre: 'Juego De Dados Punta Estrella (Torx) Cuadrante 1/2" E4 Hasta E20 - Tx10 A Tx60',
@@ -5187,7 +5833,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-86-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 648, codigo: 'S.C.06.02.08.977', nombre: 'Juego De Knockout Hidraulico De 1/2 A 4 Pulg',
@@ -5195,7 +5842,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-86-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 649, codigo: 'SIN-COD-0649', nombre: 'Juego De Llave Punta Corona De 22 A 48 Mm',
@@ -5203,7 +5851,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-86-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 650, codigo: 'SIN-COD-0650', nombre: 'Juego De Llaves Punta Corona (10 A 32)Mm',
@@ -5211,7 +5860,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-86-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 651, codigo: 'C.12.02.07.005', nombre: 'Kardex',
@@ -5219,7 +5869,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-04-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 80200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 652, codigo: 'S.C.03.02.99.004', nombre: 'Kit 6 Galgas Medidores De Soldadura',
@@ -5227,7 +5878,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-10-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 653, codigo: 'S.C.07.03.19.035', nombre: 'Laucha De Fibra De Vidrio Con Carrete 8 X100 Mt',
@@ -5235,7 +5887,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-04-05', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 654, codigo: 'C.07.03.19.001', nombre: 'Laucha Metalica 20 Mts',
@@ -5243,7 +5896,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-05-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 655, codigo: 'C.30.01.08.445', nombre: 'Laucha Metalica 30 Mts',
@@ -5251,7 +5905,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-87-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 656, codigo: 'S.C.06.02.07.403', nombre: 'Lima Cuchilla 6 Pulg',
@@ -5259,7 +5914,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-87-02', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 657, codigo: 'S.C.30.01.08.348', nombre: 'Lima Cuchillo Bastarda 8"',
@@ -5267,7 +5923,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-87-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 658, codigo: 'Z.C.06.03.04.043', nombre: 'Lima Redodnda Bastarda 7/32 X8',
@@ -5275,7 +5932,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-11-01', stockActual: 54,
     stockMinimo: 45, stockMaximo: 135, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 659, codigo: 'C.06.02.05.020', nombre: 'Llana',
@@ -5283,7 +5941,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-87-04', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 660, codigo: 'Z.C.06.02.09.022', nombre: 'Llana Dentada',
@@ -5291,7 +5950,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-87-05', stockActual: 6,
     stockMinimo: 5, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 661, codigo: 'C.30.01.08.650', nombre: 'Llave Ajustable 12Pulg. Aislada Para 1000 V',
@@ -5299,7 +5959,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-88-01', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 662, codigo: 'C.06.02.07.769', nombre: 'Llave Cadena Para Cañeria 6Pulg',
@@ -5307,7 +5968,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-88-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 663, codigo: 'S.C.30.01.08.665', nombre: 'Llave Corona Chicharra 17Mm',
@@ -5315,7 +5977,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-88-03', stockActual: 36,
     stockMinimo: 30, stockMaximo: 90, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 664, codigo: 'S.C.06.02.07.041', nombre: 'Llave Corona Corona 12 X 13Mm',
@@ -5323,7 +5986,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-88-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 665, codigo: 'S.C.06.02.07.042', nombre: 'Llave Corona Corona 14 X 15Mm',
@@ -5331,7 +5995,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-88-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 666, codigo: 'S.C.06.02.07.043', nombre: 'Llave Corona Corona 16 X 17Mm',
@@ -5339,7 +6004,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-89-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 667, codigo: 'S.C.06.02.07.044', nombre: 'Llave Corona Corona 18 X 19Mm',
@@ -5347,7 +6013,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-89-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 668, codigo: 'S.C.30.01.08.510', nombre: 'Llave Corta Espiga Cuadrante De 1',
@@ -5355,7 +6022,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-89-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 669, codigo: 'C.06.02.08.518', nombre: 'Llave De Golpe 48Mm',
@@ -5363,7 +6031,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-89-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 670, codigo: 'Z.C.06.02.08.250', nombre: 'Llave De Golpe 56Mm',
@@ -5371,7 +6040,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-89-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 671, codigo: 'S.C.06.02.08.727', nombre: 'Llave De Torque 10 A 150 Ft-Lb',
@@ -5379,7 +6049,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-90-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 672, codigo: 'S.C.06.02.08.972', nombre: 'Llave De Torque De 50 A 300 Lbs Cuadrante De 3/4',
@@ -5387,7 +6058,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-90-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 673, codigo: 'S.C.30.01.08.513', nombre: 'Llave De Torque Manual De 250 A 1000 Lbs Cua. 3/4',
@@ -5395,7 +6067,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-90-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 674, codigo: 'Z.C.06.02.07.039', nombre: 'Llave Francesa 24 Pulg',
@@ -5403,7 +6076,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-90-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 675, codigo: 'C.06.02.08.253', nombre: 'Llave Golpe 1.1/4Pulg',
@@ -5411,7 +6085,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-90-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 676, codigo: 'C.06.02.08.254', nombre: 'Llave Golpe 1.5/8Pulg',
@@ -5419,7 +6094,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-91-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 677, codigo: 'C.06.02.08.506', nombre: 'Llave Golpe 24Mm',
@@ -5427,7 +6103,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-91-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 678, codigo: 'C.06.02.08.222', nombre: 'Llave Golpe 2Pulg',
@@ -5435,7 +6112,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-91-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 679, codigo: 'C.06.02.08.697', nombre: 'Llave Golpe 32Mm',
@@ -5443,7 +6121,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-91-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 680, codigo: 'C.06.02.08.514', nombre: 'Llave Golpe 80Mm',
@@ -5451,7 +6130,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-91-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 681, codigo: 'C.06.02.08.028', nombre: 'Llave Golpe Corona 1 7/16Pulg',
@@ -5459,7 +6139,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-92-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 682, codigo: 'S.C.06.02.07.766', nombre: 'Llave Golpe Corona 27 Mm',
@@ -5467,7 +6148,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-92-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 683, codigo: 'S.C.06.02.07.765', nombre: 'Llave Golpe Corona 36 Mm',
@@ -5475,7 +6157,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-92-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 684, codigo: 'S.C.06.02.07.764', nombre: 'Llave Golpe Corona 85 Mm',
@@ -5483,7 +6166,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-92-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 685, codigo: 'C.06.02.08.022', nombre: 'Llave Punta Cola 1 1/2',
@@ -5491,7 +6175,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-92-05', stockActual: 12,
     stockMinimo: 10, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 686, codigo: 'Z.C.06.02.08.034', nombre: 'Llave Punta Cola 7/8',
@@ -5499,7 +6184,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-93-01', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 687, codigo: 'Z.C.06.02.08.050', nombre: 'Llave Punta Corona 1',
@@ -5507,7 +6193,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-93-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 688, codigo: 'Z.C.06.02.08.040', nombre: 'Llave Punta Corona 1 13/16 Pulg',
@@ -5515,7 +6202,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-93-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 689, codigo: 'C.06.02.08.307', nombre: 'Llave Punta Corona 1 3/4Pulg',
@@ -5523,7 +6211,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-93-04', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 690, codigo: 'Z.C.06.02.08.046', nombre: 'Llave Punta Corona 1 5/8',
@@ -5531,7 +6220,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-93-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 691, codigo: 'Z.C.06.02.08.051', nombre: 'Llave Punta Corona 1/2',
@@ -5539,7 +6229,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-94-01', stockActual: 24,
     stockMinimo: 12, stockMaximo: 60, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 692, codigo: 'Z.C.06.02.08.054', nombre: 'Llave Punta Corona 10',
@@ -5547,7 +6238,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-94-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 693, codigo: 'Z.C.06.02.08.055', nombre: 'Llave Punta Corona 11',
@@ -5555,7 +6247,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-94-03', stockActual: 14,
     stockMinimo: 7, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 694, codigo: 'Z.C.06.02.08.060', nombre: 'Llave Punta Corona 14',
@@ -5563,7 +6256,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-94-04', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 695, codigo: 'Z.C.06.02.08.061', nombre: 'Llave Punta Corona 15',
@@ -5571,7 +6265,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-94-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 696, codigo: 'Z.C.06.02.08.063', nombre: 'Llave Punta Corona 16',
@@ -5579,7 +6274,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-95-01', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 697, codigo: 'Z.C.06.02.08.064', nombre: 'Llave Punta Corona 17',
@@ -5587,7 +6283,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-95-02', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 698, codigo: 'Z.C.06.02.08.065', nombre: 'Llave Punta Corona 18',
@@ -5595,7 +6292,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-95-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 699, codigo: 'Z.C.06.02.08.074', nombre: 'Llave Punta Corona 2',
@@ -5603,7 +6301,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-95-04', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 700, codigo: 'Z.C.06.02.08.068', nombre: 'Llave Punta Corona 2 1/4 Pulg',
@@ -5611,7 +6310,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-95-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 701, codigo: 'C.06.02.08.070', nombre: 'Llave Punta Corona 2 3/16Pulg',
@@ -5619,7 +6319,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-96-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 702, codigo: 'C.06.02.08.071', nombre: 'Llave Punta Corona 2 3/8Pulg',
@@ -5627,7 +6328,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-96-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 703, codigo: 'Z.C.06.02.08.075', nombre: 'Llave Punta Corona 20',
@@ -5635,7 +6337,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-96-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 704, codigo: 'Z.C.06.02.08.076', nombre: 'Llave Punta Corona 21',
@@ -5643,7 +6346,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-96-04', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 705, codigo: 'Z.C.06.02.08.081', nombre: 'Llave Punta Corona 26',
@@ -5651,7 +6355,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-96-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 706, codigo: 'Z.C.06.02.08.091', nombre: 'Llave Punta Corona 33',
@@ -5659,7 +6364,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-97-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 707, codigo: 'Z.C.06.02.08.093', nombre: 'Llave Punta Corona 35',
@@ -5667,7 +6373,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-97-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 708, codigo: 'C.06.02.08.274', nombre: 'Llave Punta Corona 6Mm.',
@@ -5675,7 +6382,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-97-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 709, codigo: 'Z.C.06.02.08.139', nombre: 'Llave Punta Corona 8',
@@ -5683,7 +6391,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-97-04', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 710, codigo: 'Z.C.06.02.08.140', nombre: 'Llave Punta Corona 9',
@@ -5691,7 +6400,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-97-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 711, codigo: 'S.C.06.02.07.046', nombre: 'Llave Punta Y Corona 70Mm',
@@ -5699,7 +6409,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-98-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 712, codigo: 'C.06.02.07.047', nombre: 'Llave Stillson 36Pulg',
@@ -5707,7 +6418,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-98-02', stockActual: 5,
     stockMinimo: 3, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 713, codigo: 'S.C.06.02.08.695', nombre: 'Llave Torque 1/2 30-250 Nm',
@@ -5715,7 +6427,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-98-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 714, codigo: 'S.C.06.02.08.919', nombre: 'Llave Torque Cuadrante ¼ Pulg De 25Mm',
@@ -5723,7 +6436,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-98-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 715, codigo: 'S.C.06.02.07.040', nombre: 'Llave Torque Cuadrante ½ De 15-75 Lbs',
@@ -5731,7 +6445,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-98-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 716, codigo: 'S.C.06.02.08.921', nombre: 'Llave Torque Cuadrante 1/4 Pulg De 4.5 – 30 Nm',
@@ -5739,7 +6454,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-99-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 717, codigo: 'S.C.06.02.08.733', nombre: 'Llave Torque Cuadrante 3/8 De 15-80 Lb',
@@ -5747,7 +6463,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-99-02', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 718, codigo: 'S.C.30.01.08.516', nombre: 'Llave Torque De 100-600 Lbs Cuadrante ¾',
@@ -5755,7 +6472,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-99-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 719, codigo: 'S.C.30.01.08.517', nombre: 'Llave Torque De 10-150 Lbs Cuadrante ½',
@@ -5763,7 +6481,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-99-04', stockActual: 2,
     stockMinimo: 1, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 720, codigo: 'S.Z.C.06.02.07.115', nombre: 'Llaves Stilson De 14"',
@@ -5771,7 +6490,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-99-05', stockActual: 10,
     stockMinimo: 6, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 721, codigo: 'S.Z.C.06.02.07.046', nombre: 'Llaves Stilson De 24"',
@@ -5779,7 +6499,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-100-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 722, codigo: 'S.C.04.03.04.006', nombre: 'Locker Metalico 5 Cuerpos',
@@ -5787,7 +6508,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-04-04', stockActual: 6,
     stockMinimo: 3, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 80200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 723, codigo: 'Z.C.06.02.09.063', nombre: 'Maceta 2Lbs Con Mango',
@@ -5795,7 +6517,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-100-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 724, codigo: 'C.07.01.03.680', nombre: 'Macetas De Goma 16 Onza',
@@ -5803,7 +6526,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-02-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 725, codigo: 'S.C.06.03.03.108', nombre: 'Maquina Para Torchar 630 Amp',
@@ -5811,7 +6535,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-11-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 726, codigo: 'S.C.32.03.03.089', nombre: 'Maquina Soldadora De Corte Por Plasma',
@@ -5819,7 +6544,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-11-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 727, codigo: 'S.Z.C.06.03.03.017', nombre: 'Maquinas Mig Lincoln V350 Comleta O Similar Para Soldar Inershiel',
@@ -5827,7 +6553,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-11-04', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 728, codigo: 'S.C.06.02.10.046', nombre: 'Martillo Demoledor Sds Max 9.7 Kg',
@@ -5835,7 +6562,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-10-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 729, codigo: 'S.Z.C.06.11.06.041', nombre: 'Martillo Demoledor Toma Hexagonal',
@@ -5843,7 +6571,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-100-03', stockActual: 4,
     stockMinimo: 2, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 730, codigo: 'C.06.02.08.013', nombre: 'Martillo Mecánico',
@@ -5851,7 +6580,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-100-04', stockActual: 10,
     stockMinimo: 6, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 731, codigo: 'Z.C.06.11.03.055', nombre: 'Martillo Mecanico 1/2 Lbs.',
@@ -5859,7 +6589,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-100-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 732, codigo: 'S.C.03.02.99.008', nombre: 'Medidor De Soldadura De Filete 7Piesas',
@@ -5867,7 +6598,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-11-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 733, codigo: 'C.07.03.04.113', nombre: 'Medidor De Traslape',
@@ -5875,7 +6607,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-05-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 734, codigo: 'S.Z.C.06.13.02.009', nombre: 'Medidor Distancia Laser',
@@ -5883,7 +6616,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-06-04', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 81700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 735, codigo: 'S.C.06.05.01.014', nombre: 'Mezcladora Inalambrica',
@@ -5891,7 +6625,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-101-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 736, codigo: 'S.C.30.01.08.522', nombre: 'Micrometro Exterior',
@@ -5899,7 +6634,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-101-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 737, codigo: 'S.C.06.05.05.007', nombre: 'Mini Dumper Electrico 500 Kg',
@@ -5907,7 +6643,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-101-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 738, codigo: 'Z.C.06.13.01.010', nombre: 'Mira De Nivelacion',
@@ -5915,7 +6652,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-06-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 81700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 739, codigo: 'C.19.03.04.014', nombre: 'Monitor 19"',
@@ -5923,7 +6661,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-03-01', stockActual: 20,
     stockMinimo: 14, stockMaximo: 51, unidadMedida: 'unidades',
     precioUnitario: 92100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 740, codigo: 'S.C.19.03.04.015', nombre: 'Monitor 21.45 Pulg',
@@ -5931,7 +6670,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-03-02', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 92100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 741, codigo: 'S.C.33.09.01.038', nombre: 'Motobomba Bencinera 3 Pulg',
@@ -5939,7 +6679,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-101-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 742, codigo: 'S.C.33.09.01.039', nombre: 'Motobomba Bencinera 4 Pulg',
@@ -5947,7 +6688,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-101-05', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 743, codigo: 'S.C.06.13.02.035', nombre: 'Nivel Carpintero 30 Pulg',
@@ -5955,7 +6697,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-07-01', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 81700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 744, codigo: 'C.32.13.05.018', nombre: 'Nivel De Precision De 200 X 200 Mm',
@@ -5963,7 +6706,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-102-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 745, codigo: 'S.C.06.02.08.964', nombre: 'Nivel Imantado 48 Pulg',
@@ -5971,7 +6715,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-102-02', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 746, codigo: 'Z.C.06.13.02.042', nombre: 'Nivel Mecánico 18 Pulg',
@@ -5979,7 +6724,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-07-02', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 81700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 747, codigo: 'Z.C.06.13.02.027', nombre: 'Nivel Mecanico 24 Pulg',
@@ -5987,7 +6733,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-07-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 81700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 748, codigo: 'S.C.03.01.13.170', nombre: 'Pasteca Para 3.2 Tons',
@@ -5995,7 +6742,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-102-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 749, codigo: 'S.C.03.01.13.166', nombre: 'Pateca Simple 2 Ton',
@@ -6003,7 +6751,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-102-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 750, codigo: 'S.C.03.01.13.231', nombre: 'Pateca Simple De 1/2Pulg Para 1 Tons',
@@ -6011,7 +6760,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-102-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 751, codigo: 'C.03.01.13.229', nombre: 'Pateca Simple De 4Pulg Para 1.0 Tons',
@@ -6019,7 +6769,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-103-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 752, codigo: 'SIN-COD-0752', nombre: 'Pela Cable Aislado 1000 Volt',
@@ -6027,7 +6778,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-03-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'metros',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 753, codigo: 'SIN-COD-0753', nombre: 'Pela Cable Automatico',
@@ -6035,7 +6787,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-03-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'metros',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 754, codigo: 'C.06.13.02.089', nombre: 'Pie De Metro 6 Pulg',
@@ -6043,7 +6796,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Medición y Topografía', ubicacion: 'J-07-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 81700, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 755, codigo: 'Z.C.06.11.02.046', nombre: 'Pie De Metro 8 Pulg',
@@ -6051,7 +6805,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-103-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 756, codigo: 'C.06.14.01.012', nombre: 'Pie De Metro Digital 200Mm. Con Certificado De Calibración',
@@ -6059,7 +6814,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-103-03', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 757, codigo: 'P.09.076', nombre: 'Pistola Calafatera',
@@ -6067,7 +6823,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-103-04', stockActual: 6,
     stockMinimo: 4, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 758, codigo: 'S.C.03.01.08.006', nombre: 'Pistola K – 126 Para Ln 25 Pro',
@@ -6075,7 +6832,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-103-05', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 759, codigo: 'Z.C.06.03.03.043', nombre: 'Pistola Para Proceso Tig',
@@ -6083,7 +6841,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-12-01', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 760, codigo: 'S.C.06.03.03.109', nombre: 'Pistola Para Torchar 1000 Amp',
@@ -6091,7 +6850,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-12-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 761, codigo: 'Z.C.06.02.09.048', nombre: 'Plana Punta',
@@ -6099,7 +6859,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-104-01', stockActual: 14,
     stockMinimo: 12, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 762, codigo: '3835257', nombre: 'Plataforma Robusta C/Escalera 2,57 M X 0,61 M',
@@ -6107,7 +6868,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-104-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 763, codigo: 'C.30.01.08.407', nombre: 'Plomada 500 Grm',
@@ -6115,7 +6877,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-104-03', stockActual: 7,
     stockMinimo: 5, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 764, codigo: 'S.C.06.02.09.025', nombre: 'Plomada 900 Gr',
@@ -6123,7 +6886,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-104-04', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 765, codigo: 'SIN-COD-0765', nombre: 'Plomo 450 Grms. Albañil',
@@ -6131,7 +6895,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-104-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 766, codigo: 'S.C.19.01.02.032', nombre: 'Polea Con Freno Y Adaptador Para Mensula',
@@ -6139,7 +6904,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-105-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 767, codigo: 'S.C.19.01.02.033', nombre: 'Polea Tipo Bandeja 12 Pulg X 5 Pulg - Green Lee',
@@ -6147,7 +6913,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Material Eléctrico', ubicacion: 'F-03-03', stockActual: 30,
     stockMinimo: 25, stockMaximo: 75, unidadMedida: 'unidades',
     precioUnitario: 10300, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4231']
   },
   {
     id: 768, codigo: 'S.C.30.01.08.380', nombre: 'Porta Power Hidraulco 20 Ton',
@@ -6155,7 +6922,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-105-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 769, codigo: 'C.06.02.07.356', nombre: 'Prensa C 3 Pulg',
@@ -6163,7 +6931,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-105-03', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 770, codigo: 'C.30.01.08.063', nombre: 'Prensa C De 6Pulg',
@@ -6171,7 +6940,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-105-04', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 771, codigo: 'S.Z.C.06.02.09.018', nombre: 'Punto Acero Con Proteccion',
@@ -6179,7 +6949,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-105-05', stockActual: 12,
     stockMinimo: 10, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 772, codigo: 'SIN-COD-0772', nombre: 'Radio Motorola Dep 450 Ep 2 Con Frecuencia Mcen',
@@ -6187,7 +6958,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-106-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 773, codigo: 'S.C.30.01.08.472', nombre: 'Regla De Pelo 4 Pulg',
@@ -6195,7 +6967,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-106-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 774, codigo: 'SIN-COD-0774', nombre: 'Regulador De Oxigeno',
@@ -6203,7 +6976,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-106-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 775, codigo: 'SIN-COD-0775', nombre: 'Regulador De Propano Gas',
@@ -6211,7 +6985,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-106-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 776, codigo: 'S.Z.C.03.01.08.006', nombre: 'Remachadora Tipo Acordeon',
@@ -6219,7 +6994,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-106-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 777, codigo: 'S.C.20.01.04.014', nombre: 'Roedora 1.6 Mm Inalambrica',
@@ -6227,7 +7003,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-107-01', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 778, codigo: 'C.03.01.13.019', nombre: 'Roldana Con Polea Manual De 500 Kilos',
@@ -6235,7 +7012,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-107-02', stockActual: 12,
     stockMinimo: 6, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 779, codigo: 'C.03.01.13.020', nombre: 'Roldana Doble',
@@ -6243,7 +7021,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-107-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 780, codigo: 'S.C.06.02.10.119', nombre: 'Rotomartillo Cincelador Toma Sds Max 8Kg',
@@ -6251,7 +7030,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-10-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 781, codigo: 'S.C.06.02.10.135', nombre: 'Rotomartillo Sds Plus 3.3 Kg',
@@ -6259,7 +7039,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-10-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 782, codigo: 'S.P.02.01.08.002', nombre: 'Rotuladora Industrial Profesional E550W',
@@ -6267,7 +7048,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Equipos Electrónicos', ubicacion: 'H-03-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 92100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 783, codigo: 'SIN-COD-0783', nombre: 'Rueda 200, 10Kn / Con Base Regulable',
@@ -6275,7 +7057,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-107-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 784, codigo: 'SIN-COD-0784', nombre: 'Rueda 200, 7 Kn',
@@ -6283,7 +7066,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-107-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 785, codigo: '2634031', nombre: 'Seguro P/Plataforma (20 U)',
@@ -6291,7 +7075,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-108-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 786, codigo: 'SIN-COD-0786', nombre: 'Serrucho Electrico',
@@ -6299,7 +7084,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-108-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 787, codigo: 'S.C.06.02.08.294', nombre: 'Set Dado De Cuadrante 1/2 De 10 A 22 Mm',
@@ -6307,7 +7093,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-108-03', stockActual: 10,
     stockMinimo: 4, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 788, codigo: 'SIN-COD-0788', nombre: 'Set De Dados Cuadrante 1/2 Aislados A 1000 Volt',
@@ -6315,7 +7102,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-108-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 789, codigo: 'S.C.06.02.08.285', nombre: 'Set De Dados Cuadrante 1/2 Aislados A 1000 Volt (7Pc) 14-24',
@@ -6323,7 +7111,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-108-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 790, codigo: 'S.C.06.02.08.297', nombre: 'Set De Dados Cuadrante 1/2 De 8 A 26 Mm',
@@ -6331,7 +7120,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-109-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 791, codigo: 'C.06.02.08.644', nombre: 'Set De Dados Cuadrante 1/4Pulg',
@@ -6339,7 +7129,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-109-02', stockActual: 7,
     stockMinimo: 3, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 792, codigo: 'S.C.06.02.08.201', nombre: 'Set De Dados Cuadrante 3/4 De 19 A 50 Mm',
@@ -6347,7 +7138,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-109-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 793, codigo: 'C.06.02.08.997', nombre: 'Set De Dados Cuadrante 3/4 De 21 A 50 Mm',
@@ -6355,7 +7147,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-109-04', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 794, codigo: 'SIN-COD-0794', nombre: 'Set De Dados Cuadrante De 1/2',
@@ -6363,7 +7156,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-109-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 795, codigo: 'C.06.02.08.285', nombre: 'Set De Dados Cuadrante De 1/2″ De 1/4"-1.1/4″',
@@ -6371,7 +7165,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-110-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 796, codigo: 'S.C.06.02.08.295', nombre: 'Set De Dados Largo Cuadrante 3/8 De 10 A 22 Mm',
@@ -6379,7 +7174,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-110-02', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 797, codigo: 'S.C.06.02.08.299', nombre: 'Set De Dados Largos 1/2 10-32 Mm',
@@ -6387,7 +7183,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-110-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 798, codigo: 'S.C.06.02.08.300', nombre: 'Set De Dados Largos Cuadrante 3/8 8-24 Mm',
@@ -6395,7 +7192,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-110-04', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 799, codigo: 'S.C.06.02.08.754', nombre: 'Set De Dados Poligonales Cuadrante 1/2 De 12 A 32Mm',
@@ -6403,7 +7201,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-110-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 800, codigo: 'S.C.06.02.08.288', nombre: 'Set De Llaves Allen 10 Pcs',
@@ -6411,7 +7210,8 @@ const _PROD_CHUNK_4: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-111-01', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
 ];
 
@@ -6422,7 +7222,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-111-02', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 802, codigo: 'C.33.02.08.646', nombre: 'Set Llaves Punta Corona De 5/16″-1.1/4″',
@@ -6430,7 +7231,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-111-03', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 803, codigo: 'C.33.02.08.734', nombre: 'Set Llaves Punta Y Corona 8 A 24Mm',
@@ -6438,7 +7240,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-111-04', stockActual: 14,
     stockMinimo: 6, stockMaximo: 36, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 804, codigo: 'C.12.02.08.007', nombre: 'Silla Sin Brazos (Sala De Reunión)',
@@ -6446,7 +7249,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Mobiliario de Obra', ubicacion: 'E-04-05', stockActual: 12,
     stockMinimo: 10, stockMaximo: 30, unidadMedida: 'unidades',
     precioUnitario: 80200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 805, codigo: 'S.C.06.08.08.532', nombre: 'Sistema Gnns Con Imu',
@@ -6454,7 +7258,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-10-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 806, codigo: 'SIN-COD-0806', nombre: 'Soplete Cortador Propano Largo 1Mt.',
@@ -6462,7 +7267,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-111-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
   {
     id: 807, codigo: 'S.C.07.03.14.018', nombre: 'Starter Kit Baterias 18V Bosch',
@@ -6470,7 +7276,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-05-03', stockActual: 7,
     stockMinimo: 6, stockMaximo: 18, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 808, codigo: 'SIN-COD-0808', nombre: 'Tablero De Faena',
@@ -6478,7 +7285,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-112-01', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 809, codigo: 'SIN-COD-0809', nombre: 'Tablero Distribucion',
@@ -6486,7 +7294,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-112-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 810, codigo: 'S.C.07.03.06.013', nombre: 'Tablero Electrico De 800X600X250 Mm',
@@ -6494,7 +7303,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Equipo de Medición', ubicacion: 'C-05-04', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 35400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 811, codigo: 'SIN-COD-0811', nombre: 'Tablero Faena Estandar 380/220V',
@@ -6502,7 +7312,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-112-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 812, codigo: 'S.C.30.01.08.312', nombre: 'Taladro De Rotacion 1/2 Pulg',
@@ -6510,7 +7321,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-11-01', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 813, codigo: 'SIN-COD-0813', nombre: 'Taladro Sds Max 6Kg',
@@ -6518,7 +7330,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-11-02', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4254']
   },
   {
     id: 814, codigo: 'Z.C.06.11.99.021', nombre: 'Tanquetas De Arrastre Polines',
@@ -6526,7 +7339,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-112-04', stockActual: 10,
     stockMinimo: 4, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 815, codigo: 'S.Z.C.06.02.14.030', nombre: 'Tecle De Cadena 7.5 Toneladas',
@@ -6534,7 +7348,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-11-03', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 816, codigo: 'S.Z.C.06.02.14.054', nombre: 'Tecle De Palanca 1000 Kg.',
@@ -6542,7 +7357,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-11-04', stockActual: 6,
     stockMinimo: 5, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 817, codigo: 'SIN-COD-0817', nombre: 'Tecle Palanca 1 Tons.',
@@ -6550,7 +7366,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-112-05', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 818, codigo: 'P.08.02.17.008', nombre: 'Tenaza 7\'\' Knipex Power Cut',
@@ -6558,7 +7375,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-113-01', stockActual: 5,
     stockMinimo: 4, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 819, codigo: 'S.C.30.01.08.082', nombre: 'Tenaza De Enfierrador 250 A 300 Mm',
@@ -6566,7 +7384,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-113-02', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 820, codigo: 'S.C.08.08.02.028', nombre: 'Tensores Para Prensas',
@@ -6574,7 +7393,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-11-05', stockActual: 2,
     stockMinimo: 2, stockMaximo: 6, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 821, codigo: 'S.C.33.02.09.019', nombre: 'Termometro Hormigon Rango -40+300°C',
@@ -6582,7 +7402,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Soldadura y Corte', ubicacion: 'I-12-03', stockActual: 1,
     stockMinimo: 1, stockMaximo: 3, unidadMedida: 'unidades',
     precioUnitario: 58100, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 822, codigo: 'S.C.08.08.02.029', nombre: 'Terraja Hilo Npt 1/2 A 2Pulg Con Barrote',
@@ -6590,7 +7411,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-12-01', stockActual: 5,
     stockMinimo: 2, stockMaximo: 12, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4219']
   },
   {
     id: 823, codigo: 'C.32.02.08.020', nombre: 'Tornillo Mecanico Num 4',
@@ -6598,7 +7420,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-113-03', stockActual: 6,
     stockMinimo: 5, stockMaximo: 15, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4127']
   },
   {
     id: 824, codigo: 'S.C.03.01.13.299', nombre: 'Traspaleta Manual Para 3 Ton',
@@ -6606,7 +7429,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-113-04', stockActual: 4,
     stockMinimo: 3, stockMaximo: 9, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 825, codigo: 'C.11.01.08.019', nombre: 'Tubo Acero Cortado A 3,00 M',
@@ -6614,7 +7438,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-113-05', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4166']
   },
   {
     id: 826, codigo: 'S.C.06.08.08.041', nombre: 'Vertical 1.00 M Sin Espiga',
@@ -6622,7 +7447,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Eléctricas', ubicacion: 'B-12-02', stockActual: 60,
     stockMinimo: 50, stockMaximo: 150, unidadMedida: 'unidades',
     precioUnitario: 59200, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4132']
   },
   {
     id: 827, codigo: '2639004', nombre: 'Viga P/ Escalera 500 5 Peld H 1,00 M - Lw',
@@ -6630,7 +7456,8 @@ const _PROD_CHUNK_5: Producto[] = [
     categoriaNombre: 'Herramientas Manuales', ubicacion: 'A-114-01', stockActual: 10,
     stockMinimo: 8, stockMaximo: 24, unidadMedida: 'unidades',
     precioUnitario: 20400, estado: 'activo',
-    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
+    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10'),
+    proyectos: ['P-4257']
   },
 ];
 

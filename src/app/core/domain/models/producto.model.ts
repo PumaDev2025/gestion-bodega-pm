@@ -17,4 +17,6 @@ export interface Producto {
   fechaIngreso: Date;
   ultimaActualizacion: Date;
   imagen?: string;
+  /** Códigos de proyecto que solicitaron este producto, ej: ["P-4127","P-4166"] */
+  proyectos?: string[];
 }

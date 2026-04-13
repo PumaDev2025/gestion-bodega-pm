@@ -34,7 +34,7 @@ export class CategoriasComponent implements OnInit {
 
   /** Categorías con conteo de productos filtrado por proyecto activo */
   categoriasConConteo = computed(() => {
-    const prodsFiltrados = this.proyectoState.filtrarPorProyecto(this.allProductos(), this.allMovimientos());
+    const prodsFiltrados = this.proyectoState.filtrarProductosPorProyecto(this.allProductos());
     const conteoPorCat = new Map<number, number>();
     for (const p of prodsFiltrados) {
       conteoPorCat.set(p.categoriaId, (conteoPorCat.get(p.categoriaId) ?? 0) + 1);
