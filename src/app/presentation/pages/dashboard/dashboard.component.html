@@ -5,16 +5,14 @@
   </div>
 
   <!-- KPI Cards -->
-  @if (resumen(); as r) {
-    <div class="kpi-grid">
-      <app-stat-card icon="📦" [value]="r.totalProductos" label="Total Productos" color="#1B3A5C" />
-      <app-stat-card icon="💰" [value]="(r.valorInventario | clp)" label="Valor Inventario" color="#27ae60" trend="+4.2%" [trendUp]="true" />
-      <app-stat-card icon="⚠️" [value]="r.productosStockBajo" label="Stock Bajo" color="#f39c12" />
-      <app-stat-card icon="🚨" [value]="r.productosStockCritico" label="Stock Crítico" color="#e74c3c" />
-      <app-stat-card icon="📥" [value]="r.entradasMes" label="Entradas Mes" color="#E87722" />
-      <app-stat-card icon="📤" [value]="r.salidasMes" label="Salidas Mes" color="#8e44ad" />
-    </div>
-  }
+  <div class="kpi-grid">
+    <app-stat-card icon="📦" [value]="resumen().totalProductos" label="Total Productos" color="#1B3A5C" />
+    <app-stat-card icon="💰" [value]="(resumen().valorInventario | clp)" label="Valor Inventario" color="#27ae60" trend="+4.2%" [trendUp]="true" />
+    <app-stat-card icon="⚠️" [value]="resumen().productosStockBajo" label="Stock Bajo" color="#f39c12" />
+    <app-stat-card icon="🚨" [value]="resumen().productosStockCritico" label="Stock Crítico" color="#e74c3c" />
+    <app-stat-card icon="📥" [value]="resumen().entradasMes" label="Entradas Mes" color="#E87722" />
+    <app-stat-card icon="📤" [value]="resumen().salidasMes" label="Salidas Mes" color="#8e44ad" />
+  </div>
 
   <div class="dashboard-grid">
     <!-- Alertas de stock -->

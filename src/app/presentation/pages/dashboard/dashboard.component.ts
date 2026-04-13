@@ -4,7 +4,7 @@ import { StatCardComponent } from '../../shared/components/stat-card/stat-card.c
 import { ClpPipe } from '../../shared/pipes/clp.pipe';
 import { BodegaFacadeService } from '../../../core/application/bodega-facade.service';
 import { ProyectoStateService } from '../../../core/application/proyecto-state.service';
-import { AlertaStock, ResumenBodega, Movimiento } from '../../../core/domain/models';
+import { AlertaStock, ResumenBodega, Movimiento, Producto } from '../../../core/domain/models';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,7 +14,7 @@ import { AlertaStock, ResumenBodega, Movimiento } from '../../../core/domain/mod
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent implements OnInit {
-  resumen = signal<ResumenBodega | null>(null);
+  allProductos = signal<Producto[]>([]);
   alertas = signal<AlertaStock[]>([]);
   allMovimientos = signal<Movimiento[]>([]);
   loading = signal(true);
@@ -28,14 +28,36 @@ export class DashboardComponent implements OnInit {
     return filtrados.slice(-8).reverse();
   });
 
+  /** Resumen reactivo calculado desde los productos del proyecto activo */
+  resumen = computed((): ResumenBodega => {
+    const productos = this.proyectoState.filtrarPorProyecto(this.allProductos(), this.allMovimientos());
+    const movsFiltrados = this.proyectoState.seleccionado() === 'TODOS'
+      ? this.allMovimientos()
+      : this.allMovimientos().filter(m =>
+          m.proyecto?.startsWith(this.proyectoState.seleccionado()) ||
+          m.motivo?.includes(this.proyectoState.seleccionado()));
+    const hoy = new Date(); hoy.setHours(0,0,0,0);
+    const hoyStr = hoy.toDateString();
+    return {
+      totalProductos: productos.length,
+      totalCategorias: new Set(productos.map(p => p.categoriaId)).size,
+      valorInventario: productos.reduce((s, p) => s + p.stockActual * p.precioUnitario, 0),
+      productosStockBajo: productos.filter(p => p.stockActual <= p.stockMinimo && p.stockActual > 0).length,
+      productosStockCritico: productos.filter(p => p.stockActual === 0 || p.stockActual <= p.stockMinimo * 0.3).length,
+      movimientosHoy: movsFiltrados.filter(m => new Date(m.fecha).toDateString() === hoyStr).length,
+      entradasMes: movsFiltrados.filter(m => m.tipo === 'entrada').length,
+      salidasMes: movsFiltrados.filter(m => m.tipo === 'salida').length
+    };
+  });
+
   constructor(
     private facade: BodegaFacadeService,
     readonly proyectoState: ProyectoStateService
   ) {}
 
   ngOnInit() {
-    this.facade.getResumenBodega().subscribe(r => this.resumen.set(r));
     this.facade.getAlertasStock().subscribe(a => this.alertas.set(a));
+    this.facade.getProductos().subscribe(p => this.allProductos.set(p));
     this.facade.getMovimientos().subscribe(m => {
       this.allMovimientos.set(m);
       this.loading.set(false);

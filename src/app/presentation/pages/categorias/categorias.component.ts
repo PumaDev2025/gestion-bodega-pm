@@ -1,8 +1,9 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, signal, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ModalComponent } from '../../shared/components/modal/modal.component';
 import { BodegaFacadeService } from '../../../core/application/bodega-facade.service';
-import { Categoria } from '../../../core/domain/models';
+import { ProyectoStateService } from '../../../core/application/proyecto-state.service';
+import { Categoria, Producto, Movimiento } from '../../../core/domain/models';
 
 @Component({
   selector: 'app-categorias',
@@ -13,6 +14,8 @@ import { Categoria } from '../../../core/domain/models';
 })
 export class CategoriasComponent implements OnInit {
   categorias = signal<Categoria[]>([]);
+  allProductos = signal<Producto[]>([]);
+  allMovimientos = signal<Movimiento[]>([]);
   loading = signal(true);
   modalOpen = signal(false);
   modalTitle = signal('');
@@ -29,7 +32,23 @@ export class CategoriasComponent implements OnInit {
 
   iconos = ['📦', '🧱', '🦺', '🔧', '🔩', '🔌', '🧯', '⛏', '🪨', '🪵', '🪜', '🧰', '💡', '🪣', '🏗'];
 
-  constructor(private facade: BodegaFacadeService) {}
+  /** Categorías con conteo de productos filtrado por proyecto activo */
+  categoriasConConteo = computed(() => {
+    const prodsFiltrados = this.proyectoState.filtrarPorProyecto(this.allProductos(), this.allMovimientos());
+    const conteoPorCat = new Map<number, number>();
+    for (const p of prodsFiltrados) {
+      conteoPorCat.set(p.categoriaId, (conteoPorCat.get(p.categoriaId) ?? 0) + 1);
+    }
+    return this.categorias().map(c => ({
+      ...c,
+      cantidadProductos: conteoPorCat.get(c.id) ?? 0
+    }));
+  });
+
+  constructor(
+    private facade: BodegaFacadeService,
+    readonly proyectoState: ProyectoStateService
+  ) {}
 
   ngOnInit() {
     this.loadData();
@@ -41,6 +60,8 @@ export class CategoriasComponent implements OnInit {
       this.categorias.set(c);
       this.loading.set(false);
     });
+    this.facade.getProductos().subscribe(p => this.allProductos.set(p));
+    this.facade.getMovimientos().subscribe(m => this.allMovimientos.set(m));
   }
 
   openCreate() {

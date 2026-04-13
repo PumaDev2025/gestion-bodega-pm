@@ -10,7 +10,7 @@
   </div>
 
   <div class="categorias-grid">
-    @for (cat of categorias(); track cat.id) {
+    @for (cat of categoriasConConteo(); track cat.id) {
       <div class="cat-card" [style.--cat-color]="cat.color">
         <div class="cat-header">
           <span class="cat-icon">{{ cat.icono }}</span>

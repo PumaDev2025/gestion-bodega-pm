@@ -1,4 +1,5 @@
 import { Injectable, signal, computed } from '@angular/core';
+import type { Movimiento } from '../domain/models';
 
 export interface Proyecto {
   codigo: string;
@@ -46,10 +47,34 @@ export class ProyectoStateService {
     this.seleccionado.set(this.proyectos[next].codigo);
   }
 
-  /** Proyecto anterior en la lista */
+  /** Anterior en la lista */
   anterior() {
     const idx = this.proyectos.findIndex(p => p.codigo === this.seleccionado());
     const prev = (idx - 1 + this.proyectos.length) % this.proyectos.length;
     this.seleccionado.set(this.proyectos[prev].codigo);
+  }
+
+  /**
+   * Dado un array de movimientos, retorna el Set de productoIds que pertenecen
+   * al proyecto seleccionado. Retorna null si está en modo "TODOS".
+   */
+  getProductIdsParaProyecto(movimientos: Movimiento[]): Set<number> | null {
+    const proyecto = this.seleccionado();
+    if (proyecto === 'TODOS') return null;
+    return new Set(
+      movimientos
+        .filter(m => m.proyecto?.startsWith(proyecto) || m.motivo?.includes(proyecto))
+        .map(m => m.productoId)
+    );
+  }
+
+  /**
+   * Filtra un array de productos/items con campo `id` según los movimientos del proyecto activo.
+   * Si el proyecto es "TODOS" devuelve el array completo.
+   */
+  filtrarPorProyecto<T extends { id: number }>(items: T[], movimientos: Movimiento[]): T[] {
+    const ids = this.getProductIdsParaProyecto(movimientos);
+    if (!ids) return items;
+    return items.filter(item => ids.has(item.id));
   }
 }

@@ -3,7 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { ModalComponent } from '../../shared/components/modal/modal.component';
 import { ClpPipe } from '../../shared/pipes/clp.pipe';
 import { BodegaFacadeService } from '../../../core/application/bodega-facade.service';
-import { Producto, Categoria, EstadoProducto } from '../../../core/domain/models';
+import { ProyectoStateService } from '../../../core/application/proyecto-state.service';
+import { Producto, Categoria, EstadoProducto, Movimiento } from '../../../core/domain/models';
 
 @Component({
   selector: 'app-inventario',
@@ -13,7 +14,8 @@ import { Producto, Categoria, EstadoProducto } from '../../../core/domain/models
   styleUrl: './inventario.component.scss'
 })
 export class InventarioComponent implements OnInit {
-  productos = signal<Producto[]>([]);
+  allProductos = signal<Producto[]>([]);
+  allMovimientos = signal<Movimiento[]>([]);
   categorias = signal<Categoria[]>([]);
   searchTerm = signal('');
   filtroCategoria = signal<number>(0);
@@ -33,6 +35,11 @@ export class InventarioComponent implements OnInit {
     ubicacion: '', stockActual: 0, stockMinimo: 0, stockMaximo: 0,
     unidadMedida: 'unidades', precioUnitario: 0, estado: 'activo' as EstadoProducto
   };
+
+  /** Productos filtrados por proyecto activo */
+  productos = computed(() =>
+    this.proyectoState.filtrarPorProyecto(this.allProductos(), this.allMovimientos())
+  );
 
   productosFiltrados = computed(() => {
     let items = this.productos();
@@ -56,7 +63,10 @@ export class InventarioComponent implements OnInit {
     return items;
   });
 
-  constructor(private facade: BodegaFacadeService) {}
+  constructor(
+    private facade: BodegaFacadeService,
+    readonly proyectoState: ProyectoStateService
+  ) {}
 
   ngOnInit() {
     this.loadData();
@@ -65,10 +75,11 @@ export class InventarioComponent implements OnInit {
   loadData() {
     this.loading.set(true);
     this.facade.getProductos().subscribe(p => {
-      this.productos.set(p);
+      this.allProductos.set(p);
       this.loading.set(false);
     });
     this.facade.getCategorias().subscribe(c => this.categorias.set(c));
+    this.facade.getMovimientos().subscribe(m => this.allMovimientos.set(m));
   }
 
   getStockClass(p: Producto): string {
