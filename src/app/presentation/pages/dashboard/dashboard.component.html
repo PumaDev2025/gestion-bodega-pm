@@ -82,35 +82,24 @@
     <div class="card categorias-chart-card">
       <div class="card-header">
         <h3>📊 Distribución por Categoría</h3>
+        <span class="badge-count">{{ distribucionCategorias().length }}</span>
       </div>
       <div class="card-body">
-        <div class="bar-chart">
-          <div class="bar-item">
-            <span class="bar-label">🧱 Mat. Básicos</span>
-            <div class="bar-track"><div class="bar-fill" style="width: 75%; background: #e74c3c;"></div></div>
-            <span class="bar-value">445 uds</span>
+        @if (distribucionCategorias().length === 0) {
+          <div class="empty-state"><span class="empty-icon">📭</span><p>Sin datos para este proyecto</p></div>
+        } @else {
+          <div class="bar-chart">
+            @for (cat of distribucionCategorias(); track cat.nombre) {
+              <div class="bar-item">
+                <span class="bar-label">{{ cat.icono }} {{ cat.nombre }}</span>
+                <div class="bar-track">
+                  <div class="bar-fill" [style.width.%]="cat.pct" [style.background]="cat.color"></div>
+                </div>
+                <span class="bar-value">{{ cat.stock }} uds</span>
+              </div>
+            }
           </div>
-          <div class="bar-item">
-            <span class="bar-label">🦺 EPP</span>
-            <div class="bar-track"><div class="bar-fill" style="width: 12%; background: #3498db;"></div></div>
-            <span class="bar-value">16 uds</span>
-          </div>
-          <div class="bar-item">
-            <span class="bar-label">🔧 Herramientas</span>
-            <div class="bar-track"><div class="bar-fill" style="width: 5%; background: #2ecc71;"></div></div>
-            <span class="bar-value">6 uds</span>
-          </div>
-          <div class="bar-item">
-            <span class="bar-label">🔩 Fijaciones</span>
-            <div class="bar-track"><div class="bar-fill" style="width: 14%; background: #f39c12;"></div></div>
-            <span class="bar-value">85 uds</span>
-          </div>
-          <div class="bar-item">
-            <span class="bar-label">🔌 Instalaciones</span>
-            <div class="bar-track"><div class="bar-fill" style="width: 10%; background: #9b59b6;"></div></div>
-            <span class="bar-value">60 uds</span>
-          </div>
-        </div>
+        }
       </div>
     </div>
 
@@ -125,21 +114,23 @@
             <svg viewBox="0 0 120 120">
               <circle cx="60" cy="60" r="52" fill="none" stroke="#eee" stroke-width="12"/>
               <circle cx="60" cy="60" r="52" fill="none" stroke="#E87722" stroke-width="12"
-                      stroke-dasharray="327" stroke-dashoffset="98" stroke-linecap="round"
-                      transform="rotate(-90 60 60)"/>
+                      stroke-dasharray="327" [attr.stroke-dashoffset]="svgOffset()"
+                      stroke-linecap="round" transform="rotate(-90 60 60)"/>
             </svg>
             <div class="ocupacion-text">
-              <span class="ocupacion-pct">70%</span>
+              <span class="ocupacion-pct">{{ ocupacionBodega() }}%</span>
               <span class="ocupacion-label">ocupado</span>
             </div>
           </div>
         </div>
         <div class="ocupacion-details">
-          <div class="ocupacion-row"><span class="dot" style="background:#E87722"></span> Zona A – Materiales <strong>85%</strong></div>
-          <div class="ocupacion-row"><span class="dot" style="background:#3498db"></span> Zona B – EPP <strong>40%</strong></div>
-          <div class="ocupacion-row"><span class="dot" style="background:#2ecc71"></span> Zona C – Herramientas <strong>55%</strong></div>
-          <div class="ocupacion-row"><span class="dot" style="background:#f39c12"></span> Zona D – Fijaciones <strong>65%</strong></div>
-          <div class="ocupacion-row"><span class="dot" style="background:#9b59b6"></span> Zona E – Instalaciones <strong>50%</strong></div>
+          @for (cat of distribucionCategorias(); track cat.nombre) {
+            <div class="ocupacion-row">
+              <span class="dot" [style.background]="cat.color"></span>
+              {{ cat.icono }} {{ cat.nombre }}
+              <strong>{{ cat.ocupPct }}%</strong>
+            </div>
+          }
         </div>
       </div>
     </div>
