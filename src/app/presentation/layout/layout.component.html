@@ -51,6 +51,19 @@
         <h1 class="page-title">Puga Mujica — Gestión de Bodega en Obra</h1>
       </div>
       <div class="topbar-right">
+        <!-- ── Selector de proyecto ── -->
+        <div class="proyecto-selector">
+          <button class="proj-nav-btn" (click)="proyectoState.anterior()" title="Proyecto anterior">‹</button>
+          <div class="proj-dot" [style.background]="proyectoState.proyectoActual().color"></div>
+          <select class="proj-select"
+                  [ngModel]="proyectoState.seleccionado()"
+                  (ngModelChange)="proyectoState.seleccionar($event)">
+            @for (p of proyectos; track p.codigo) {
+              <option [value]="p.codigo">{{ p.nombre }}</option>
+            }
+          </select>
+          <button class="proj-nav-btn" (click)="proyectoState.siguiente()" title="Proyecto siguiente">›</button>
+        </div>
         <span class="date-display">📅 {{ today }}</span>
         <div class="notif-wrapper">
           <button class="notification-btn" title="Notificaciones" (click)="toggleNotif()">

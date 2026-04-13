@@ -1,7 +1,9 @@
 import { Component, signal, computed } from '@angular/core';
 import { Router, RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { AuthFacadeService } from '../../core/application/auth-facade.service';
 import { BodegaFacadeService } from '../../core/application/bodega-facade.service';
+import { ProyectoStateService, PROYECTOS } from '../../core/application/proyecto-state.service';
 import type { AlertaStock } from '../../core/domain/models';
 
 interface NavItem {
@@ -14,7 +16,7 @@ interface NavItem {
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, FormsModule],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
@@ -40,11 +42,16 @@ export class LayoutComponent {
 
   currentUser = computed(() => this.authFacade.getUsuarioActual());
 
+  readonly proyectos = PROYECTOS;
+  readonly proyectoState: ProyectoStateService;
+
   constructor(
     private authFacade: AuthFacadeService,
     private bodegaFacade: BodegaFacadeService,
-    private router: Router
+    private router: Router,
+    proyectoState: ProyectoStateService
   ) {
+    this.proyectoState = proyectoState;
     this.bodegaFacade.alertasStock$.subscribe(a => this.alertas.set(a));
   }
 

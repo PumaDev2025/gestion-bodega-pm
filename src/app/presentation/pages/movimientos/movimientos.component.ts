@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { ModalComponent } from '../../shared/components/modal/modal.component';
 import { BodegaFacadeService } from '../../../core/application/bodega-facade.service';
+import { ProyectoStateService } from '../../../core/application/proyecto-state.service';
 import { Movimiento, Producto, TipoMovimiento } from '../../../core/domain/models';
 
 @Component({
@@ -34,7 +35,11 @@ export class MovimientosComponent implements OnInit {
     let items = this.movimientos();
     const tipo = this.filtroTipo();
     const search = this.searchTerm().toLowerCase();
+    const proyecto = this.proyectoState.seleccionado();
 
+    if (proyecto !== 'TODOS') {
+      items = items.filter(m => m.proyecto?.startsWith(proyecto) || m.motivo?.includes(proyecto));
+    }
     if (tipo !== 'todos') {
       items = items.filter(m => m.tipo === tipo);
     }
@@ -49,7 +54,10 @@ export class MovimientosComponent implements OnInit {
   });
 
   resumenMov = computed(() => {
-    const todos = this.movimientos();
+    const proyecto = this.proyectoState.seleccionado();
+    const todos = proyecto === 'TODOS'
+      ? this.movimientos()
+      : this.movimientos().filter(m => m.proyecto?.startsWith(proyecto) || m.motivo?.includes(proyecto));
     return {
       entradas: todos.filter(m => m.tipo === 'entrada').length,
       salidas: todos.filter(m => m.tipo === 'salida').length,
@@ -57,7 +65,10 @@ export class MovimientosComponent implements OnInit {
     };
   });
 
-  constructor(private facade: BodegaFacadeService) {}
+  constructor(
+    private facade: BodegaFacadeService,
+    readonly proyectoState: ProyectoStateService
+  ) {}
 
   ngOnInit() {
     this.loadData();

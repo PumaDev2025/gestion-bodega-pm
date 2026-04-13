@@ -12,4 +12,6 @@ export interface Movimiento {
   motivo: string;
   documento?: string;
   observaciones?: string;
+  /** Código de proyecto destino, ej: "P-4166 ESMAX" */
+  proyecto?: string;
 }
