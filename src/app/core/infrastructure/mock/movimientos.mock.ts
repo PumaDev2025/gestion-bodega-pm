@@ -1,7 +1,9 @@
 import { Movimiento } from '../../domain/models';
 
 // Historial completo de movimientos 2024-2026 (5529 registros)
-export const MOCK_MOVIMIENTOS: Movimiento[] = [
+// Dividido en 12 chunks de 500 para evitar TS2590
+
+const _MOV_CHUNK_1: Movimiento[] = [
   {
     id: 1, tipo: 'salida', productoId: 61,
     productoNombre: 'Estacion Total',
@@ -5497,6 +5499,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4132 IDE-MONTAJE MECANICO'
   },
+];
+
+const _MOV_CHUNK_2: Movimiento[] = [
   {
     id: 501, tipo: 'salida', productoId: 202,
     productoNombre: 'Rotomartillo Toma Sds Max 7 Kg',
@@ -10996,6 +11001,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4132 IDE-MONTAJE MECANICO'
   },
+];
+
+const _MOV_CHUNK_3: Movimiento[] = [
   {
     id: 1001, tipo: 'salida', productoId: 3,
     productoNombre: 'Monitor De 19Pulg',
@@ -16495,6 +16503,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4231 CMDIC'
   },
+];
+
+const _MOV_CHUNK_4: Movimiento[] = [
   {
     id: 1501, tipo: 'salida', productoId: 98,
     productoNombre: 'Napoleon 36 Pulg',
@@ -21987,6 +21998,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4127 GASMAR'
   },
+];
+
+const _MOV_CHUNK_5: Movimiento[] = [
   {
     id: 2001, tipo: 'salida', productoId: 65,
     productoNombre: 'Limaton Redondo 12P Pulg',
@@ -27481,6 +27495,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4132 IDE-MONTAJE MECANICO'
   },
+];
+
+const _MOV_CHUNK_6: Movimiento[] = [
   {
     id: 2501, tipo: 'salida', productoId: 2,
     productoNombre: 'Silla Con Brazos',
@@ -32978,6 +32995,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4166 ESMAX'
   },
+];
+
+const _MOV_CHUNK_7: Movimiento[] = [
   {
     id: 3001, tipo: 'salida', productoId: 9,
     productoNombre: 'Huincha De Medir 8 Mts.',
@@ -38461,6 +38481,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4254 DOOSAN'
   },
+];
+
+const _MOV_CHUNK_8: Movimiento[] = [
   {
     id: 3501, tipo: 'salida', productoId: 44,
     productoNombre: 'Palas Punta Huevo Mango De Fibra',
@@ -43764,6 +43787,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4127 GASMAR'
   },
+];
+
+const _MOV_CHUNK_9: Movimiento[] = [
   {
     id: 4001, tipo: 'salida', productoId: 1,
     productoNombre: 'Amperimetro Tenaza  Hioki 3280-10 1000 Volt',
@@ -49012,6 +49038,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4254 DOOSAN'
   },
+];
+
+const _MOV_CHUNK_10: Movimiento[] = [
   {
     id: 4501, tipo: 'salida', productoId: 342,
     productoNombre: 'Base Magnetica Ajuste Fino',
@@ -54271,6 +54300,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'ENTREGADO',
     proyecto: 'P-4302 ELABRA'
   },
+];
+
+const _MOV_CHUNK_11: Movimiento[] = [
   {
     id: 5001, tipo: 'salida', productoId: 157,
     productoNombre: 'Esmeril Angular De 4.1/2" Inalambrico',
@@ -59083,6 +59115,9 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     observaciones: 'PENDIENTE',
     proyecto: 'P-4323 CHILEPANEL'
   },
+];
+
+const _MOV_CHUNK_12: Movimiento[] = [
   {
     id: 5501, tipo: 'salida', productoId: 1,
     productoNombre: 'Ménsula 0.39',
@@ -59345,3 +59380,5 @@ export const MOCK_MOVIMIENTOS: Movimiento[] = [
     proyecto: 'P-4254 DOOSAN'
   },
 ];
+
+export const MOCK_MOVIMIENTOS: Movimiento[] = [..._MOV_CHUNK_1, ..._MOV_CHUNK_2, ..._MOV_CHUNK_3, ..._MOV_CHUNK_4, ..._MOV_CHUNK_5, ..._MOV_CHUNK_6, ..._MOV_CHUNK_7, ..._MOV_CHUNK_8, ..._MOV_CHUNK_9, ..._MOV_CHUNK_10, ..._MOV_CHUNK_11, ..._MOV_CHUNK_12];

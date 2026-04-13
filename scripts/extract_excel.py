@@ -274,10 +274,11 @@ def clean_str(s):
 lines_prod = [
     "import { Producto } from '../../domain/models';\n\n",
     f"// Inventario completo generado desde Requerimientos Tendencias 2024-2026\n",
-    f"// Total: {len(productos_list)} productos con demanda hist\u00f3rica registrada\n",
-    "export const MOCK_PRODUCTOS: Producto[] = [\n",
+    f"// Total: {len(productos_list)} productos con demanda histórica registrada\n\n",
 ]
 
+PROD_CHUNK = 200
+prod_items = []
 cat_seq = defaultdict(int)
 for idx, p in enumerate(productos_list, start=1):
     cat_id = p["catId"]
@@ -290,17 +291,30 @@ for idx, p in enumerate(productos_list, start=1):
     stock_actual, stock_min, stock_max = calc_stock(p["cod"], n_projs_activos, int(p["total"]))
     precio       = gen_precio(cat_id, int(p["total"]))
     unidad       = gen_unidad(p["desc"])
-    lines_prod += [
-        f"  {{\n",
-        f"    id: {idx}, codigo: '{codigo}', nombre: '{nombre}',\n",
-        f"    descripcion: '{desc_ts}', categoriaId: {cat_id},\n",
-        f"    categoriaNombre: '{CATEGORIAS[cat_id]['nombre']}', ubicacion: '{ubic}', stockActual: {stock_actual},\n",
-        f"    stockMinimo: {stock_min}, stockMaximo: {stock_max}, unidadMedida: '{unidad}',\n",
-        f"    precioUnitario: {precio}, estado: 'activo',\n",
-        f"    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')\n",
-        f"  }},\n",
-    ]
-lines_prod.append("];\n")
+    prod_items.append((idx, cat_id, codigo, nombre, desc_ts, ubic,
+                       stock_actual, stock_min, stock_max, unidad, precio))
+
+n_prod_chunks = (len(prod_items) + PROD_CHUNK - 1) // PROD_CHUNK
+prod_chunk_names = [f"_PROD_CHUNK_{i+1}" for i in range(n_prod_chunks)]
+
+for ci, cname in enumerate(prod_chunk_names):
+    lines_prod.append(f"const {cname}: Producto[] = [\n")
+    for (idx, cat_id, codigo, nombre, desc_ts, ubic,
+         stock_actual, stock_min, stock_max, unidad, precio) in prod_items[ci*PROD_CHUNK:(ci+1)*PROD_CHUNK]:
+        lines_prod += [
+            f"  {{\n",
+            f"    id: {idx}, codigo: '{codigo}', nombre: '{nombre}',\n",
+            f"    descripcion: '{desc_ts}', categoriaId: {cat_id},\n",
+            f"    categoriaNombre: '{CATEGORIAS[cat_id]['nombre']}', ubicacion: '{ubic}', stockActual: {stock_actual},\n",
+            f"    stockMinimo: {stock_min}, stockMaximo: {stock_max}, unidadMedida: '{unidad}',\n",
+            f"    precioUnitario: {precio}, estado: 'activo',\n",
+            f"    fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')\n",
+            f"  }},\n",
+        ]
+    lines_prod.append("];\n\n")
+
+prod_chunks_concat = ", ...".join(prod_chunk_names)
+lines_prod.append(f"export const MOCK_PRODUCTOS: Producto[] = [...{prod_chunks_concat}];\n")
 
 with open(OUT_PRODUCTOS, "w", encoding="utf-8") as f:
     f.writelines(lines_prod)
@@ -405,37 +419,56 @@ print(f"Movimientos válidos: {len(movimientos)} | Omitidos (sin cantidad): {ski
 
 # ─────────────────────────────────────────────
 # 7. GENERAR movimientos.mock.ts
+#    Se divide en chunks de 500 para evitar TS2590
+#    "Expression produces a union type too complex"
 # ─────────────────────────────────────────────
-lines_mov = [
-    "import { Movimiento } from '../../domain/models';\n\n",
-    f"// Historial completo de movimientos 2024-2026 ({len(movimientos)} registros)\n",
-    "export const MOCK_MOVIMIENTOS: Movimiento[] = [\n",
-]
+CHUNK_SIZE = 500
 
-for mov_id, m in enumerate(movimientos, start=1):
+def render_mov_item(mov_id, m):
     fecha_str   = m["fecha"].strftime("%Y-%m-%dT08:00:00") if hasattr(m["fecha"],"strftime") else "2026-04-07T08:00:00"
     prod_nombre = clean_str(m["prodNombre"].title())
     motivo      = clean_str(f'Despacho {m["proyecto"]}')
     obs_final   = clean_str(m["obs"]) if m["obs"] else clean_str(f'Estado: {m["estado"]} | {m["semDesp"]}')
-
-    lines_mov += [f"  {{\n", f"    id: {mov_id}, tipo: '{m['tipo']}', productoId: {m['productoId']},\n"]
-    lines_mov.append(f"    productoNombre: '{prod_nombre}',\n")
+    lines = [f"  {{\n", f"    id: {mov_id}, tipo: '{m['tipo']}', productoId: {m['productoId']},\n"]
+    lines.append(f"    productoNombre: '{prod_nombre}',\n")
     if m["prodCodigo"]:
-        lines_mov.append(f"    productoCodigo: '{clean_str(m['prodCodigo'])}',\n")
-    lines_mov += [
+        lines.append(f"    productoCodigo: '{clean_str(m['prodCodigo'])}',\n")
+    lines += [
         f"    cantidad: {m['cantidad']}, fecha: new Date('{fecha_str}'),\n",
         f"    responsable: 'Bodega Central P-1010',\n",
         f"    motivo: '{motivo}',\n",
     ]
     if m["guia"]:
-        lines_mov.append(f"    documento: '{clean_str(m['guia'])}',\n")
-    lines_mov.append(f"    observaciones: '{obs_final[:120]}',\n")
-    lines_mov.append(f"    proyecto: '{clean_str(m['proyecto'])}'\n")
-    lines_mov.append(f"  }},\n")
+        lines.append(f"    documento: '{clean_str(m['guia'])}',\n")
+    lines.append(f"    observaciones: '{obs_final[:120]}',\n")
+    lines.append(f"    proyecto: '{clean_str(m['proyecto'])}'\n")
+    lines.append(f"  }},\n")
+    return lines
 
-lines_mov.append("];\n")
+# Calcular número de chunks
+n_chunks = (len(movimientos) + CHUNK_SIZE - 1) // CHUNK_SIZE
+chunk_names = [f"_MOV_CHUNK_{i+1}" for i in range(n_chunks)]
+
+lines_mov = [
+    "import { Movimiento } from '../../domain/models';\n\n",
+    f"// Historial completo de movimientos 2024-2026 ({len(movimientos)} registros)\n",
+    f"// Dividido en {n_chunks} chunks de {CHUNK_SIZE} para evitar TS2590\n\n",
+]
+
+# Generar cada chunk como const tipada
+for ci, chunk_name in enumerate(chunk_names):
+    start_idx = ci * CHUNK_SIZE
+    end_idx   = min(start_idx + CHUNK_SIZE, len(movimientos))
+    lines_mov.append(f"const {chunk_name}: Movimiento[] = [\n")
+    for mov_id, m in enumerate(movimientos[start_idx:end_idx], start=start_idx + 1):
+        lines_mov.extend(render_mov_item(mov_id, m))
+    lines_mov.append("];\n\n")
+
+# Export final que concatena todos los chunks
+chunks_concat = ", ...".join(chunk_names)
+lines_mov.append(f"export const MOCK_MOVIMIENTOS: Movimiento[] = [...{chunks_concat}];\n")
 
 with open(OUT_MOVIMIENTOS, "w", encoding="utf-8") as f:
     f.writelines(lines_mov)
-print(f"Generado: {OUT_MOVIMIENTOS} ({len(movimientos)} movimientos)")
+print(f"Generado: {OUT_MOVIMIENTOS} ({len(movimientos)} movimientos en {n_chunks} chunks)")
 print("\n\u2713 Done \u2014 historial completo 2024-2026 generado.")

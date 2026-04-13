@@ -2,7 +2,8 @@ import { Producto } from '../../domain/models';
 
 // Inventario completo generado desde Requerimientos Tendencias 2024-2026
 // Total: 827 productos con demanda histórica registrada
-export const MOCK_PRODUCTOS: Producto[] = [
+
+const _PROD_CHUNK_1: Producto[] = [
   {
     id: 1, codigo: 'S.C.30.01.08.350', nombre: 'Esmeril Angular 4 1/2 Pulg',
     descripcion: 'Esmeril Angular 4 1/2 Pulg — demanda histórica acumulada: 40 un', categoriaId: 2,
@@ -1603,6 +1604,9 @@ export const MOCK_PRODUCTOS: Producto[] = [
     precioUnitario: 18500, estado: 'activo',
     fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
   },
+];
+
+const _PROD_CHUNK_2: Producto[] = [
   {
     id: 201, codigo: 'S.C.36.26.03.000', nombre: 'Rigidizador Vertical 0.5',
     descripcion: 'Rigidizador Vertical 0.5 — demanda histórica acumulada: 5 un', categoriaId: 4,
@@ -3203,6 +3207,9 @@ export const MOCK_PRODUCTOS: Producto[] = [
     precioUnitario: 11800, estado: 'activo',
     fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
   },
+];
+
+const _PROD_CHUNK_3: Producto[] = [
   {
     id: 401, codigo: 'Z.C.06.02.08.037', nombre: 'Llave Punta Corona 1 1/4',
     descripcion: 'Llave Punta Corona 1 1/4 — demanda histórica acumulada: 2 un', categoriaId: 1,
@@ -4803,6 +4810,9 @@ export const MOCK_PRODUCTOS: Producto[] = [
     precioUnitario: 58100, estado: 'activo',
     fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
   },
+];
+
+const _PROD_CHUNK_4: Producto[] = [
   {
     id: 601, codigo: 'S.C.07.03.04.023', nombre: 'Electrodo Tipo Resorte Para Inspeccion De Cañerias 14 Pulg',
     descripcion: 'Electrodo Tipo Resorte Para Inspeccion De Cañerias 14 Pulg — demanda histórica acumulada: 1 un', categoriaId: 9,
@@ -6403,6 +6413,9 @@ export const MOCK_PRODUCTOS: Producto[] = [
     precioUnitario: 20400, estado: 'activo',
     fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
   },
+];
+
+const _PROD_CHUNK_5: Producto[] = [
   {
     id: 801, codigo: 'Z.C.06.02.08.017', nombre: 'Set De Llaves Estrellas',
     descripcion: 'Set De Llaves Estrellas — demanda histórica acumulada: 1 un', categoriaId: 1,
@@ -6620,3 +6633,5 @@ export const MOCK_PRODUCTOS: Producto[] = [
     fechaIngreso: new Date('2024-04-15'), ultimaActualizacion: new Date('2026-04-10')
   },
 ];
+
+export const MOCK_PRODUCTOS: Producto[] = [..._PROD_CHUNK_1, ..._PROD_CHUNK_2, ..._PROD_CHUNK_3, ..._PROD_CHUNK_4, ..._PROD_CHUNK_5];
