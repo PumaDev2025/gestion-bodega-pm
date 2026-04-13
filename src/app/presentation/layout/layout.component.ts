@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AuthFacadeService } from '../../core/application/auth-facade.service';
 import { BodegaFacadeService } from '../../core/application/bodega-facade.service';
 import { ProyectoStateService, PROYECTOS } from '../../core/application/proyecto-state.service';
-import type { AlertaStock } from '../../core/domain/models';
+import type { AlertaStock, Movimiento, Producto } from '../../core/domain/models';
 
 interface NavItem {
   icon: string;
@@ -23,8 +23,18 @@ interface NavItem {
 export class LayoutComponent {
   sidebarCollapsed = signal(false);
   notifOpen = signal(false);
-  alertas = signal<AlertaStock[]>([]);
+  allAlertas = signal<AlertaStock[]>([]);
+  allMovimientos = signal<Movimiento[]>([]);
   today = new Date().toLocaleDateString('es-CL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+  /** Alertas filtradas por proyecto seleccionado */
+  alertas = computed(() => {
+    const proyecto = this.proyectoState.seleccionado();
+    if (proyecto === 'TODOS') return this.allAlertas();
+    const ids = this.proyectoState.getProductIdsParaProyecto(this.allMovimientos());
+    if (!ids) return this.allAlertas();
+    return this.allAlertas().filter(a => ids.has(a.productoId));
+  });
 
   allNavItems: NavItem[] = [
     { icon: '📊', label: 'Dashboard', route: '/dashboard' },
@@ -52,7 +62,8 @@ export class LayoutComponent {
     proyectoState: ProyectoStateService
   ) {
     this.proyectoState = proyectoState;
-    this.bodegaFacade.alertasStock$.subscribe(a => this.alertas.set(a));
+    this.bodegaFacade.alertasStock$.subscribe(a => this.allAlertas.set(a));
+    this.bodegaFacade.getMovimientos().subscribe(m => this.allMovimientos.set(m));
   }
 
   toggleSidebar() {

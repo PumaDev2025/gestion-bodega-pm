@@ -15,9 +15,16 @@ import { AlertaStock, ResumenBodega, Movimiento, Producto } from '../../../core/
 })
 export class DashboardComponent implements OnInit {
   allProductos = signal<Producto[]>([]);
-  alertas = signal<AlertaStock[]>([]);
+  allAlertas = signal<AlertaStock[]>([]);
   allMovimientos = signal<Movimiento[]>([]);
   loading = signal(true);
+
+  /** Alertas filtradas por proyecto activo */
+  alertas = computed(() => {
+    const ids = this.proyectoState.getProductIdsParaProyecto(this.allMovimientos());
+    if (!ids) return this.allAlertas();
+    return this.allAlertas().filter(a => ids.has(a.productoId));
+  });
 
   movimientos = computed(() => {
     const proyecto = this.proyectoState.seleccionado();
@@ -56,7 +63,7 @@ export class DashboardComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.facade.getAlertasStock().subscribe(a => this.alertas.set(a));
+    this.facade.getAlertasStock().subscribe(a => this.allAlertas.set(a));
     this.facade.getProductos().subscribe(p => this.allProductos.set(p));
     this.facade.getMovimientos().subscribe(m => {
       this.allMovimientos.set(m);
